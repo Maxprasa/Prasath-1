@@ -68,5 +68,8 @@ kuvadoo@gmail.com from the email address of your account and we delete it within
 - Website privacy policy: the full policy now lives at /finnsana/privacy/ (source: `docs/facts/finnsana-privacy.md`).
   The owner will switch the Play Console privacy URL later.
 
+- Sign-in options (owner, 2026-10-07): **guest mode**, **continue with Google**, **continue with email**.
+- Developer name: the owner will change the Google Play developer name from PRASADOO to **Kuvadoo** (2026-10-07).
+
 ## Forbidden
 "official", test-preparation claims, YKI, user numbers, ratings, awards, "human teacher", invented reviews.

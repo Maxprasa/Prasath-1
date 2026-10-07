@@ -105,6 +105,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .section { padding-block: var(--section); }
 .section--alt { background: var(--bg-alt); }
 .section--tight { padding-block: var(--s-7); }
+.section--flush-top { padding-top: 0; }
 .section-head { max-width: var(--measure); margin-bottom: var(--s-7); }
 .section-head--center { margin-inline: auto; text-align: center; }
 .eyebrow {
