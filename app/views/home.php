@@ -44,6 +44,7 @@ page_start('', txt('hero_lead'), [
 <?php endfor; ?>
   </div>
 </div>
+<label class="marquee-pause"><input type="checkbox"> <?= e(t('pause_motion')) ?></label>
 
 <section class="section wrap" aria-labelledby="svc-h">
   <h2 id="svc-h" class="section-title reveal"><?= e(txt('services_title')) ?></h2>
@@ -51,7 +52,7 @@ page_start('', txt('hero_lead'), [
 <?php foreach ([['photo', url('photo'), '01'], ['video', url('films'), '02'], ['aerial', url('films'), '03'], ['edit', url('films'), '04']] as [$k, $href, $num]): ?>
     <li class="service reveal">
       <span class="service-num" aria-hidden="true"><?= $num ?></span>
-      <h3><a href="<?= e($href) ?>"><?= e(txt("svc_{$k}_title")) ?></a></h3>
+      <h3><a href="<?= e($href) ?>"><?= hf(e(txt("svc_{$k}_title"))) ?></a></h3>
       <p><?= e(txt("svc_{$k}_text")) ?></p>
     </li>
 <?php endforeach; ?>
@@ -68,7 +69,7 @@ page_start('', txt('hero_lead'), [
 <?php foreach ($featured as $i => $a): $cover = photo($a['cover']) ?? photo($a['photos'][0]); ?>
     <li class="album-card reveal<?= $i === 0 ? ' album-card-wide' : '' ?>">
       <a href="<?= e(url('album', null, ['cat' => $a['category'], 'album' => $a['slug']])) ?>">
-        <span class="album-img"><?= img($cover, $i === 0 ? '(min-width: 900px) 66vw, 100vw' : '(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw') ?></span>
+        <span class="album-img"><?= img($cover, $i === 0 ? '(min-width: 900px) 66vw, 100vw' : '(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw', '', true, 960, '') ?></span>
         <span class="album-meta">
           <span class="album-cat"><?= e(tr(categories()[$a['category']]['name'])) ?></span>
           <span class="album-title"><?= e(tr($a['title'])) ?></span>
@@ -84,8 +85,8 @@ page_start('', txt('hero_lead'), [
   <div class="wrap">
     <div class="films-head reveal">
       <p class="kicker"><?= e(t('films_tagline')) ?></p>
-      <h2 id="films-h" class="films-wordmark">Hämeen Films</h2>
-      <p class="lead"><?= e(txt('films_lead')) ?></p>
+      <h2 id="films-h" class="films-wordmark" lang="fi">Hämeen Films</h2>
+      <p class="lead"><?= hf(e(txt('films_lead'))) ?></p>
     </div>
 <?php if ($topVideos): ?>
     <div class="video-grid">

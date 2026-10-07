@@ -7,7 +7,7 @@ function album_cards(array $list): void
 <?php foreach ($list as $a): $cover = photo($a['cover']) ?? photo($a['photos'][0]); ?>
     <li class="album-card reveal">
       <a href="<?= e(url('album', null, ['cat' => $a['category'], 'album' => $a['slug']])) ?>">
-        <span class="album-img"><?= img($cover, '(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw') ?></span>
+        <span class="album-img"><?= img($cover, '(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw', '', true, 960, '') ?></span>
         <span class="album-meta">
           <span class="album-cat"><?= count($a['photos']) ?> <?= e(t('photos_count')) ?></span>
           <span class="album-title"><?= e(tr($a['title'])) ?></span>

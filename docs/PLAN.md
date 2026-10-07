@@ -130,3 +130,16 @@ leaders but above the old 100 € packages.
 2. Galleries, Hämeen Films, prices, about, contact, privacy, terms → all real content.
 3. Admin: photos, videos, prices, texts, backup.
 4. SEO, redirects, checks (site-check, accessibility, code and security review) → test address → switch.
+
+## 8. Status (2026-10-07, evening)
+
+Built and tested. Upload zip: `kuvadoo.fi.zip` (not in git; built with the `release` skill). Steps: `DEPLOY.md`.
+Checks done: 132 page renders (FI/EN, 360/1280, light/dark), admin end-to-end test (29 checks incl. parallel
+uploads, CSRF, XSS, login limit), security review and WCAG 2.2 AA audit — findings fixed.
+
+Still open for the owner:
+- Photo descriptions (alt texts) are per album, not per photo – improve them in the admin over time.
+- Your own photo for the About page (admin → Texts).
+- OK from the City of Hämeenlinna to show the two MyIntegration videos you made (credit line is shown).
+- Ennakkoperintärekisteri (recommended before launch).
+- A native Finnish speaker should read the Finnish texts once.

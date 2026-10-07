@@ -24,7 +24,7 @@ page_start(txt('about_title') . ' – ' . txt('about_kicker'), txt('about_short'
     <p class="muted"><?= e(txt('about_name_note')) ?></p>
     <ul class="skill-list">
 <?php foreach (['svc_video_title', 'svc_photo_title', 'svc_aerial_title', 'svc_edit_title'] as $k): ?>
-      <li><?= e(txt($k)) ?></li>
+      <li><?= hf(e(txt($k))) ?></li>
 <?php endforeach; ?>
     </ul>
   </div>

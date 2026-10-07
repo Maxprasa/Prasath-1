@@ -8,7 +8,7 @@ function price_group(array $g): void
     }
     ?>
   <section class="price-group" aria-labelledby="pg-<?= e($g['id']) ?>">
-    <h2 id="pg-<?= e($g['id']) ?>" class="section-title reveal"><?= e(tr($g['title'])) ?></h2>
+    <h2 id="pg-<?= e($g['id']) ?>" class="section-title reveal"><?= hf(e(tr($g['title']))) ?></h2>
     <ul class="price-list">
 <?php foreach ($items as $it): $lines = array_filter(array_map('trim', preg_split('/\R/', tr($it['includes'])))); ?>
       <li class="price-card reveal">

@@ -14,8 +14,8 @@ page_start('Hämeen Films – ' . t('films_tagline'), txt('films_lead'), [
 <header class="film-hero">
   <div class="wrap">
     <p class="kicker"><?= e(t('films_tagline')) ?></p>
-    <h1 class="films-wordmark film-title">Hämeen Films</h1>
-    <p class="lead"><?= e(txt('films_lead')) ?></p>
+    <h1 class="films-wordmark film-title" lang="fi">Hämeen Films</h1>
+    <p class="lead"><?= hf(e(txt('films_lead'))) ?></p>
     <p class="muted"><?= e(txt('films_intro')) ?></p>
   </div>
   <div class="film-strip" aria-hidden="true"></div>

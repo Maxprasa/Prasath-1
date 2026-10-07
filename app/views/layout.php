@@ -80,7 +80,7 @@ function page_start(string $title, string $description, array $o = []): void
     <nav class="site-nav" aria-label="<?= e(t('nav_main')) ?>">
       <ul>
 <?php foreach ($nav as $key => [$href, $label]): ?>
-        <li><a href="<?= e($href) ?>"<?= $key === $active ? ' aria-current="page"' : '' ?><?= $key === 'films' ? ' class="nav-films"' : '' ?>><?= e($label) ?></a></li>
+        <li><a href="<?= e($href) ?>"<?= $key === $active ? ' aria-current="page"' : '' ?><?= $key === 'films' ? ' class="nav-films" lang="fi"' : '' ?>><?= e($label) ?></a></li>
 <?php endforeach; ?>
       </ul>
     </nav>
@@ -140,10 +140,10 @@ function page_end(): void
   <a class="btn btn-wa" href="<?= e(whatsapp_link()) ?>" rel="noopener"><?= wa_icon() ?><span>WhatsApp</span></a>
   <a class="btn btn-ghost" href="<?= e($mail) ?>"><?= mail_icon() ?><span><?= e(t('cta_email')) ?></span></a>
 </div>
-<dialog class="lightbox" aria-label="<?= e(t('open_photo')) ?>">
+<dialog class="lightbox" aria-label="<?= e(t('lb_label')) ?>">
   <button class="lb-btn lb-close" type="button" aria-label="<?= e(t('lb_close')) ?>">×</button>
   <button class="lb-btn lb-prev" type="button" aria-label="<?= e(t('lb_prev')) ?>">‹</button>
-  <figure class="lb-figure"><img class="lb-img" alt=""><figcaption class="lb-cap"></figcaption></figure>
+  <figure class="lb-figure"><img class="lb-img" alt=""><figcaption class="lb-cap" aria-live="polite"></figcaption></figure>
   <button class="lb-btn lb-next" type="button" aria-label="<?= e(t('lb_next')) ?>">›</button>
 </dialog>
 </body>

@@ -7,7 +7,7 @@ page_start(txt('prices_title'), txt('prices_lead'), [
 ]);
 ?>
 <header class="page-head wrap">
-  <p class="kicker">Kuvadoo · Hämeen Films</p>
+  <p class="kicker">Kuvadoo · <span lang="fi">Hämeen Films</span></p>
   <h1 class="page-title"><?= e(txt('prices_title')) ?></h1>
   <p class="lead"><?= e(txt('prices_lead')) ?></p>
 </header>

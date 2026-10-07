@@ -6,7 +6,7 @@ const ROOT = __DIR__ . '/..';
 const DATA_DIR = ROOT . '/data';
 const MEDIA_DIR = ROOT . '/media';
 const SITE_URL = 'https://kuvadoo.fi';
-const ASSET_VER = '1';
+const ASSET_VER = '2';
 
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Helsinki');
@@ -227,7 +227,7 @@ function photo_srcset(array $p): string
 }
 
 /** <img> tag for a photo. $sizes is the CSS sizes attribute. */
-function img(?array $p, string $sizes, string $class = '', bool $lazy = true, int $w = 960): string
+function img(?array $p, string $sizes, string $class = '', bool $lazy = true, int $w = 960, ?string $alt = null): string
 {
     if (!$p) {
         return '<div class="img-missing ' . e($class) . '" aria-hidden="true"></div>';
@@ -235,9 +235,18 @@ function img(?array $p, string $sizes, string $class = '', bool $lazy = true, in
     $max = end($p['widths']);
     $h = (int) round($p['h'] * $max / $p['w']);
     return '<img src="' . e(photo_url($p, $w)) . '" srcset="' . e(photo_srcset($p)) . '" sizes="' . e($sizes) . '"'
-        . ' width="' . $max . '" height="' . $h . '" alt="' . e(tr($p['alt'] ?? '')) . '"'
+        . ' width="' . $max . '" height="' . $h . '" alt="' . e($alt ?? tr($p['alt'] ?? '')) . '"'
         . ($class ? ' class="' . e($class) . '"' : '')
         . ($lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high"') . '>';
+}
+
+/** Mark the Finnish brand name with lang="fi" on English pages. Input must already be escaped. */
+function hf(string $escaped): string
+{
+    if (($GLOBALS['lang'] ?? 'fi') !== 'en') {
+        return $escaped;
+    }
+    return str_replace('Hämeen Films', '<span lang="fi">Hämeen Films</span>', $escaped);
 }
 
 function whatsapp_link(string $textKey = 'wa_hello'): string

@@ -7,7 +7,7 @@ page_start(txt('contact_title'), txt('contact_lead'), [
 ]);
 ?>
 <header class="page-head wrap">
-  <p class="kicker">Kuvadoo · Hämeen Films</p>
+  <p class="kicker">Kuvadoo · <span lang="fi">Hämeen Films</span></p>
   <h1 class="page-title"><?= e(txt('contact_title')) ?></h1>
   <p class="lead"><?= e(txt('contact_lead')) ?></p>
 </header>
