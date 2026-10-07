@@ -48,8 +48,7 @@ function page_start(string $title, string $description, array $o = []): void
 <link rel="alternate" hreflang="x-default" href="<?= e(SITE_URL . ($lang === 'fi' ? ($o['canonical'] ?? '/') : $o['alt'])) ?>">
 <?php endif; ?>
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f5f1ea" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0e0d0c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0a6b43">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kuvadoo">
 <meta property="og:title" content="<?= e($fullTitle) ?>">
@@ -61,7 +60,7 @@ function page_start(string $title, string $description, array $o = []): void
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/img/k-mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
 <?php if (!empty($o['preload'])): ?><link rel="preload" as="image" imagesrcset="<?= e(photo_srcset($o['preload'])) ?>" imagesizes="100vw">
 <?php endif; ?>
 <link rel="stylesheet" href="/assets/style.css?v=<?= ASSET_VER ?>">
@@ -166,13 +165,13 @@ function cta_band(string $title, string $text): void
 {
     $mail = 'mailto:' . setting('email') . '?subject=' . rawurlencode(t('mail_subject'));
     ?>
-<section class="cta-band reveal">
+<section class="cta-band">
   <div class="wrap">
-    <h2><?= e($title) ?></h2>
+    <h2><?= hl_text($title) ?></h2>
     <p><?= e($text) ?></p>
     <p class="btn-row">
       <a class="btn btn-wa" href="<?= e(whatsapp_link()) ?>" rel="noopener"><?= wa_icon() ?><span>WhatsApp</span></a>
-      <a class="btn btn-ghost" href="<?= e($mail) ?>"><?= mail_icon() ?><span><?= e(setting('email')) ?></span></a>
+      <a class="btn btn-outline-light" href="<?= e($mail) ?>"><?= mail_icon() ?><span><?= e(setting('email')) ?></span></a>
     </p>
   </div>
 </section>

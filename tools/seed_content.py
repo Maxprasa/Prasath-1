@@ -21,7 +21,7 @@ content = {
   },
   'text': {
     'hero_kicker': T('Valokuvaus · Video · Ilmakuvaus', 'Photography · Video · Aerial'),
-    'hero_title': T('Hetkiä, jotka saavat tuntemaan.', 'Moments that make people feel something.'),
+    'hero_title': T('Hetkiä, jotka saavat *tuntemaan*.', 'Moments that make people *feel* something.'),
     'hero_lead': T('Kuvadoo kuvaa ihmisiä, tapahtumia ja tarinoita – maasta ja ilmasta. Yli 12 vuoden kokemus valokuvauksesta, elokuvakuvauksesta ja editoinnista.',
                    'Kuvadoo photographs and films people, events and stories – on the ground and from the sky. Over 12 years of experience in photography, cinematography and editing.'),
     'services_title': T('Mitä teen', 'What I do'),
@@ -81,7 +81,7 @@ content = {
     'contact_title': T('Yhteystiedot', 'Contact'),
     'contact_lead': T('Helpoimmin tavoitat minut WhatsAppissa tai sähköpostilla. Kerro päivä, paikka ja mitä haluat kuvata – lähetän tarjouksen.',
                       'The easiest way to reach me is WhatsApp or email. Tell me the date, the place and what you would like – I will send you an offer.'),
-    'cta_title': T('Kerro hetkestäsi', 'Tell me about your moment'),
+    'cta_title': T('Kerro *hetkestäsi*', 'Tell me about *your moment*'),
     'cta_text': T('Kysy vapaita päiviä ja tarjousta WhatsAppissa tai sähköpostilla.', 'Ask for free dates and an offer on WhatsApp or by email.'),
   },
 }

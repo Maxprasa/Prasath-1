@@ -5,13 +5,13 @@ function legal_page(string $page, string $title, string $updated, array $section
     $lang = $GLOBALS['lang'];
     page_start($title, $intro, ['page' => $page, 'canonical' => url($page), 'alt' => url($page, $lang === 'fi' ? 'en' : 'fi')]);
     ?>
-<article class="wrap legal">
-  <header class="page-head">
+<header class="page-hero"><div class="wrap page-head">
     <p class="kicker">Kuvadoo · <?= e(t('ytunnus')) ?> <?= e(setting('ytunnus')) ?></p>
     <h1 class="page-title"><?= e($title) ?></h1>
     <p class="lead"><?= e($intro) ?></p>
     <p class="muted"><?= e($updated) ?></p>
-  </header>
+  </div></header>
+<article class="wrap legal">
 <?php foreach ($sections as $h => $ps): ?>
   <section>
     <h2><?= e($h) ?></h2>

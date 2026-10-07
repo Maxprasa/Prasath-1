@@ -15,12 +15,12 @@ page_start($name, $intro, [
     'noindex' => $list === [],
 ]);
 ?>
-<header class="page-head wrap">
+<header class="page-hero"><div class="wrap page-head">
   <p class="kicker"><a href="<?= e(url('photo')) ?>"><?= e(txt('photo_title')) ?></a></p>
   <h1 class="page-title"><?= e($name) ?></h1>
   <p class="lead"><?= e($intro) ?></p>
   <?php category_chips($key); ?>
-</header>
+</div></header>
 <section class="section wrap" aria-label="<?= e(t('galleries')) ?>">
 <?php if ($list): album_cards($list); else: ?>
   <p><?= e(t('empty_cat')) ?></p>

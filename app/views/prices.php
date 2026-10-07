@@ -6,11 +6,11 @@ page_start(txt('prices_title'), txt('prices_lead'), [
     'page' => 'prices', 'canonical' => url('prices'), 'alt' => url('prices', $lang === 'fi' ? 'en' : 'fi'),
 ]);
 ?>
-<header class="page-head wrap">
+<header class="page-hero"><div class="wrap page-head">
   <p class="kicker">Kuvadoo · <span lang="fi">Hämeen Films</span></p>
   <h1 class="page-title"><?= e(txt('prices_title')) ?></h1>
   <p class="lead"><?= e(txt('prices_lead')) ?></p>
-</header>
+</div></header>
 <div class="wrap">
 <?php foreach (data_get('prices')['groups'] ?? [] as $g) { price_group($g); } ?>
   <section class="price-notes reveal" aria-label="<?= e(t('footer_terms')) ?>">

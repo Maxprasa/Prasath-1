@@ -6,11 +6,11 @@ page_start(txt('contact_title'), txt('contact_lead'), [
     'page' => 'contact', 'canonical' => url('contact'), 'alt' => url('contact', $lang === 'fi' ? 'en' : 'fi'),
 ]);
 ?>
-<header class="page-head wrap">
+<header class="page-hero"><div class="wrap page-head">
   <p class="kicker">Kuvadoo · <span lang="fi">Hämeen Films</span></p>
   <h1 class="page-title"><?= e(txt('contact_title')) ?></h1>
   <p class="lead"><?= e(txt('contact_lead')) ?></p>
-</header>
+</div></header>
 <div class="wrap contact-grid">
   <a class="contact-card contact-wa reveal" href="<?= e(whatsapp_link()) ?>" rel="noopener">
     <?= wa_icon() ?><span class="contact-label">WhatsApp</span><span class="contact-value"><?= e(phone_display()) ?></span>

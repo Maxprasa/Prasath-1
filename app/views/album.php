@@ -16,14 +16,14 @@ page_start($title, tr($a['intro']) ?: $title, [
     'jsonld' => breadcrumbs_ld([[txt('photo_title'), url('photo')], [$catName, url('cat', null, ['cat' => $key])], [$title, $here]]),
 ]);
 ?>
-<header class="page-head wrap">
+<header class="page-hero"><div class="wrap page-head">
   <p class="kicker"><a href="<?= e(url('photo')) ?>"><?= e(txt('photo_title')) ?></a> / <a href="<?= e(url('cat', null, ['cat' => $key])) ?>"><?= e($catName) ?></a></p>
   <h1 class="page-title"><?= e($title) ?></h1>
 <?php if (tr($a['intro']) !== ''): ?>
   <p class="lead"><?= e(tr($a['intro'])) ?></p>
 <?php endif; ?>
   <p class="muted"><?= count($photos) ?> <?= e(t('photos_count')) ?></p>
-</header>
+</div></header>
 <section class="wrap gallery" aria-label="<?= e($title) ?>">
 <?php foreach ($photos as $i => $p): $portrait = $p['h'] > $p['w']; ?>
   <a class="g-item<?= $portrait ? ' is-portrait' : '' ?> reveal" href="<?= e(photo_url($p, 2200)) ?>" data-lb="<?= e(photo_url($p, 2200)) ?>" data-lb-srcset="<?= e(photo_srcset($p)) ?>">

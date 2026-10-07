@@ -2,7 +2,7 @@
 require __DIR__ . '/layout.php';
 page_start(t('notfound_title'), t('notfound_text'), ['noindex' => true]);
 ?>
-<div class="wrap page-head notfound">
+<div class="wrap notfound">
   <p class="kicker">404</p>
   <h1 class="page-title"><?= e(t('notfound_title')) ?></h1>
   <p class="lead"><?= e(t('notfound_text')) ?></p>

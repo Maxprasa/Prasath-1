@@ -6,7 +6,7 @@ const ROOT = __DIR__ . '/..';
 const DATA_DIR = ROOT . '/data';
 const MEDIA_DIR = ROOT . '/media';
 const SITE_URL = 'https://kuvadoo.fi';
-const ASSET_VER = '2';
+const ASSET_VER = '3';
 
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Helsinki');
@@ -238,6 +238,18 @@ function img(?array $p, string $sizes, string $class = '', bool $lazy = true, in
         . ' width="' . $max . '" height="' . $h . '" alt="' . e($alt ?? tr($p['alt'] ?? '')) . '"'
         . ($class ? ' class="' . e($class) . '"' : '')
         . ($lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high"') . '>';
+}
+
+/** Escape text and turn *word* into a highlighted span (owner can mark the highlight in the admin). */
+function hl_text(string $text): string
+{
+    return preg_replace('/\*(.+?)\*/u', '<span class="hl">$1</span>', e($text));
+}
+
+/** Plain text without *highlight* markers (for meta tags). */
+function plain(string $text): string
+{
+    return str_replace('*', '', $text);
 }
 
 /** Mark the Finnish brand name with lang="fi" on English pages. Input must already be escaped. */
