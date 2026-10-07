@@ -22,3 +22,11 @@ Check every page for:
 If Node + Playwright are available (`tools/check-site.mjs`), run it for screenshots and automated checks.
 
 Output: a table of issues — page, element, WCAG criterion, severity (blocker/major/minor), exact fix.
+
+## Owner rules that override older notes (2026-10-07)
+- **Location: say only "Finland". Never mention Hämeenlinna** anywhere on the site, including the footer
+  (`© 2026 Kuvadoo, Finland · kuvadoo@gmail.com`). Do not flag "Finland" as an error.
+- **No app links in the footer or top menu.** The footer is site-wide only (all apps, support, kuvadoo.fi,
+  contact, website privacy). FinnSana's links (privacy, terms, delete account, FAQ) stay on FinnSana's own
+  pages. Do not suggest adding FinnSana (or any app) to the footer or menu.
+- Read the current `CLAUDE.md` before reviewing; it wins over anything older.

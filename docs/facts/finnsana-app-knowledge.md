@@ -1,5 +1,8 @@
 # FinnSana: everything the website session needs to know (attach this file)
 
+> **Website override (owner, 2026-10-07):** on the website say only "Finland" — never Hämeenlinna — and never put
+> FinnSana links in the site footer or menu. See CLAUDE.md rules 4 and 12.
+
 Facts checked against the app's code on 7 Oct 2026. Use only what is written here; ask the owner about anything missing.
 
 ## Quick facts

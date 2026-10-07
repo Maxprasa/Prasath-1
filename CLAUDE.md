@@ -37,7 +37,9 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
 11. **Screenshots:** files are `assets/fs-<name>-<SHOT_VER>.webp` (540×1104, app screen only, no store
    captions; source shots 1080×2408 cropped to y 84–2292 to drop the status and navigation bars). Always
    show screenshots complete inside a thin phone frame (never cropped). Names in
-   use: welcome, home, path, lesson, word, wordbank, flashcard, grammar, match, my-words. Heroes use the
+   use: welcome, home, home-practice, path, lesson, lesson-2, lesson-3, word, wordbank, flashcard,
+   flashcard-back, practice, practice-words, practice-spoken, spoken, grammar, listening, reading, my-words,
+   me, me-skills, credits. Heroes use the
    owner-approved fan: Word bank left, main screen in front, lesson right (tilted sides behind). **When screenshots change,
    bump SHOT_VER and rename the files** — Hostinger's CDN caches images by file name for 7 days. A missing
    file shows a branded placeholder automatically.

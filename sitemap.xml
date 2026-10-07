@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://apps.kuvadoo.fi/</loc></url>
-  <url><loc>https://apps.kuvadoo.fi/finnsana/</loc></url>
-  <url><loc>https://apps.kuvadoo.fi/finnsana/privacy/</loc></url>
-  <url><loc>https://apps.kuvadoo.fi/finnsana/terms/</loc></url>
-  <url><loc>https://apps.kuvadoo.fi/finnsana/delete-account/</loc></url>
-  <url><loc>https://apps.kuvadoo.fi/support/</loc></url>
-  <url><loc>https://apps.kuvadoo.fi/privacy/</loc></url>
+  <url><loc>https://apps.kuvadoo.fi/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.kuvadoo.fi/finnsana/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.kuvadoo.fi/finnsana/privacy/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.kuvadoo.fi/finnsana/terms/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.kuvadoo.fi/finnsana/delete-account/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.kuvadoo.fi/support/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.kuvadoo.fi/privacy/</loc><lastmod>2026-10-07</lastmod></url>
 </urlset>
