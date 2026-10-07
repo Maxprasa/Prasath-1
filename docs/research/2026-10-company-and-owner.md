@@ -95,3 +95,18 @@ were found by opening the registers in a real (headless) browser instead.
   "Making of the Echcharikkai music video" (e6JRj_wg22Q), "EPIC Cinematic Hair Cutting B roll | DOOFILMS"
   (V7EN72-U53k), "Nissan GTR R35 Car shoot Malaysia" (LYm65Pe06V4), drone videos in Malaysia, travel videos
   in Sri Lanka and Kerala.
+
+## Update 2 (owner gave links, 2026-10-07)
+
+- LinkedIn https://www.linkedin.com/in/prasathsivakathiramalei/ — login wall, nothing readable.
+- MyIntegration Hämeenlinna blog by the owner, "From Sri Lanka to Hämeenlinna: Capturing Stories Through Visual
+  Storytelling", 30.12.2025
+  (https://hameenlinna.myintegration.fi/blogi/from-sri-lanka-to-hameenlinna-capturing-stories-through-visual-storytelling/):
+  - "My name is Prasath, and I am originally from Sri Lanka." Moved to Hämeenlinna with his family.
+  - "I have over 12 years of experience in photography, cinematography, and video editing."
+  - "Visual storytelling has always been my passion. I love capturing moments that speak to people, whether it
+    is a fleeting emotion or a grand event."
+  - Works in the City of Hämeenlinna International Resident Services team; filmed and edited "Valoilmiö 2025
+    Hämeenlinna" (YouTube st2p772Tlcs) and "Independence Day in Hämeenlinna 2025" (ws1bAm3ps7M), both published
+    on the City's channel "Myintegration - Hämeenlinna" (checked with YouTube oEmbed).
+  - "Being able to both shoot and edit the content gives me the creative control…"
