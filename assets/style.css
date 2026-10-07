@@ -227,14 +227,14 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .hero h1 .hl { color: var(--lime); }
 .hero .lead { color: #ffffff; margin-bottom: var(--s-6); }
 .hero .chips { margin-bottom: var(--s-6); }
-.hero .chips li { background: rgb(0 0 0 / .18); color: #ffffff; border: 1px solid rgb(255 255 255 / .22); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hero .chips li { background: rgb(0 0 0 / .25); color: #ffffff; border: 1px solid rgb(255 255 255 / .22); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .hero .eyebrow { background: rgb(255 255 255 / .14); color: #ffffff; border: 1px solid rgb(255 255 255 / .22); }
 .hero .btn--primary { background: #ffffff; color: #064a30; box-shadow: 0 18px 40px -18px rgb(0 0 0 / .6); }
 .hero .btn--primary:hover { background: var(--lime); color: #064a30; }
 .hero .btn--ghost { background: rgb(255 255 255 / .1); border-color: rgb(255 255 255 / .45); color: #ffffff; }
 .hero .btn--ghost:hover { background: rgb(255 255 255 / .18); border-color: #ffffff; color: #ffffff; }
 .hero .btn--soon { border-color: rgb(255 255 255 / .55); color: #ffffff; }
-.hero .badge { background: rgb(0 0 0 / .18); color: #ffffff; border-color: rgb(255 255 255 / .25); }
+.hero .badge { background: rgb(0 0 0 / .25); color: #ffffff; border-color: rgb(255 255 255 / .25); }
 .hero-status { margin-top: var(--s-4); font-size: var(--fs-sm); color: #ffffff; }
 .store-line { display: flex; align-items: center; gap: var(--s-2); margin: var(--s-5) 0 0; font-size: var(--fs-sm); font-weight: 600; color: #ffffff; }
 .store-line svg { width: 18px; height: 18px; flex: none; }
@@ -606,3 +606,9 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 
 /* phones: no light glow behind the hero text (keeps white text ≥ 4.5:1) */
 @media (max-width: 40rem) { .hero::before { display: none; } }
+
+/* review round 2 */
+.hero .text-link { padding-left: 0; margin-left: var(--s-2); }
+.store-line + .store-line { margin-top: var(--s-2); }
+.store-line--soon { font-weight: 500; }
+@media (max-width: 37.5rem) { .feature-media .phone { width: min(13rem, 58vw); } }
