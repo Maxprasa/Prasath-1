@@ -42,7 +42,7 @@ trackers, and 100 % honest (no invented ratings, users, awards or reviews).
 2. **App grid** — card per app: icon, name, tagline, platform · price chips, status badge
    ("In testing" / "Available"). Grid auto-fills, so app #2…#20 just add a card.
 3. **Our promise** — "No ads in any Kuvadoo app" (owner-confirmed). Other principles not confirmed.
-4. **About strip** — "Made by Kuvadoo in Hämeenlinna, Finland", link to www.kuvadoo.fi.
+4. **About strip** — "Made by Kuvadoo in Finland", link to www.kuvadoo.fi.
 5. **Contact band** — email CTA.
 
 ## FinnSana page sections (all text from `docs/facts/finnsana.md`)

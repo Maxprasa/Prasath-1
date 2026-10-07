@@ -1,9 +1,9 @@
 # Kuvadoo (studio) — approved facts
 
-- Kuvadoo is a sole trader in Hämeenlinna, Finland. Main site: https://www.kuvadoo.fi (photography business).
+- Kuvadoo is a sole trader in Finland. **On the website say only "Finland", never the town** (owner, 2026-10-07). Main site: https://www.kuvadoo.fi (photography business).
 - apps.kuvadoo.fi is the home of all apps made by Kuvadoo. One page per app.
 - Contact: kuvadoo@gmail.com
-- Publisher line: © 2026 Kuvadoo, Hämeenlinna, Finland · kuvadoo@gmail.com
+- Publisher line: © 2026 Kuvadoo, Finland · kuvadoo@gmail.com
 - No postal address, no business ID on the site unless the owner adds them.
 
 ## Studio promises (owner-confirmed 2026-10-07, apply to ALL apps)

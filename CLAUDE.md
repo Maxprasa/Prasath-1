@@ -1,7 +1,7 @@
 # apps.kuvadoo.fi — project rules
 
 Static website for **apps.kuvadoo.fi**: the home of all apps made by Kuvadoo (a sole trader in
-Hämeenlinna, Finland; main site https://www.kuvadoo.fi, a photography business). One page per app.
+Finland; main site https://www.kuvadoo.fi, a photography business). One page per app.
 First app: **FinnSana: Learn Finnish** (Android). More apps will be added the same way.
 
 Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `public_html`).
@@ -19,8 +19,9 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
 3. **Honest AI disclosure.** FinnSana's voices and pictures are computer-generated; say so wherever
    voices/pictures are described.
 4. **Footer publisher line, exactly:**
-   `© 2026 Kuvadoo, Hämeenlinna, Finland · kuvadoo@gmail.com`
-   No postal address, no business ID unless the owner adds them.
+   `© 2026 Kuvadoo, Finland · kuvadoo@gmail.com`
+   **Location: say only "Finland" — never the town (owner rule, 2026-10-07).** No postal address, no
+   business ID unless the owner adds them.
 5. **Language:** English, `<html lang="en">`. Finnish words in text get `lang="fi"` spans.
 6. **Accessibility:** WCAG 2.2 AA — landmarks, one `h1`, logical headings, alt text, contrast AA in
    light *and* dark mode, visible focus, works at 360 px wide, respects `prefers-reduced-motion`.
