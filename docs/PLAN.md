@@ -92,9 +92,10 @@ leaders but above the old 100 € packages.
 
 | Hämeen Films — video | Price | Includes |
 |---|---|---|
-| Tapahtuma- / yritysvideo | alk. 690 € | up to 3 h filming, 1–2 min film + 1 vertical clip |
-| Häävideo: vihkiminen + parikuvaus | alk. 890 € | up to 3 h, 2–3 min film |
-| Häävideo: koko päivä | alk. 1590 € | up to 8 h, 4–6 min film + 1 min trailer |
+| Tapahtuma- / yritysvideo | alk. 890 € | up to 4 h filming, 1–2 min film + 2 vertical clips |
+| Häävideo: vihkiminen + parikuvaus | alk. 990 € | up to 3 h, 2–3 min film |
+| Häävideo: koko päivä | alk. 1790 € | up to 8 h, 4–6 min film + 1 min trailer |
+| Musiikkivideo | tarjouksen mukaan | by offer (no public market prices found) |
 
 - **Travel:** included up to 30 km; after that 0.50 €/km both ways. The exact price is in the written
   offer before booking.
@@ -103,6 +104,11 @@ leaders but above the old 100 € packages.
 - **Booking by WhatsApp or email** counts as a distance contract, so customers have a 14-day right to
   cancel. This is explained on `/varausehdot/`. No non-refundable deposit until an accountant or lawyer
   confirms.
+- **Important: ennakkoperintärekisteri.** Kuvadoo is not in it. Until it is, private customers must report
+  the payment to the tulorekisteri, and business customers must withhold tax (60 % without a tax card).
+  This scares customers. **Recommendation: join the ennakkoperintärekisteri now** (free, at ytj.fi; it is
+  separate from VAT). Prices do not change. (Vero.fi: ennakkoperintärekisteri, kotitalous ostaa palvelun.)
+- **VAT limit 20 000 €/year:** above it, 25.5 % VAT starts and prices must be raised or include VAT.
 - This is research, not legal advice. An accountant should check the VAT and terms text once.
 
 ## 6. Questions left (short)
@@ -115,7 +121,8 @@ leaders but above the old 100 € packages.
 5. **Prices:** are the prices above OK as a start?
 6. **About:** please send one photo of you. Should we write about DOOFILMS and Sri Lanka?
 7. **Couple shoot:** may we show the names "Samantha & Teemu"? (Otherwise "Pariskuvaus".)
-8. **Hosting:** OK to build first on a test address (e.g. `uusi.kuvadoo.fi`), then switch kuvadoo.fi?
+8. **Ennakkoperintärekisteri:** will you join it? (Recommended before the site goes live.)
+9. **Hosting:** OK to build first on a test address (e.g. `uusi.kuvadoo.fi`), then switch kuvadoo.fi?
 
 ## 7. Build order (after approval)
 

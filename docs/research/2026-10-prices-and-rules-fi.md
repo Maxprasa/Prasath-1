@@ -1,126 +1,123 @@
-# Prices and price rules for kuvadoo.fi (research, 2026-10-07)
+# Prices and price rules for kuvadoo.fi (research, 2026-10-07, updated same day)
 
-**This is research, not legal or tax advice.** The owner sets the final prices. Before publishing, ask an
-accountant about VAT and, if unsure, ask KKV (kuluttajaneuvonta) about the cancellation terms.
+**This is research, not legal or tax advice.** The owner sets the final prices. Ask an accountant about
+tax registration, and ask KKV (kuluttajaneuvonta) or a lawyer about the cancellation terms.
 Following `CLAUDE.md` rule 6, no town is named in the proposed site text below.
+
+**Status (YTJ, given by the coordinator 2026-10-07):** Kuvadoo, Y-tunnus 3635801-2, yksityinen
+elinkeinonharjoittaja, registered 28.6.2026 (Trade Register 1.7.2026). **Not VAT-registered. Not in
+ennakkoperintärekisteri.** The owner is an experienced cinematographer (music videos, weddings).
+YTJ shows the town publicly. On the site, still write "Finland" until the owner decides (rule 6).
 
 ## Recommendations (short)
 
-1. **Show one clear price list page** (`/hinnasto/` or `/prices/`). If you show prices at all, you must
-   show them correctly, and a service business with a website must keep a price list on the site
-   (hintamerkintäasetus 553/2013, 5–6 §, as explained by KKV).
-2. **Every consumer price is the final total price, VAT included.** First, the owner must tell us whether
-   Kuvadoo is VAT-registered. Then add the matching VAT line (see "Wording" below).
-3. **"alkaen" prices are OK** if each package says what is included and what can add cost (extra
-   hours, travel). KKV allows "price determination basis" (määräytymisperusteet) when an exact price
-   cannot be given.
-4. **Travel rule on the page:** say what is included (e.g. "within 30 km") and the per-km price after that.
-   Put the exact travel cost in the written quote before booking.
-5. **No crossed-out "was" prices** (this is already `CLAUDE.md` rule 4).
-6. **Show the business identity:** name Kuvadoo, Y-tunnus, email (+ WhatsApp number if used). EU law
+1. **Show one clear price list page** (`/hinnasto/`). A service business with a website must keep a price
+   list there (hintamerkintäasetus 553/2013, 5–6 §, as explained by KKV).
+2. **Prices are final prices. No VAT is added.** Use the same price for consumers and businesses. Never
+   write "sis. alv" or "+ alv" (see the wording in Part C).
+3. **Join ennakkoperintärekisteri soon (strong recommendation).** Until then, a *private customer* must
+   report the payment to the income register, and must withhold tax if they pay the same seller over
+   1 500 € in a calendar year. Business customers must withhold tax at the tax-card rate, or 60 % if no
+   tax card is shown. These customers also get no household deduction. This puts off wedding and business
+   customers (see A8). Joining is voluntary and does not mean VAT registration.
+4. **Plan for the 20 000 € VAT limit.** Above it, 25.5 % VAT is due from the day the limit is passed.
+   With the same final prices, the owner keeps only about 80 % (price ÷ 1.255). Either raise prices then,
+   or set prices now with room for that. Watch turnover from 28.6.2026.
+5. **"alkaen" prices are OK** if each package says what is included and what can add cost (extra hours,
+   travel). Give the exact total in a written offer before booking.
+6. **Travel rule on the page:** what is included (e.g. 30 km) and the per-km price after that.
+7. **No crossed-out "was" prices** (`CLAUDE.md` rule 4).
+8. **Business identity on the site:** Kuvadoo, Y-tunnus 3635801-2, email (+ WhatsApp number). EU law
    also asks for a "geographic address". This clashes with the "Finland only" rule, so the owner decides.
-7. **Confirm every booking in writing (email)** with the price, what is included, travel, payment and
-   cancellation terms. A WhatsApp/email booking is very likely a *distance contract*. Until the owner gets
-   advice, do not promise "no cancellation" (see Part A6).
-8. **Add a short privacy notice** (`/tietosuoja/`) that covers email and WhatsApp contacts, even
-   without a form.
-9. **Raise the old prices.** 100 € for 25 edited photos is far below the local market (see Part B).
-   The proposed list is in Part C.
+9. **Confirm every booking by email** with the price, what is included, travel, payment and cancellation
+   terms. A WhatsApp/email booking is very likely a distance contract, so do not promise "no
+   cancellation" until the owner has advice (A6).
+10. **Add a short privacy notice** (`/tietosuoja/`) for email and WhatsApp contacts.
+11. **Raise the old prices**, video most of all (owner's experience). See Part C.
 
 ---
 
 ## Part A — rules (observations)
 
-### A1. Consumer prices must include VAT and all costs
-- If a specific service is offered at a price, the marketing must show the **total price including taxes**
-  or, if an exact price is impossible because of the service type, the **basis for the price** (KSL 2:8).
-  Before a distance contract, the same total price info must be given (KSL 6:9). Source: KKV guideline
-  "Tavaroiden ja palveluiden hinnan ilmoittaminen" (Kuluttaja-asiamiehen linjaus 2014), sections 2, 4 and 10
-  — https://yksa.disec.fi/Yksa4/download/142726905250700/file/b438ade8-2dc1-4b96-9a9b-95fbc16bf189
-- If extra costs cannot be calculated in advance, you must say that such costs **may** arise (same
-  guideline, section 2.2 / KSL 2:8). Section 9 says that for services sold with a sale, the fixed price or
-  basis "kuten tunti- tai kilometriveloitus" must be shown on the website.
-- Misleading price info is banned (KSL 2:6, guideline section 11). Small print is often seen as misleading
-  (section 12).
-- EU e-commerce directive art. 5(2): prices online must be "clear and unambiguous" and must "indicate
-  whether they are inclusive of tax and delivery costs" —
-  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32000L0031
-- Selling to businesses: prices may be shown without VAT ("750 euroa + alv"). Source: Suomen Yrittäjät —
-  https://www.yrittajat.fi/tietopankki/markkinointi-ja-myynti/hinnan-ilmoittaminen/ (note: this page still
-  says the old 15 000 € VAT limit, which is out of date).
+### A1. Consumer prices must be total prices
+- A specific service offered at a price needs the **total price including taxes**. If an exact price is
+  impossible, show the **basis for the price** (KSL 2:8). The same total price info is required before a
+  distance contract (KSL 6:9). If extra costs cannot be calculated in advance, say they **may** arise. For
+  services sold with a sale, the website must show the fixed price or the basis, "kuten tunti- tai
+  kilometriveloitus" (section 9). Misleading price info is banned (KSL 2:6), and small print is often seen
+  as misleading. Source: KKV guideline "Tavaroiden ja palveluiden hinnan ilmoittaminen" (2014), sections
+  2, 4, 9–12 — https://yksa.disec.fi/Yksa4/download/142726905250700/file/b438ade8-2dc1-4b96-9a9b-95fbc16bf189
+- Online prices must "indicate whether they are inclusive of tax and delivery costs" (directive 2000/31/EC
+  art. 5(2)) — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32000L0031. So the page should
+  say clearly that no VAT is added.
 
-### A2. Service price list on the website (hintamerkintäasetus 553/2013)
-- A service provider covered by the Services Act (1166/2009) must keep a price list at its premises **and
-  on its website**. If exact prices are impossible, show the price basis. If services are performed
-  elsewhere than the premises, the list must be shown on request (5 §). If there are too many services, list
-  the most common prices and say that the full price list is available on request (6 §). KKV adds that the
-  website duty is general and does not depend on online ordering (section 8.2, "KA" = Consumer Ombudsman
-  view). Source: KKV guideline above, section 8.
-- I could not open the Finlex text of 553/2013 itself (the page is rendered by script). The section numbers
-  above are as cited by KKV.
+### A2. Price list on the website (553/2013)
+- A provider under the Services Act (1166/2009) must keep a price list at its premises **and on its
+  website**. If exact prices are impossible, show the price basis (5 §). If there are many services, show
+  the most common prices and say that the full price list is available on request (6 §). The website duty is
+  general (Consumer Ombudsman view). Source: KKV guideline, section 8. I could not open the Finlex text itself.
 
-### A3. VAT rate and the VAT limit (2026)
-- **General VAT rate 25.5 %** since 1.9.2024. It covers "most goods and services". Photography is not
-  named, but it is not on the reduced-rate list (13.5 % from 1.1.2026; 10 % for newspapers/magazines only) —
+### A3. VAT
+- General rate **25.5 %** since 1.9.2024, for "most goods and services". The reduced rate is 13.5 % from
+  1.1.2026, and 10 % is for newspapers/magazines only —
   https://vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/arvonlisaverotus/arvonlisaveroprosentit/
-  **Accountant to confirm the rate for photo and video services.**
-- **VAT limit (vähäisen toiminnan raja): 20 000 €** turnover, from 1.1.2025, counted per **calendar
-  year** (both current and previous year). VAT is due **from the moment the limit is exceeded** (no more
-  back-dated VAT) — https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48658/arvonlisaveroton-vahainen-toiminta/
-  and the Vero press release
+- **Limit 20 000 €** per **calendar year** (current and previous year), from 1.1.2025. VAT is due **from the
+  moment the limit is passed** —
+  https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48658/arvonlisaveroton-vahainen-toiminta/ ·
   https://www.vero.fi/tietoa-verohallinnosta/uutishuone/lehdistötiedotteet/2024/pienten-yritysten-alv-velvollisuus-muuttuu--vahaisen-toiminnan-raja-nousee-20-000-euroon/
-- The Vero guidance **does not cite a section number** for small-business exemption, so I could not
-  confirm "AVL 3 §". The proposed wording below therefore does not use a section number.
-  The accountant can add it if they wish.
-- Practical point: a non-registered trader whose sales go over 20 000 € must start charging VAT
-  at once. If prices are "VAT included", the trader's net income drops by about 20 %, or prices must
-  change.
+- Below the limit, a trader can usually register for VAT voluntarily (seen only in search summaries of
+  vero.fi, not opened — accountant to confirm).
+- **No section number is confirmed.** The Vero guidance names no section of the VAT act, so I could not
+  confirm "AVL 3 §". The wording below has no section number, and the accountant can add one.
+- Scale: about 7 full-day wedding films (Part C), or about 90 portrait sessions, reach 20 000 €.
 
 ### A4. "alkaen" (from) prices
-- I found **no KKV text that is specifically about "alkaen"**. What I did see: KKV lets you show a price
-  *basis* when an exact price cannot be given, and it requires you to tell people that extra costs may
-  arise (A1). Misleading total impressions are banned (KSL 2:6). Recommendation: use "alkaen" only
-  when the lowest price really buys the package as described, and list what raises the price.
+- I found no KKV text written only about "alkaen". KKV does allow a price *basis*, requires a note that
+  extra costs may come, and bans a misleading overall impression (A1). Use "alkaen" only when the lowest
+  price really buys the package as described.
 
 ### A5. Crossed-out "was" prices
-- The 30-day lowest-price rule (KSL 2:11, from 1.1.2023, from Omnibus art. 6a of directive 98/6/EC)
-  applies to **goods ("tavara")**. Comparisons for services are judged under KSL 2:6 (misleading
-  information). Source: KKV webinar 13.9.2022 —
-  https://www.kkv.fi/uploads/sites/2/tavaroita-koskevat-alennusilmoitukset_webinaari_13092022.pdf
-  Directive 98/6/EC itself covers "products" only (art. 1) —
+- The 30-day lowest-price rule (KSL 2:11, from 1.1.2023; directive 98/6/EC art. 6a) is about **goods**.
+  For services, a "was" price is judged as possibly misleading (KSL 2:6) —
+  https://www.kkv.fi/uploads/sites/2/tavaroita-koskevat-alennusilmoitukset_webinaari_13092022.pdf ·
   https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31998L0006
-- So for services a fake "was" price is still illegal as misleading. The site rule (no "was" prices) is the
-  safe choice.
 
 ### A6. Identity, booking by WhatsApp/email, cancellation
-- **Identity on the website** (e-commerce directive art. 5(1)): name, "the geographic address at which
-  the service provider is established", email, trade register + registration number (Y-tunnus), VAT
-  number where applicable — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32000L0031
-  I could not open the Finnish implementing text (tietoyhteiskuntakaari). **The address versus the
-  "Finland only" rule is an owner decision.** Ask an adviser whether a municipality is enough.
-- **Distance contract:** a contract made "without the simultaneous physical presence" of the parties, using
-  only distance communication, "under an organised distance sales or service-provision scheme" (directive
-  2011/83/EU art. 2(7)) — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011L0083
-  A website that invites bookings by WhatsApp/email very likely meets this test.
-- **Withdrawal:** 14 days from the contract for services (art. 9(2)). If the customer expressly asks for the
-  service to start inside the 14 days, they pay a proportional amount if they withdraw (art. 8(8), 14(3)).
-  The right ends once the service is fully performed with express consent (art. 16(a)).
+- **Identity online:** name, "the geographic address at which the service provider is established", email,
+  register + number (Y-tunnus), VAT number where applicable (2000/31/EC art. 5(1)). Kuvadoo has no VAT
+  number. I could not open the Finnish implementing text.
+- **Distance contract:** made "without the simultaneous physical presence" of the parties, "under an
+  organised distance sales or service-provision scheme" (2011/83/EU art. 2(7)) —
+  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011L0083
+- **Withdrawal:** 14 days from the contract for services (art. 9(2)). If the customer asks for the service
+  to start earlier, they pay a proportional amount if they withdraw (art. 8(8), 14(3)). The right ends when
+  the service is fully performed with express consent (art. 16(a)).
 - **Exemption:** art. 16(l) excludes "services related to leisure activities if the contract provides for a
-  specific date or period of performance". **I did not find any official source that says whether a
-  photo/video shoot on a fixed date counts as a "leisure activity" service.** Do not rely on it. Ask
-  KKV or a lawyer. Until then, treat bookings as having a 14-day withdrawal right and write the
-  terms to fit it.
-- Practical point: a Hämeenlinna competitor publishes strict terms ("session fee non-refundable"). This
-  is not proof that such terms are legal —
+  specific date or period of performance". **I found no official source that says a fixed-date shoot counts
+  as a leisure service.** Do not rely on it until KKV or a lawyer confirms.
+- A local competitor publishes a "non-refundable session fee". That does not prove the term is legal —
   https://www.kukkiaphotography.fi/hinnasto-ja-kuvausehdot/
 
-### A7. GDPR for email / WhatsApp links (no form)
-- Getting emails and WhatsApp messages still means processing personal data. You must tell people:
-  controller identity and contact, purposes and legal basis, recipients, transfers outside the EU,
-  retention, their rights, and the right to complain (GDPR art. 13) — https://gdpr-info.eu/art-13-gdpr/
-  (unofficial copy of the GDPR text).
-- In the privacy notice, name WhatsApp (Meta) as a channel the visitor chooses. Keep the WhatsApp
-  link a plain link that loads nothing until it is clicked. This fits the "no third-party request" rule.
+### A7. GDPR for email / WhatsApp links
+- Messages still mean processing personal data. The notice must give the controller, purposes, legal
+  basis, recipients, transfers outside the EU, retention, rights and the right to complain (GDPR art. 13) —
+  https://gdpr-info.eu/art-13-gdpr/ (unofficial copy). Name WhatsApp (Meta) as a channel the visitor
+  chooses. Keep the link a plain link (no third-party load).
+
+### A8. Not in ennakkoperintärekisteri — effect on customers
+- "Jos yritys ei ole ennakkoperintärekisterissä, asiakkaan pitää tehdä ennakonpidätys". For a sole trader
+  the rate is the tax-card rate. "Jos henkilö ei ole esittänyt verokorttia, ennakonpidätys on 60 %."
+  Registration is not compulsory —
+  https://www.vero.fi/yritykset-ja-yhteisot/yritystoiminta/verohallinnon-rekisterit/ennakkoperintarekisteri/
+- **Households:** the household must report the work payment to the income register by the 5th of the next
+  month, with no minimum amount. It must also withhold tax if it pays the same payee "yli 1 500 euroa
+  kalenterivuoden aikana" —
+  https://vero.fi/tulorekisteri/yksityishenkil%C3%B6t/kotitalous-ty%C3%B6nantajana/kotitalous-ostaa-palvelun/
+  The household cannot get the household deduction ("Et voi saada kotitalousvähennystä…") —
+  https://www.vero.fi/henkiloasiakkaat/asuminen/kotitalous_tyon_teettajana/
+- **What changes after joining:** customers just pay the invoice — no withholding and no income-register
+  report. The owner then pays their own prepayment tax (ennakkovero). Nothing changes in the price wording.
+  Until then, **do not hide this**. Tell the customer in the written offer.
 
 ---
 
@@ -128,15 +125,15 @@ Following `CLAUDE.md` rule 6, no town is named in the proposed site text below.
 
 | Business (area) | Prices seen | VAT | Travel |
 |---|---|---|---|
-| Kukkia Photography (Hämeenlinna) | Family/portrait session 150 € (~1 h, files extra: 10 files 190 €, 15 files 250 €); event from 440 € (1–2 h, min. 60 files); wedding portraits from 690 € (30+ photos); weddings from 1440–2190 € | incl. 25.5 % | central town incl., then 0.57 €/km |
-| Hämeenlinnan Kuvapalvelu Oy (Hämeenlinna, studio) | Rippikuvaus 39 € (1 print); wedding studio from 129 €, location from 229 €; family by agreement | not stated | not stated |
-| Stories by Susanna (Lahti) | Rippi/graduation 190 € (30 min, 5 photos, extra 15 €); wedding portraits 550 € (1 h, 50 files); portraits+ceremony 750 €; 1 h + 3 h party 1100 €; full day 2100 € | not stated | Lahti/Hollola incl., then 0.50 €/km |
-| Miia Koskinen (Lahti) | Wedding portraits 460 € (20 photos) / 590 € (60+); portraits+ceremony 780 €; 8 h 1900 €; 12 h 2400 € | incl. 25.5 % | extra for far shoots |
-| Teemu P. (Tampere) | Portrait from 150 € (60 min, 3 files); event 150 € first hour, then 75 €/h, editing 65 €/h; wedding 350 / 700 / 1400 € (from) | "En ole alv-velvollinen, joten hinnat alv 0%" | 0.55 €/km over 10 km |
+| Kukkia Photography (Hämeenlinna) | Family/portrait session 150 € (~1 h, files extra: 10 files 190 €, 15 files 250 €); event from 440 € (1–2 h, min. 60 files); wedding portraits from 690 €; weddings 1440–2190 € (from) | incl. 25.5 % | central town incl., then 0.57 €/km |
+| Hämeenlinnan Kuvapalvelu Oy (Hämeenlinna, studio) | Rippikuvaus 39 € (1 print); wedding studio from 129 €, location from 229 € | not stated | not stated |
+| Stories by Susanna (Lahti) | Rippi/graduation 190 € (30 min, 5 photos); wedding portraits 550 €; portraits+ceremony 750 €; 1 h + 3 h party 1100 €; full day 2100 € | not stated | Lahti/Hollola incl., then 0.50 €/km |
+| Miia Koskinen (Lahti) | Wedding portraits 460 € / 590 €; portraits+ceremony 780 €; 8 h 1900 €; 12 h 2400 € | incl. 25.5 % | extra for far shoots |
+| Teemu P. (Tampere) | Portrait from 150 € (60 min, 3 files); event 150 € first hour, then 75 €/h, editing 65 €/h; weddings from 350 / 700 / 1400 € | "En ole alv-velvollinen, joten hinnat alv 0%" | 0.55 €/km over 10 km |
 | Arto Markkanen (Helsinki) | Headshots from 150 €/person (2 photos); event 300 € first hour, then 150 €/h | + alv 25.5 % | not stated |
-| Henniina Visuals (Tampere) | Wedding video 8 h 1900 € (4–7 min); + vertical trailer 2200 €; 10 h with ceremony & speeches 3000 € | not stated | Tampere area incl., then 0.53 €/km |
-| Kuvajälki (Helsinki, works in Tampere) | Wedding video from 1490 € (4–6 h) / from 1990 € (10–12 h); **photo + video full day from 3490 €**; extra hour 120 €; event video from 1190 € + alv; business shoot day from 1690 € + alv | weddings incl. 25.5 %; business + alv | 100 € (≤100 km), 150 € (≤150 km), 250 € (≤250 km) |
-| valokuvaajat.fi averages (Hämeenlinna) | Family average 260 € (national 220 €); wedding average 1100 € (national 1000 €); method not explained | — | — |
+| Henniina Visuals (Tampere) | Wedding video 8 h 1900 €; + vertical trailer 2200 €; 10 h with ceremony & speeches 3000 € | not stated | Tampere area incl., then 0.53 €/km |
+| Kuvajälki (Helsinki, works in Tampere) | Wedding video from 1490 € (4–6 h) / 1990 € (10–12 h); photo + video full day from 3490 €; event video from 1190 € + alv; business shoot day from 1690 € + alv | weddings incl.; business + alv | 100 / 150 / 250 € by distance |
+| valokuvaajat.fi (Hämeenlinna) | Family average 260 € (national 220 €); wedding average 1100 € (national 1000 €); method not given | — | — |
 
 Sources: https://www.kukkiaphotography.fi/hinnasto-ja-kuvausehdot/ ·
 https://kuvapalvelu.net/kuvauspalvelut/hinnasto/ · https://storiesbysusanna.fi/hinnasto ·
@@ -146,17 +143,22 @@ https://kuvajalki.fi/haavideokuvaus/ · https://kuvajalki.fi/videotuotanto-tampe
 https://www.valokuvaajat.fi/valokuvaus/perhekuvaus/hameenlinna/ ·
 https://www.valokuvaajat.fi/valokuvaus/haakuvaus/hameenlinna/
 
-What these show: the market mostly uses **packages with "from" prices**, **travel included near the base
-and then about 0.50–0.57 €/km**, and VAT "incl." for consumers but "+ alv" for business work. A
-non-registered trader writes "alv 0 %". I found no published Hämeenlinna video price list.
+Patterns:
+- Most sellers use packages with "from" prices.
+- Travel is included near the base, then about 0.50–0.57 €/km.
+- A non-registered Tampere trader writes "alv 0%".
+- Business prices of VAT-registered sellers are "+ alv". For a business buyer, Kuvadoo's price without VAT
+  costs the same as a competitor's price before VAT.
+- I found no published Hämeenlinna video price list and no music-video price list.
 
 ---
 
 ## Part C — proposed starting price list (OWNER DECIDES)
 
-These are suggestions only. They are set **below the local leaders** (Kukkia, Susanna, Koskinen) but
-well above the old 100 € price. All are final consumer prices. If Kuvadoo is VAT-registered, they include
-25.5 % VAT. Nothing goes on the site until the owner confirms each line in `docs/facts/kuvadoo.md`.
+These are final prices with no VAT added, the same for consumers and businesses. Photo prices sit below the
+local leaders. Video prices are set close to the market for an experienced cinematographer but under the
+Helsinki/Tampere studios, as a newer local business. Nothing goes on the site until the owner confirms
+each line in `docs/facts/kuvadoo.md`.
 
 **Kuvadoo — photography**
 
@@ -165,52 +167,54 @@ well above the old 100 € price. All are final consumer prices. If Kuvadoo is V
 | Mini portrait / Rippikuvat | alkaen 140 € | 30–45 min, 1 outdoor place, 20 edited photos, online gallery |
 | Portrait or family | alkaen 220 € | 60–90 min, up to 2 places, 40 edited photos |
 | Event photography | alkaen 320 € | 2 h, 100+ edited photos; extra hour 120 € |
+| Business portraits | alkaen 190 € | 1 h on site, up to 4 people, 2 edited photos each |
 | Wedding: portraits + ceremony | alkaen 690 € | up to 2.5 h, 120+ edited photos |
 | Wedding: half day | alkaen 1190 € | up to 5 h, 300+ edited photos |
 | Wedding: full day | alkaen 1790 € | up to 9 h, 500+ edited photos; extra hour 140 € |
-| Business portraits (B2B) | alkaen 190 € + alv* | 1 h on site, up to 4 people, 2 edited photos each |
 
 **Hämeen Films – a video service by Kuvadoo**
 
 | Package | Price | Includes |
 |---|---|---|
-| Event / business short film | alkaen 690 € (+ alv* for businesses) | up to 3 h filming, 1–2 min edited film + 1 vertical clip |
-| Wedding film: ceremony + portraits | alkaen 890 € | up to 3 h, 2–3 min film |
-| Wedding film: full day | alkaen 1590 € | up to 8 h, 4–6 min film + 1 min vertical trailer |
-| Photo + video (wedding, full day) | alkaen 2990 € | 8 h, photos as full-day photo package + full-day film. **Only if a second shooter is available — owner to confirm** |
+| Event / business short film | alkaen 890 € | up to 4 h filming, 1–2 min edited film + 2 vertical clips |
+| Wedding film: ceremony + portraits | alkaen 990 € | up to 3 h, 2–3 min film |
+| Wedding film: full day | alkaen 1790 € | up to 8 h, 4–6 min film + 1 min vertical trailer; extra hour 150 € |
+| Music video | by offer (alkaen price after owner sets it) | no market data found |
+| Photo + video (wedding, full day) | alkaen 3290 € | 8 h, full-day photo + full-day film. **Only with a second shooter — owner to confirm** |
 
-\*If Kuvadoo is not VAT-registered, business prices are written "alv 0 %" instead of "+ alv".
+**Travel (proposal):** "Travel up to 30 km from our base is included. Longer trips cost 0.50 €/km, counted
+both ways. The exact travel cost is in your written offer before you book."
 
-**Travel rule (proposal):** "Travel up to 30 km from our base is included. Longer trips: 0.50 €/km,
-counted both ways. The exact travel cost is in your written offer before you book."
+### Wording lines for the price page (not VAT-registered)
 
-**Booking rule (proposal, check with adviser):** booking is confirmed by email with the price, contents,
-travel cost and terms. Deposit and cancellation fees only after the A6 question is answered.
-
-### Wording lines for the price page (choose one VAT line)
-
-If VAT-registered:
-- FI: "Hinnat ovat kuluttajahintoja ja sisältävät arvonlisäveron 25,5 %."
-- EN: "Prices are consumer prices and include VAT 25.5%."
-- B2B: "Yritysasiakkaiden hintoihin lisätään alv 25,5 %." / "VAT 25.5% is added to business prices."
-
-If not VAT-registered:
 - FI: "Kuvadoo ei ole arvonlisäverovelvollinen (vähäinen toiminta), joten hintoihin ei lisätä
-  arvonlisäveroa. Hinnat ovat lopullisia."
-- EN: "Kuvadoo is not VAT-registered (small business), so no VAT is added. The prices are final."
-
-Always:
-- FI: "Hinnat alkaen-hintoja. Lopullinen hinta riippuu kuvausajasta, kuvamäärästä ja matkasta – saat
-  aina kirjallisen tarjouksen ennen varausta."
-- EN: "Prices are starting prices. The final price depends on time, number of photos and travel. You always
-  get a written offer before you book."
+  arvonlisäveroa. Hinnat ovat lopullisia hintoja, ja ne koskevat sekä yksityis- että yritysasiakkaita."
+- EN: "Kuvadoo is not registered for VAT (small business), so no VAT is added. The prices are final prices
+  for private and business customers."
+- FI: "Hinnat ovat alkaen-hintoja. Lopullinen hinta riippuu kuvausajasta, kuva- tai videomäärästä ja
+  matkasta. Saat aina kirjallisen tarjouksen ennen varausta."
 - FI: "Matkat 30 km:n säteellä sisältyvät hintaan, pidemmät matkat 0,50 €/km (meno-paluu)."
-- FI: "Täydellinen hinnasto (lisäkuvat, lisätunnit) saatavilla pyydettäessä." (hintamerkintäasetus 6 §)
-- Identity line (when the owner gives the data): "Kuvadoo (toiminimi), Y-tunnus …, kuvadoo@gmail.com".
+- FI: "Täydellinen hinnasto (lisäkuvat, lisätunnit) saatavilla pyydettäessä."
+- Footer/contact: "Kuvadoo (toiminimi) · Y-tunnus 3635801-2 · kuvadoo@gmail.com"
+- **Until Kuvadoo joins ennakkoperintärekisteri** (put this in the written offer; it can also go on the page):
+  "Kuvadoo ei vielä ole ennakkoperintärekisterissä. Kerromme tarjouksessa, mitä tämä tarkoittaa
+  maksajalle." Delete it after registering. Then optionally add "Kuvadoo on merkitty
+  ennakkoperintärekisteriin."
+
+### What changes later
+
+- **Joins ennakkoperintärekisteri:** prices stay the same. Customers (households and businesses) just pay
+  the invoice, with no withholding and no income-register report. Remove the note above. YTJ shows the
+  status.
+- **Passes 20 000 € (or registers for VAT voluntarily):** VAT is due from that moment. Change the VAT line to
+  "Hinnat sisältävät arvonlisäveron 25,5 %" for consumers. Business prices can then be shown as
+  "+ alv 25,5 %". Either keep the consumer prices (net income ÷ 1.255) or raise them. If prices are lowered
+  or raised, never show the old price crossed out unless the rules in A5 are met. Invoices then need VAT
+  details (accountant).
 
 ### Open questions for the owner
-1. Is Kuvadoo VAT-registered? (This decides the VAT line and whether business prices are "+ alv".)
-2. Y-tunnus, and which address may be shown (see A6).
-3. Final price for each line, the photo counts and delivery time.
-4. Can you do photo + video together (second shooter)?
-5. Deposit/cancellation terms — after advice from KKV or a lawyer about the withdrawal right.
+1. Final price, photo count and delivery time for each line; the music-video price.
+2. Can you do photo + video on the same day (second shooter)?
+3. Will you join ennakkoperintärekisteri now (recommended)?
+4. Which address, if any, may be shown (A6)?
+5. Deposit and cancellation terms — after advice on the withdrawal right.
