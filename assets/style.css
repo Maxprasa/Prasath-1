@@ -574,3 +574,11 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .phone-fan .phone:nth-child(2) { transform: translateX(42%) rotate(8deg) scale(.86); }
 }
+
+/* Placeholder screen until real screenshots are added */
+.phone-screen--placeholder { display: grid; place-items: center; background: var(--hero-grad); }
+.phone-screen--placeholder img { width: 38%; height: auto; border-radius: 22%; box-shadow: 0 16px 34px -12px rgb(0 0 0 / .5); }
+@media (prefers-reduced-motion: no-preference) {
+  .phone-screen--placeholder img { animation: breathe 4s ease-in-out infinite; }
+  @keyframes breathe { 50% { transform: scale(1.06); } }
+}

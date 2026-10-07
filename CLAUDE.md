@@ -12,9 +12,6 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
    no analytics, no cookies, no external fonts, scripts or CDNs. Fonts must be self-hosted in
    `assets/fonts/` with their licence (currently Bricolage Grotesque, OFL, headings only). Small inline JS
    only if a feature cannot be done without it, and the page must work fully with JS off.
-10. **Motion (v3 design):** micro-animations are pure CSS (entrance, scroll reveal via
-   `animation-timeline`, hover, marquee). Content must be fully visible without animation support, and
-   everything must switch off under `prefers-reduced-motion: reduce`.
 2. **Never invent facts.** Only state what the owner has written down (see `docs/facts/`). No
    "official", no test-preparation claims, no YKI mention, no user numbers, ratings, reviews, awards,
    press quotes or "human teacher". No fake testimonials. If a claim is not in the facts file, leave it out
@@ -33,6 +30,12 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
    owner says the listing is public.
 9. **Required per-app pages:** `/<app>/`, `/<app>/privacy/`, `/<app>/terms/`, `/<app>/delete-account/`
    (Google Play needs the privacy and account-deletion URLs). Never remove or move these URLs.
+10. **Motion (v3 design):** micro-animations are pure CSS (entrance, scroll reveal via
+   `animation-timeline`, hover, marquee). Content must be fully visible without animation support, and
+   everything must switch off under `prefers-reduced-motion: reduce`.
+11. **Screenshots:** phone frames use `assets/finnsana-screen-<name>.webp` (540×963, app screen only, no
+   store captions). Names in use: home, path, word, flashcard, grammar, match, my-words. A missing file
+   shows a branded placeholder automatically.
 
 ## Structure
 
