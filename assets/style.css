@@ -549,7 +549,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 /* ---------- 20. Footer ---------------------------------------------------- */
 .site-footer { position: relative; padding-block: var(--s-8) var(--s-6); background: var(--bg-alt); border-top: 1px solid var(--border); font-size: var(--fs-sm); }
 .footer-grid { display: grid; gap: var(--s-6); grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 52rem) { .footer-grid { grid-template-columns: 1.6fr repeat(4, 1fr); } }
+@media (min-width: 52rem) { .footer-grid { grid-template-columns: 2fr repeat(3, 1fr); } }
 .footer-brand { grid-column: 1 / -1; }
 @media (min-width: 52rem) { .footer-brand { grid-column: auto; } }
 .footer-brand p { color: var(--muted); max-width: 22rem; margin-top: var(--s-3); }

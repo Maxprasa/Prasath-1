@@ -37,6 +37,11 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
    store captions; source shots 1080×2408 cropped to y 84–2292 to drop the status and navigation bars).
    Names in use: home, path, lesson, word, flashcard, grammar, match, my-words. A missing file
    shows a branded placeholder automatically.
+12. **Site-wide header and footer only (owner rule, 2026-10-07).** The top menu is Apps · Support ·
+   Contact and the footer has only site-wide links (all apps, support, kuvadoo.fi, contact, website
+   privacy). **Never add a menu button or footer links for a single app.** App-specific links (privacy,
+   terms, delete account, FAQ) live only on that app's own pages. Apps appear in lists: the home page app
+   grid, the support hub and the website-privacy list of app policies.
 
 ## Structure
 

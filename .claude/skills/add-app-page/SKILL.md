@@ -15,8 +15,9 @@ arguments: [slug, app-name]
    "Your data" page explaining how local data is removed). Set the app accent with
    `style="--app-accent: …"` on `<body>` (check AA contrast in both themes).
 3. **Icon.** `assets/$0-icon.png` (512×512). Placeholder if none supplied.
-4. **Wire it up.** Add the app card to the home page grid, the footer "Apps" column on every page, the
-   support hub, `sitemap.xml`, and "More from Kuvadoo" on other app pages.
+4. **Wire it up.** Add the app card to the home page grid, an entry in the support hub
+   (`/support/`) and in the website privacy page's list of app policies, and the new URLs to `sitemap.xml`.
+   **Do not** add a header button or footer links for the app (CLAUDE.md rule 12).
 5. **SEO.** Ask the seo-specialist agent for title, meta, Open Graph and `MobileApplication` JSON-LD.
 6. **Review.** Run the copywriter (claims), accessibility-auditor, code-reviewer and
    play-store-compliance agents; fix findings.
