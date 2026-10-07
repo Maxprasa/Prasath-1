@@ -4,7 +4,7 @@ DirectoryIndex index.php
 
 # Repository-only and private files are never served
 RedirectMatch 404 ^/(\.git|\.claude|docs|tools|app|data)(/|$)
-RedirectMatch 404 (?i)^/(CLAUDE\.md|DEPLOY\.md|router\.php|\.gitignore|.*\.zip)$
+RedirectMatch 404 (?i)^/(CLAUDE\.md|DEPLOY\.md|router\.php|\.gitignore|\.user\.ini|.*\.zip)$
 
 <IfModule mod_rewrite.c>
   RewriteEngine On

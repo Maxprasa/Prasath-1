@@ -1,18 +1,20 @@
 ---
 name: release
-description: Build and verify the upload zip for kuvadoo.fi and give the owner Hostinger upload steps. Use when changes are ready to go live.
+description: Build and verify the upload zip for kuvadoo.fi (full first release, or a code-only update that keeps the owner's admin content) and give the owner Hostinger upload steps. Use when changes are ready to go live.
 ---
 
 # Release
 
 1. Run the `site-check` skill; do not release with failures.
-2. Build from the repo root:
-   `rm -f kuvadoo.fi.zip && zip -r kuvadoo.fi.zip . -x '.git' '.git/*' '.claude/*' 'docs/*' 'tools/*' 'CLAUDE.md' 'DEPLOY.md' '.gitignore' '*.zip'`
-3. Verify: `unzip -l kuvadoo.fi.zip` — `index.html` and `.htaccess` at the top level, no repo-only files, no
-   original (unoptimised) photos inside; note the zip size.
-4. Commit (including the zip) and push.
-5. Send the owner the zip and these steps (simple English): hPanel → Websites → kuvadoo.fi → File Manager →
-   `public_html` → Upload the zip → right-click → Extract → overwrite → delete the zip.
-   For the **first** release, follow the "Hosting switch" plan in `docs/PLAN.md` / `DEPLOY.md` instead, so
-   the site is never down.
+2. Build from the repo root.
+   - **First release (full):**
+     `rm -f kuvadoo.fi.zip && zip -qr kuvadoo.fi.zip . -x '.git' '.git/*' '.claude/*' 'docs/*' 'tools/*' 'CLAUDE.md' 'DEPLOY.md' 'router.php' '.gitignore' '*.zip' 'data/auth.json' 'data/setup-code.txt' 'data/login-attempts.json' 'data/.lock'`
+   - **Update after launch (keeps the owner's photos, prices and texts on the server):**
+     `rm -f kuvadoo.fi-update.zip && zip -qr kuvadoo.fi-update.zip . -x '.git' '.git/*' '.claude/*' 'docs/*' 'tools/*' 'CLAUDE.md' 'DEPLOY.md' 'router.php' '.gitignore' '*.zip' 'data/*' 'media/*'`
+     If an update needs a new data field, make the PHP code tolerate its absence (defaults) instead of
+     shipping data files.
+3. Verify: `unzip -l <zip>` — `index.php`, `.htaccess`, `.user.ini` at the top level; no `.git`, `docs`,
+   `tools`, `router.php`, `auth.json` or `setup-code.txt` inside. Note the size.
+4. Commit and push (zips are git-ignored; send them to the owner as files).
+5. Give the owner the matching part of `DEPLOY.md` in simple English.
 6. After they upload, run the live part of `site-check`.

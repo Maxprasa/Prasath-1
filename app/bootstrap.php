@@ -20,13 +20,13 @@ function e(?string $s): string
 /** Read a JSON data file (returns $default if missing). Cached per request. */
 function data_get(string $name, $default = [])
 {
-    static $cache = [];
-    if (array_key_exists($name, $cache)) {
+    $cache = &$GLOBALS['__data_cache'];
+    if (isset($cache[$name])) {
         return $cache[$name];
     }
     $file = DATA_DIR . "/$name.json";
     if (!is_file($file)) {
-        return $cache[$name] = $default;
+        return $default;
     }
     $json = json_decode((string) file_get_contents($file), true);
     return $cache[$name] = is_array($json) ? $json : $default;
@@ -41,6 +41,7 @@ function data_put(string $name, array $value): void
     $tmp = $file . '.' . bin2hex(random_bytes(4)) . '.tmp';
     file_put_contents($tmp, json_encode($value, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
     rename($tmp, $file);
+    $GLOBALS['__data_cache'][$name] = $value;
     flock($lock, LOCK_UN);
     fclose($lock);
 }
