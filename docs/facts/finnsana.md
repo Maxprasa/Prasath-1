@@ -69,7 +69,7 @@ kuvadoo@gmail.com from the email address of your account and we delete it within
   The owner will switch the Play Console privacy URL later.
 
 - Sign-in options (owner, 2026-10-07): **guest mode**, **continue with Google**, **continue with email**.
-- Developer name: the owner will change the Google Play developer name from PRASADOO to **Kuvadoo** (2026-10-07).
+- Developer name on Google Play: **Kuvadoo** (changed from PRASADOO by the owner, 2026-10-07).
 
 ## Forbidden
 "official", test-preparation claims, YKI, user numbers, ratings, awards, "human teacher", invented reviews.
