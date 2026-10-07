@@ -584,3 +584,39 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
   .phone-screen--placeholder img { animation: breathe 4s ease-in-out infinite; }
   @keyframes breathe { 50% { transform: scale(1.06); } }
 }
+
+/* store "coming soon" buttons: two-line label */
+.btn--store { gap: .65rem; padding-inline: 1.1rem 1.4rem; text-align: left; line-height: 1.15; }
+.btn--store small { display: block; font-size: .72rem; font-weight: 600; opacity: .85; letter-spacing: .01em; }
+.btn--store svg { width: 22px; height: 22px; }
+
+/* ---------- App tour (every screenshot with an explanation) ------------- */
+.tour-nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-2); list-style: none; padding: 0; margin: 0 0 var(--s-7); }
+.tour-nav li { margin: 0; }
+.tour-nav a { display: inline-block; padding: .45rem .95rem; border-radius: var(--radius-pill); background: var(--surface); border: 1px solid var(--border); color: var(--text); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; transition: transform .3s var(--spring), border-color .25s var(--ease), background .25s var(--ease); }
+.tour-nav a:hover { transform: translateY(-2px); border-color: var(--brand); background: var(--brand-soft); }
+.tour-group + .tour-group { margin-top: var(--s-7); }
+.tour-head { margin-bottom: var(--s-5); }
+.tour-head h3 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem); margin-bottom: var(--s-1); }
+.tour-head p { color: var(--muted); margin: 0; }
+.tour-row {
+  list-style: none; padding: var(--s-2) 0 var(--s-4); margin: 0;
+  display: grid; gap: var(--s-5);
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+}
+.tour-card { margin: 0; display: flex; flex-direction: column; gap: var(--s-4); }
+.tour-card .phone { width: 100%; max-width: 12.5rem; margin-inline: auto; padding: 5px; border-radius: 1.9rem; }
+.tour-card .phone-screen { border-radius: 1.55rem; }
+.tour-card:hover .phone { transform: translateY(-6px); }
+.tour-text h4 { font-family: var(--font-display); font-size: 1.15rem; letter-spacing: -.01em; margin: 0 0 var(--s-1); }
+.tour-text p { margin: 0; color: var(--muted); font-size: 1rem; }
+/* phones: swipe sideways through each group instead of a very long page */
+@media (max-width: 47.99rem) {
+  .tour-row {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%;
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--s-4)); padding-inline: var(--s-4); scroll-padding-inline: var(--s-4);
+  }
+  .tour-card { scroll-snap-align: start; }
+}
+.store-row { margin-top: var(--s-3); }

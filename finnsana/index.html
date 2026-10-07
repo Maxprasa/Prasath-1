@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FinnSana: Learn Finnish – Free Android App (A1–B2)</title>
-<meta name="description" content="Learn Finnish on Android, free with no ads and no account needed. Nearly 5,000 words with pictures and sound, 100+ grammar lessons, games. A1–B2.">
+<meta name="description" content="Learn Finnish on Android, free and without ads. Nearly 5,000 words with pictures and sound, 100+ grammar lessons, games. A1–B2. iPhone coming soon.">
 <link rel="canonical" href="https://apps.kuvadoo.fi/finnsana/">
 <meta name="theme-color" content="#faf7f0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121613" media="(prefers-color-scheme: dark)">
@@ -12,12 +12,12 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css?v=9">
+<link rel="stylesheet" href="/assets/style.css?v=11">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kuvadoo apps">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="FinnSana: Learn Finnish – Free Android App (A1–B2)">
-<meta property="og:description" content="Learn Finnish on Android, free with no ads and no account needed. Nearly 5,000 words with pictures and sound, 100+ grammar lessons, games. A1–B2.">
+<meta property="og:description" content="Learn Finnish on Android, free and without ads. Nearly 5,000 words with pictures and sound, 100+ grammar lessons, games. A1–B2. iPhone coming soon.">
 <meta property="og:url" content="https://apps.kuvadoo.fi/finnsana/">
 <meta property="og:image" content="https://apps.kuvadoo.fi/assets/og-finnsana.png">
 <meta property="og:image:width" content="1200">
@@ -72,10 +72,10 @@
     },
     {
      "@type": "Question",
-     "name": "Do I need an account?",
+     "name": "How do I start?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No. Start in guest mode: no account, and your progress stays on your phone. If you want a backup, continue with Google or with email, on the first screen or later in Me → Account &amp; sync."
+      "text": "Start as a guest, and your progress stays on your phone. If you want a backup, continue with Google or with email, on the first screen or later in Me → Account &amp; sync."
      }
     },
     {
@@ -91,7 +91,15 @@
      "name": "Which devices does it run on?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "FinnSana is an Android app."
+      "text": "FinnSana is for Android. An iPhone version is coming soon to the App Store."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I try FinnSana now?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, on Android. FinnSana is in testing on Google Play: ask for early access by email and tell us the email address you use on Google Play. We then send you the link to the test version on Google Play."
      }
     },
     {
@@ -99,7 +107,7 @@
      "name": "When can I download it?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "FinnSana is in testing on Google Play. The public release is coming soon."
+      "text": "FinnSana is in testing on Google Play, and the public release is coming soon. It is also coming soon to the App Store."
      }
     },
     {
@@ -198,16 +206,20 @@
         <h1 id="hero-title" class="rise" style="--d:1">FinnSana: <span class="hl">Learn Finnish</span></h1>
         <p class="lead rise" style="--d:2">Learn Finnish A1–B2: nearly 5,000 words, clear grammar, pictures, games.</p>
         <ul class="chips rise" style="--d:3" aria-label="Key facts">
-          <li>Android</li><li>Free</li><li>No ads</li><li>No account needed</li>
+          <li>Android</li><li>iPhone: coming soon</li><li>Free</li><li>No ads</li>
         </ul>
         <div class="btn-row rise" style="--d:4">
-              <!-- When the Play Store listing is public, replace the span below with:
-              <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=app.finnsana">Get it on Google Play</a>
-              (and consider Google's official badge artwork) -->
-              <span class="btn btn--soon">Coming soon to Google Play</span>
-          <a class="btn btn--ghost" href="#features">See features <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--primary" href="mailto:kuvadoo@gmail.com?subject=FinnSana%20early%20access&body=Hi%21%20I%20would%20like%20to%20test%20FinnSana%20on%20Android.%20Please%20send%20me%20the%20Google%20Play%20test%20link.%0A%0AThe%20email%20address%20of%20my%20Google%20Play%20account%20is%3A%20%0A%0AThank%20you%21"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Get early access</a>
+          <a class="btn btn--ghost" href="#tour">Take the tour <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <p class="hero-status rise" style="--d:5">In testing on Google Play. Public release soon.</p>
+        <div class="btn-row store-row rise" style="--d:5">
+              <!-- When the Play Store listing is public, replace the first span below with:
+              <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=app.finnsana">Get it on Google Play</a>
+              (and consider Google's official badge artwork). Apple badge only once the app is live there. -->
+              <span class="btn btn--soon btn--store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span><small>Coming soon to</small> Google Play</span></span>
+              <span class="btn btn--soon btn--store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span><small>Coming soon to the</small> App Store</span></span>
+        </div>
+        <p class="hero-status rise" style="--d:6">In testing on Google Play. Want to try it now? Send us your Google Play email address and we send you the test link (Android).</p>
       </div>
       <div class="phone-fan rise" style="--d:3">
             <div class="phone phone--main float"><div class="phone-screen"><img src="/assets/fs-home-v2.webp" width="540" height="1104" alt="FinnSana home screen with Start learning and practice topics" decoding="async"></div></div>
@@ -225,7 +237,7 @@
         <li class="tile rise" style="--d:4"><h3><span class="stat">Nearly 5,000</span>words</h3><p>Everyday words with sound and pictures.</p></li>
         <li class="tile rise" style="--d:5"><h3><span class="stat">100+</span>grammar lessons</h3><p>One small rule at a time.</p></li>
         <li class="tile rise" style="--d:6"><h3><span class="stat">A1–B2</span>CEFR levels</h3><p>From your first words to B2.</p></li>
-        <li class="tile rise" style="--d:7"><h3><span class="stat">Free</span>no ads</h3><p>And no account needed.</p></li>
+        <li class="tile rise" style="--d:7"><h3><span class="stat">Free</span>no ads</h3><p>Learn without adverts.</p></li>
       </ul>
     </div>
   </section>
@@ -336,7 +348,136 @@
     </div>
   </section>
 
-  <section class="section section--alt" aria-labelledby="levels-title">
+  <section class="section section--alt" id="tour" aria-labelledby="tour-title">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> App tour</span>
+        <h2 id="tour-title">Everything inside FinnSana</h2>
+        <p class="lead">A screen-by-screen look at the app: real screenshots from FinnSana.</p>
+      </div>
+      <nav class="tour-nav" aria-label="App tour sections"><ul><li><a href="#tour-start">Getting started</a></li><li><a href="#tour-learn">Step-by-step lessons</a></li><li><a href="#tour-words">Nearly 5,000 words</a></li><li><a href="#tour-grammar">Grammar and spoken Finnish</a></li><li><a href="#tour-skills">Listening and reading</a></li><li><a href="#tour-progress">Your progress</a></li></ul></nav>
+      <div class="tour-group" id="tour-start">
+        <div class="tour-head reveal"><h3>Getting started</h3><p>Pick your level and get going in a few taps.</p></div>
+        <ul class="tour-row" aria-label="Getting started">
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-welcome-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Choose your level</h4><p>Tell FinnSana how much Finnish you know, from Beginner (A1) to Upper intermediate (B2), so you don't repeat what you already know. Not sure? Start from the beginning. You can change it any time in Me.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-home-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Your home screen</h4><p>A greeting in Finnish with sound, your next lesson in “Start learning”, and quick ways into practice.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-home-practice-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Practice topics</h4><p>Words, listening, reading, grammar, spoken Finnish and more, each with its own picture, plus today's goal.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="tour-group" id="tour-learn">
+        <div class="tour-head reveal"><h3>Step-by-step lessons</h3><p>Your path through Finnish, level by level.</p></div>
+        <ul class="tour-row" aria-label="Step-by-step lessons">
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-path-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Your learning path</h4><p>Units for A1, A2, B1 and B2, starting with greetings, personal pronouns and the verb olla. “Everyday phrases” gives you ready-made phrases for the shop, the doctor and work.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-lesson-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Meet a new word</h4><p>Each new word comes with a picture, its meaning, a sound button and an example sentence you can listen to.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-lesson-2-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>One word at a time</h4><p>Short steps: see the word, hear it, and read it in a real sentence before you move on.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-lesson-3-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Check yourself</h4><p>“How do you say this in Finnish?” Choose the right word to make it stick.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="tour-group" id="tour-words">
+        <div class="tour-head reveal"><h3>Nearly 5,000 words</h3><p>Everyday words with pictures and sound, and smart review.</p></div>
+        <ul class="tour-row" aria-label="Nearly 5,000 words">
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-wordbank-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Word bank</h4><p>Search all 4,993 words, filter by level and topic, and tick the ones you know.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-word-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Every word explained</h4><p>Picture, meaning, word type and level, an example sentence and a “Looks like” tip that helps you remember.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-flashcard-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Flashcards</h4><p>Listen and look at the picture, then turn the card. Say whether you knew it.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-flashcard-back-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>The answer side</h4><p>The meaning, an example sentence and a memory tip. FinnSana asks the word again a little later.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-practice-words-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Practise your words</h4><p>Flashcards and Word match, plus your word lists: My words and the Word bank.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-my-words-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Add your own words</h4><p>Heard a word at work or on the bus? Add it with its meaning, word type and an optional picture that stays on your phone.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="tour-group" id="tour-grammar">
+        <div class="tour-head reveal"><h3>Grammar and spoken Finnish</h3><p>Small rules, real speech.</p></div>
+        <ul class="tour-row" aria-label="Grammar and spoken Finnish">
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-grammar-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Grammar Lab</h4><p>Each topic follows the same rhythm: small rule, examples, activity, feedback, review. Search topics or browse by level.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-spoken-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Two kinds of Finnish</h4><p>Standard Finnish (kirjakieli) and spoken Finnish (puhekieli), explained side by side in short lessons.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-practice-spoken-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Practise spoken Finnish</h4><p>“What did they say?”: hear a sentence in spoken Finnish and pick the standard sentence that means the same. Or match spoken and standard pairs.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="tour-group" id="tour-skills">
+        <div class="tour-head reveal"><h3>Listening and reading</h3><p>Train your ear and your eyes with real-life situations.</p></div>
+        <ul class="tour-row" aria-label="Listening and reading">
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-practice-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Choose a skill</h4><p>Practise words, listening or reading, or play a quick game: Speed Round and True or False.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-listening-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Listening</h4><p>Short conversations, such as in the stairwell or at the swimming hall desk. Listen, answer four questions, then see your score and what was said.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-reading-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Reading</h4><p>Short real-life texts: messages, notices, a postcard, an email. Read, answer, then see every sentence in English.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="tour-group" id="tour-progress">
+        <div class="tour-head reveal"><h3>Your progress</h3><p>See how far you've come.</p></div>
+        <ul class="tour-row" aria-label="Your progress">
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-me-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Me</h4><p>Your day streak, best streak, words learned and grammar mastered, and your Word bank.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-me-skills-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Skills and study time</h4><p>Vocabulary, verb forms, cases, sentence building, grammar and listening, plus the minutes you studied this week. Skill scores grow as you remember things over days.</p></div>
+          </li>
+          <li class="tour-card reveal">
+            <div class="phone"><div class="phone-screen"><img src="/assets/fs-credits-v2.webp" width="540" height="1104" alt="" loading="lazy" decoding="async"></div></div>
+            <div class="tour-text"><h4>Credits and licences</h4><p>Where the content comes from, for example example sentences from Tatoeba and word forms from Wiktionary, with their licences.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="levels-title">
     <div class="container">
       <div class="section-head section-head--center reveal">
         <span class="eyebrow">Made for real learners</span>
@@ -366,7 +507,7 @@
         <p class="lead">Start as a guest, or sign in to back up your progress. You can change your mind later in Me → Account &amp; sync.</p>
       </div>
       <ul class="tiles">
-        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>Guest mode</h3><p>Start right away, no account. Your learning progress never leaves your phone.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>Guest mode</h3><p>Start right away as a guest. Your learning progress never leaves your phone.</p></li>
         <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1 0 8z"/></svg></span><h3>Continue with Google</h3><p>Back up your progress so you can get it back on a new phone. We never see your Google password.</p></li>
         <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h3>Continue with email</h3><p>Use your email address and a password to back up your progress. The password is handled by Google Firebase, never visible to us.</p></li>
       </ul>
@@ -387,7 +528,7 @@
           </ul>
         </div>
         <ul class="facts-list">
-          <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><div><strong>Guest mode</strong><span>No account needed. Your progress stays on your phone.</span></div></li>
+          <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><div><strong>Guest mode</strong><span>Learn as a guest. Your progress stays on your phone.</span></div></li>
           <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1 0 8z"/></svg></span><div><strong>Optional backup</strong><span>Sign in with Google or email to back up progress and settings.</span></div></li>
           <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/></svg></span><div><strong>Delete any time</strong><span>Me tab → tap your profile → Delete account. Can't open the app? Email us.</span></div></li>
           <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6 18.4 18.4"/></svg></span><div><strong>No ads</strong><span>FinnSana has no ads.</span></div></li>
@@ -408,8 +549,8 @@
           <div><p>Yes. FinnSana is free and has no ads.</p></div>
         </details>
         <details>
-          <summary>Do I need an account?</summary>
-          <div><p>No. Start in guest mode: no account, and your progress stays on your phone. If you want a backup, continue with Google or with email, on the first screen or later in Me → Account &amp; sync.</p></div>
+          <summary>How do I start?</summary>
+          <div><p>Start as a guest, and your progress stays on your phone. If you want a backup, continue with Google or with email, on the first screen or later in Me → Account &amp; sync.</p></div>
         </details>
         <details>
           <summary>Which levels does FinnSana cover?</summary>
@@ -417,11 +558,15 @@
         </details>
         <details>
           <summary>Which devices does it run on?</summary>
-          <div><p>FinnSana is an Android app.</p></div>
+          <div><p>FinnSana is for Android. An iPhone version is coming soon to the App Store.</p></div>
+        </details>
+        <details>
+          <summary>Can I try FinnSana now?</summary>
+          <div><p>Yes, on Android. FinnSana is in testing on Google Play: <a href="mailto:kuvadoo@gmail.com?subject=FinnSana%20early%20access&body=Hi%21%20I%20would%20like%20to%20test%20FinnSana%20on%20Android.%20Please%20send%20me%20the%20Google%20Play%20test%20link.%0A%0AThe%20email%20address%20of%20my%20Google%20Play%20account%20is%3A%20%0A%0AThank%20you%21">ask for early access</a> by email and tell us the email address you use on Google Play. We then send you the link to the test version on Google Play.</p></div>
         </details>
         <details>
           <summary>When can I download it?</summary>
-          <div><p>FinnSana is in testing on Google Play. The public release is coming soon.</p></div>
+          <div><p>FinnSana is in testing on Google Play, and the public release is coming soon. It is also coming soon to the App Store.</p></div>
         </details>
         <details>
           <summary>Does it work offline?</summary>
@@ -455,9 +600,10 @@
     <div class="container">
       <div class="cta reveal-scale">
         <h2 id="cta-title">Learn Finnish with <span class="hl">FinnSana</span></h2>
-        <p>Free, no ads, no account needed. Coming soon to Google Play.</p>
+        <p>Free and without ads. Coming soon to Google Play and the App Store.</p>
         <div class="btn-row">
-          <a class="btn btn--primary" href="mailto:kuvadoo@gmail.com?subject=FinnSana"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Ask a question</a>
+          <a class="btn btn--primary" href="mailto:kuvadoo@gmail.com?subject=FinnSana%20early%20access&body=Hi%21%20I%20would%20like%20to%20test%20FinnSana%20on%20Android.%20Please%20send%20me%20the%20Google%20Play%20test%20link.%0A%0AThe%20email%20address%20of%20my%20Google%20Play%20account%20is%3A%20%0A%0AThank%20you%21"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Get early access</a>
+          <a class="btn btn--outline-light" href="mailto:kuvadoo@gmail.com?subject=FinnSana">Ask a question <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>

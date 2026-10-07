@@ -71,5 +71,20 @@ kuvadoo@gmail.com from the email address of your account and we delete it within
 - Sign-in options (owner, 2026-10-07): **guest mode**, **continue with Google**, **continue with email**.
 - Developer name on Google Play: **Kuvadoo** (changed from PRASADOO by the owner, 2026-10-07).
 
+- **Do not mention "no account" / "no account needed" in marketing copy** (owner, 2026-10-07). Guest mode may
+  be described as "start as a guest". Legal pages (privacy, terms, delete account) keep the owner's wording.
+- **iPhone / App Store: "Coming soon to the App Store"** (owner, 2026-10-07). Show it as a plain text
+  "coming soon" button only — no Apple badge artwork until the app is live there; no dates, no other iOS claims.
+  (The app-knowledge pack's "no iOS version" is superseded for the coming-soon mention only.)
+- Screenshot facts (owner's screenshots, 2026-10-07) may be used for tour captions: welcome level choice,
+  Learn path with Everyday phrases, Word bank (4,993 words, search, levels, topics), word pages with
+  sentence and "Looks like" tip, lessons step by step, flashcards, Grammar Lab (small rule → examples →
+  activity → feedback → review), spoken Finnish (25 lessons, "What did they say?", "Match spoken and
+  standard"), listening (conversations with 4 questions), reading (short real-life texts), My words,
+  Me (streaks, words learned, skills, minutes studied this week), Credits & licences.
+
+- **Early access (owner, 2026-10-07):** visitors email kuvadoo@gmail.com with the email address of their Google
+  Play account; the owner then sends them the Google Play test link (closed testing, Android only).
+
 ## Forbidden
 "official", test-preparation claims, YKI, user numbers, ratings, awards, "human teacher", invented reviews.
