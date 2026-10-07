@@ -1,0 +1,4 @@
+# No PHP in uploaded media
+<FilesMatch "\.(php|phtml|phar|php\d)$">
+  Require all denied
+</FilesMatch>

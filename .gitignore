@@ -1,2 +1,8 @@
 tools/screenshots/
 node_modules/
+data/.lock
+data/*.tmp
+data/setup-code.txt
+data/auth.json
+data/login-attempts.json
+*.zip

@@ -1,0 +1,180 @@
+{
+    "site": {
+        "email": "kuvadoo@gmail.com",
+        "whatsapp": "+358417911831",
+        "whatsapp_display": "041 791 1831",
+        "ytunnus": "3635801-2",
+        "town": "Hämeenlinna",
+        "instagram": "https://www.instagram.com/kuvadoo/",
+        "facebook": "https://www.facebook.com/kuvadoo",
+        "youtube": "https://www.youtube.com/@SPrasath",
+        "hero_photo": "019734c42010",
+        "about_photo": ""
+    },
+    "text": {
+        "hero_kicker": {
+            "fi": "Valokuvaus · Video · Ilmakuvaus",
+            "en": "Photography · Video · Aerial"
+        },
+        "hero_title": {
+            "fi": "Hetkiä, jotka saavat tuntemaan.",
+            "en": "Moments that make people feel something."
+        },
+        "hero_lead": {
+            "fi": "Kuvadoo kuvaa ihmisiä, tapahtumia ja tarinoita – maasta ja ilmasta. Yli 12 vuoden kokemus valokuvauksesta, elokuvakuvauksesta ja editoinnista.",
+            "en": "Kuvadoo photographs and films people, events and stories – on the ground and from the sky. Over 12 years of experience in photography, cinematography and editing."
+        },
+        "services_title": {
+            "fi": "Mitä teen",
+            "en": "What I do"
+        },
+        "svc_photo_title": {
+            "fi": "Valokuvaus",
+            "en": "Photography"
+        },
+        "svc_photo_text": {
+            "fi": "Tapahtumat ja festivaalit, muotokuvat, parikuvat, rippikuvat, häät ja yritykset.",
+            "en": "Events and festivals, portraits, couples, confirmation photos, weddings and business."
+        },
+        "svc_video_title": {
+            "fi": "Video – Hämeen Films",
+            "en": "Video – Hämeen Films"
+        },
+        "svc_video_text": {
+            "fi": "Häävideot, tapahtumavideot, yritysvideot ja musiikkivideot. Kuvaus ja editointi samasta kädestä.",
+            "en": "Wedding films, event films, business videos and music videos. Filming and editing from one hand."
+        },
+        "svc_aerial_title": {
+            "fi": "Ilmakuvaus",
+            "en": "Aerial filming"
+        },
+        "svc_aerial_text": {
+            "fi": "Sertifioitu drone-lentäjä, yli kymmenen vuoden kokemus ilmakuvauksesta.",
+            "en": "Certified drone operator with more than a decade of aerial experience."
+        },
+        "svc_edit_title": {
+            "fi": "Editointi",
+            "en": "Editing"
+        },
+        "svc_edit_text": {
+            "fi": "Videoeditointi ja jälkikäsittely – ensimmäisestä otoksesta valmiiseen leikkaukseen.",
+            "en": "Video editing and post-production – from the first frame to the final cut."
+        },
+        "work_title": {
+            "fi": "Viimeisimmät kuvaukset",
+            "en": "Recent work"
+        },
+        "films_title": {
+            "fi": "Hämeen Films",
+            "en": "Hämeen Films"
+        },
+        "films_lead": {
+            "fi": "Hämeen Films on Kuvadoon videopalvelu. Kuvaan ja editoin videot itse, joten tarina pysyy samassa kädessä alusta loppuun.",
+            "en": "Hämeen Films is the video service of Kuvadoo. I film and edit every video myself, so the story stays in one hand from start to finish."
+        },
+        "films_intro": {
+            "fi": "Häät, tapahtumat, yritykset, musiikkivideot ja ilmakuvaus. Alla on töitä vuosien varrelta Sri Lankasta, Malesiasta ja Suomesta.",
+            "en": "Weddings, events, business, music videos and aerial filming. Below is work from over the years in Sri Lanka, Malaysia and Finland."
+        },
+        "about_kicker": {
+            "fi": "Kuvaaja ja videokuvaaja",
+            "en": "Cinematographer & photographer"
+        },
+        "about_title": {
+            "fi": "Hei, olen Prasath.",
+            "en": "Hi, I'm Prasath."
+        },
+        "about_short": {
+            "fi": "Olen kertonut tarinoita kameran kautta yli 12 vuotta – maassa ja ilmasta. Työskentelen valokuvaajana, elokuvakuvaajana ja editoijana, joten voin viedä projektin ensimmäisestä otoksesta valmiiseen leikkaukseen.",
+            "en": "For over 12 years, I've told stories through the lens – on the ground and from the sky. I work as a photographer, cinematographer and editor, so I can carry a project from the first frame to the final cut."
+        },
+        "about_body": {
+            "fi": "Olen kertonut tarinoita kameran kautta yli 12 vuotta – maassa ja ilmasta.\n\nTyöhöni kuuluvat elokuvakuvaus, valokuvaus ja videoeditointi, joten voin viedä projektin ensimmäisestä otoksesta valmiiseen leikkaukseen. Olen sertifioitu drone-lentäjä, ja minulla on yli kymmenen vuoden kokemus ilmakuvauksesta. Ilmasta näkee kuvakulmia, joihin katsoja pysähtyy.\n\nOlen tehnyt projekteja neljässä maassa: Sri Lankassa, Malesiassa, Intiassa ja Suomessa. Jokainen paikka on opettanut sopeutumaan uusiin kulttuureihin, maisemiin ja työryhmiin – ja löytämään tarinan, joka koskettaa ihmisiä missä tahansa.\n\nMinua ajaa yksinkertainen asia: haluan tallentaa hetkiä, jotka saavat ihmiset tuntemaan jotakin.\n\nKuvadoo on yritykseni Suomessa. Hämeen Films on nimi, jolla teen videotyöt.",
+            "en": "For over 12 years, I've told stories through the lens, both on the ground and from the sky.\n\nMy work covers cinematography, photography and video editing, so I can carry a project from the first frame to the final cut. As a certified drone operator with more than a decade of aerial experience, I bring perspectives that make audiences stop and look twice.\n\nI've worked on projects in four countries: Sri Lanka, Malaysia, India and Finland. Working in each place taught me to adapt to new cultures, landscapes and crews, and to find the story that connects with people wherever they are.\n\nWhat drives me is simple: capturing moments that make people feel something.\n\nKuvadoo is my business in Finland. Hämeen Films is the name I use for my video work."
+        },
+        "about_name_note": {
+            "fi": "Nimi Kuvadoo tulee suomen sanasta \"kuva\".",
+            "en": "The name Kuvadoo comes from the Finnish word \"kuva\", which means picture."
+        },
+        "steps_title": {
+            "fi": "Näin varaat kuvauksen",
+            "en": "How booking works"
+        },
+        "step1": {
+            "fi": "Lähetä viesti WhatsAppissa tai sähköpostilla: päivä, paikka ja mitä haluat kuvata.",
+            "en": "Send a message on WhatsApp or by email: the date, the place and what you would like."
+        },
+        "step2": {
+            "fi": "Saat kirjallisen tarjouksen, jossa on hinta ja mahdolliset matkakulut.",
+            "en": "You get a written offer with the price and any travel costs."
+        },
+        "step3": {
+            "fi": "Kuvauspäivänä tallennetaan hetket – rennosti ja suunnitellusti.",
+            "en": "On the day, we capture the moments – relaxed and well planned."
+        },
+        "step4": {
+            "fi": "Saat valmiit kuvat verkkogalleriassa tai valmiin videon.",
+            "en": "You receive the finished photos in an online gallery, or the finished video."
+        },
+        "photo_title": {
+            "fi": "Valokuvaus",
+            "en": "Photography"
+        },
+        "photo_lead": {
+            "fi": "Tapahtumia, festivaaleja, ihmisiä ja tarinoita. Valitse kategoria tai selaa gallerioita.",
+            "en": "Events, festivals, people and stories. Pick a category or browse the galleries."
+        },
+        "cat_events": {
+            "fi": "Festivaalit, moottoriurheilu ja yleisötapahtumat – tunnelma, esiintyjät ja ihmiset.",
+            "en": "Festivals, motorsport and public events – the atmosphere, the performers and the people."
+        },
+        "cat_portraits": {
+            "fi": "Muotokuvat, parikuvat ja perhekuvat luonnonvalossa.",
+            "en": "Portraits, couples and families in natural light."
+        },
+        "cat_confirmation": {
+            "fi": "Rippikuvat rennosti kotona, pihalla tai kauniissa paikassa – myös perheen ja suvun kanssa.",
+            "en": "Confirmation photos at home, in the garden or in a beautiful place – with family too."
+        },
+        "cat_weddings": {
+            "fi": "Hääkuvaus vihkimisestä juhlaan.",
+            "en": "Wedding photography from the ceremony to the party."
+        },
+        "cat_business": {
+            "fi": "Yrityskuvat, henkilökuvat ja sisältöä markkinointiin.",
+            "en": "Business photos, headshots and content for marketing."
+        },
+        "cat_aerial": {
+            "fi": "Ilmakuvat dronella maisemista, tapahtumista ja kohteista.",
+            "en": "Aerial photos by drone of landscapes, events and places."
+        },
+        "prices_title": {
+            "fi": "Hinnasto",
+            "en": "Prices"
+        },
+        "prices_lead": {
+            "fi": "Hinnat ovat lähtöhintoja. Lopullinen hinta sovitaan aina kirjallisesti ennen varausta. Kysy rohkeasti, jos tarpeesi ei sovi pakettiin.",
+            "en": "Prices are starting prices. The final price is always agreed in writing before booking. Just ask if your idea does not fit a package."
+        },
+        "prices_notes": {
+            "fi": "Kuvadoo ei ole arvonlisäverovelvollinen (vähäinen toiminta), joten hintoihin ei lisätä arvonlisäveroa. Hinnat ovat lopullisia hintoja, ja ne koskevat sekä yksityis- että yritysasiakkaita.\n\nMatkat 30 km:iin asti sisältyvät hintaan. Sen jälkeen 0,50 €/km (meno ja paluu). Tarkka summa kerrotaan tarjouksessa ennen varausta.\n\n\"Alk.\"-hinta on paketin pienin hinta. Hintaa nostavat esimerkiksi pidempi kuvausaika, useampi kuvauspaikka tai pidempi matka.",
+            "en": "Kuvadoo is not registered for VAT (small business), so no VAT is added. The prices are final prices for private and business customers.\n\nTravel up to 30 km is included. After that 0.50 €/km (both ways). The exact amount is in the offer before booking.\n\nA \"from\" price is the lowest price of the package. A longer shoot, more locations or a longer trip raise the price."
+        },
+        "contact_title": {
+            "fi": "Yhteystiedot",
+            "en": "Contact"
+        },
+        "contact_lead": {
+            "fi": "Helpoimmin tavoitat minut WhatsAppissa tai sähköpostilla. Kerro päivä, paikka ja mitä haluat kuvata – lähetän tarjouksen.",
+            "en": "The easiest way to reach me is WhatsApp or email. Tell me the date, the place and what you would like – I will send you an offer."
+        },
+        "cta_title": {
+            "fi": "Kerro hetkestäsi",
+            "en": "Tell me about your moment"
+        },
+        "cta_text": {
+            "fi": "Kysy vapaita päiviä ja tarjousta WhatsAppissa tai sähköpostilla.",
+            "en": "Ask for free dates and an offer on WhatsApp or by email."
+        }
+    }
+}

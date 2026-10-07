@@ -1,0 +1,190 @@
+{
+  "groups": [
+    {
+      "id": "photo",
+      "title": {
+        "fi": "Valokuvaus",
+        "en": "Photography"
+      },
+      "items": [
+        {
+          "id": "mini",
+          "visible": true,
+          "from": true,
+          "price": 140,
+          "name": {
+            "fi": "Minikuvaus / rippikuvat",
+            "en": "Mini shoot / confirmation photos"
+          },
+          "includes": {
+            "fi": "30–45 min\n1 kuvauspaikka\n20 käsiteltyä kuvaa\nVerkkogalleria",
+            "en": "30–45 min\n1 location\n20 edited photos\nOnline gallery"
+          }
+        },
+        {
+          "id": "portrait",
+          "visible": true,
+          "from": true,
+          "price": 220,
+          "name": {
+            "fi": "Muotokuva- tai perhekuvaus",
+            "en": "Portrait or family shoot"
+          },
+          "includes": {
+            "fi": "60–90 min\nEnintään 2 kuvauspaikkaa\n40 käsiteltyä kuvaa\nVerkkogalleria",
+            "en": "60–90 min\nUp to 2 locations\n40 edited photos\nOnline gallery"
+          }
+        },
+        {
+          "id": "event",
+          "visible": true,
+          "from": true,
+          "price": 320,
+          "name": {
+            "fi": "Tapahtumakuvaus",
+            "en": "Event photography"
+          },
+          "includes": {
+            "fi": "2 h\n100+ käsiteltyä kuvaa\nLisätunti 120 €",
+            "en": "2 h\n100+ edited photos\nExtra hour 120 €"
+          }
+        },
+        {
+          "id": "business",
+          "visible": true,
+          "from": true,
+          "price": 190,
+          "name": {
+            "fi": "Yritys- ja henkilökuvat",
+            "en": "Business portraits"
+          },
+          "includes": {
+            "fi": "1 h paikan päällä\nEnintään 4 henkilöä\n2 kuvaa / henkilö",
+            "en": "1 h on site\nUp to 4 people\n2 photos per person"
+          }
+        },
+        {
+          "id": "wedding-s",
+          "visible": true,
+          "from": true,
+          "price": 690,
+          "name": {
+            "fi": "Hääkuvaus: vihkiminen ja parikuvat",
+            "en": "Wedding: ceremony and couple portraits"
+          },
+          "includes": {
+            "fi": "Enintään 2,5 h\n120+ käsiteltyä kuvaa",
+            "en": "Up to 2.5 h\n120+ edited photos"
+          }
+        },
+        {
+          "id": "wedding-m",
+          "visible": true,
+          "from": true,
+          "price": 1190,
+          "name": {
+            "fi": "Hääkuvaus: puoli päivää",
+            "en": "Wedding: half day"
+          },
+          "includes": {
+            "fi": "Enintään 5 h\n300+ käsiteltyä kuvaa",
+            "en": "Up to 5 h\n300+ edited photos"
+          }
+        },
+        {
+          "id": "wedding-l",
+          "visible": true,
+          "from": true,
+          "price": 1790,
+          "name": {
+            "fi": "Hääkuvaus: koko päivä",
+            "en": "Wedding: full day"
+          },
+          "includes": {
+            "fi": "Enintään 9 h\n500+ käsiteltyä kuvaa\nLisätunti 140 €",
+            "en": "Up to 9 h\n500+ edited photos\nExtra hour 140 €"
+          }
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "title": {
+        "fi": "Video – Hämeen Films",
+        "en": "Video – Hämeen Films"
+      },
+      "items": [
+        {
+          "id": "v-event",
+          "visible": true,
+          "from": true,
+          "price": 890,
+          "name": {
+            "fi": "Tapahtuma- tai yritysvideo",
+            "en": "Event or business film"
+          },
+          "includes": {
+            "fi": "Enintään 4 h kuvausta\n1–2 min video\n2 pystyvideota someen",
+            "en": "Up to 4 h filming\n1–2 min film\n2 vertical clips for social media"
+          }
+        },
+        {
+          "id": "v-wedding-s",
+          "visible": true,
+          "from": true,
+          "price": 990,
+          "name": {
+            "fi": "Häävideo: vihkiminen ja parikuvaus",
+            "en": "Wedding film: ceremony and couple"
+          },
+          "includes": {
+            "fi": "Enintään 3 h\n2–3 min video",
+            "en": "Up to 3 h\n2–3 min film"
+          }
+        },
+        {
+          "id": "v-wedding-l",
+          "visible": true,
+          "from": true,
+          "price": 1790,
+          "name": {
+            "fi": "Häävideo: koko päivä",
+            "en": "Wedding film: full day"
+          },
+          "includes": {
+            "fi": "Enintään 8 h\n4–6 min video\n1 min traileri",
+            "en": "Up to 8 h\n4–6 min film\n1 min trailer"
+          }
+        },
+        {
+          "id": "v-music",
+          "visible": true,
+          "from": false,
+          "price": null,
+          "name": {
+            "fi": "Musiikkivideo",
+            "en": "Music video"
+          },
+          "includes": {
+            "fi": "Suunnittelu, kuvaus ja editointi",
+            "en": "Planning, filming and editing"
+          }
+        },
+        {
+          "id": "v-aerial",
+          "visible": true,
+          "from": false,
+          "price": null,
+          "name": {
+            "fi": "Ilmakuvaus dronella",
+            "en": "Aerial filming by drone"
+          },
+          "includes": {
+            "fi": "Ilmakuvat ja -videot",
+            "en": "Aerial photos and video"
+          }
+        }
+      ]
+    }
+  ]
+}
