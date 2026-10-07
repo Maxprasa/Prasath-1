@@ -1,0 +1,16 @@
+# apps.kuvadoo.fi — Hostinger (Apache/LiteSpeed)
+
+# Custom "not found" page
+ErrorDocument 404 /404.html
+
+# Keep repository files private if the site is deployed with Git
+RedirectMatch 404 /\.git
+<FilesMatch "^(DEPLOY\.md|\.gitignore)$">
+  Require all denied
+</FilesMatch>
+
+# Force HTTPS. Turn on ONLY after the SSL certificate for apps.kuvadoo.fi is active
+# (remove the # from the three lines below).
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
