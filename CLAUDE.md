@@ -9,8 +9,12 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
 ## Hard rules (apply to every agent and every change)
 
 1. **Plain static files only.** HTML + CSS (+ inline SVG). No build step, no framework, no trackers,
-   no analytics, no cookies, no external fonts, scripts or CDNs. Small inline JS only if a feature
-   cannot be done without it, and the page must work fully with JS off.
+   no analytics, no cookies, no external fonts, scripts or CDNs. Fonts must be self-hosted in
+   `assets/fonts/` with their licence (currently Bricolage Grotesque, OFL, headings only). Small inline JS
+   only if a feature cannot be done without it, and the page must work fully with JS off.
+10. **Motion (v3 design):** micro-animations are pure CSS (entrance, scroll reveal via
+   `animation-timeline`, hover, marquee). Content must be fully visible without animation support, and
+   everything must switch off under `prefers-reduced-motion: reduce`.
 2. **Never invent facts.** Only state what the owner has written down (see `docs/facts/`). No
    "official", no test-preparation claims, no YKI mention, no user numbers, ratings, reviews, awards,
    press quotes or "human teacher". No fake testimonials. If a claim is not in the facts file, leave it out

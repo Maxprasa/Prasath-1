@@ -11,7 +11,8 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/style.css?v=4">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css?v=5">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kuvadoo apps">
 <meta property="og:locale" content="en_US">
@@ -191,42 +192,41 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero-grid">
       <div>
-        <div class="app-title">
+        <div class="app-title rise" style="--d:0">
           <img src="/assets/finnsana-icon.png" width="512" height="512" alt="">
           <span class="badge">In testing on Google Play</span>
         </div>
-        <h1 id="hero-title">FinnSana: Learn Finnish</h1>
-        <p class="lead">Learn Finnish A1–B2: nearly 5,000 words, clear grammar, pictures, games.</p>
-        <ul class="chips" aria-label="Key facts">
+        <h1 id="hero-title" class="rise" style="--d:1">FinnSana: <span class="hl">Learn Finnish</span></h1>
+        <p class="lead rise" style="--d:2">Learn Finnish A1–B2: nearly 5,000 words, clear grammar, pictures, games.</p>
+        <ul class="chips rise" style="--d:3" aria-label="Key facts">
           <li>Android</li><li>Free</li><li>No ads</li><li>No account needed</li>
         </ul>
-        <div class="btn-row">
+        <div class="btn-row rise" style="--d:4">
               <!-- When the Play Store listing is public, replace the span below with:
               <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=app.finnsana">Get it on Google Play</a>
               (and consider Google's official badge artwork) -->
               <span class="btn btn--soon">Coming soon to Google Play</span>
-          <a class="btn btn--ghost" href="#features">See features</a>
+          <a class="btn btn--ghost" href="#features">See features <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <p class="hero-status">In testing on Google Play. Public release soon.</p>
+        <p class="hero-status rise" style="--d:5">In testing on Google Play. Public release soon.</p>
       </div>
-      <div class="phone-stage">
-            <div class="phone phone--tilt">
-              <div class="phone-screen">
-                <img src="/assets/finnsana-screen-home.webp" width="540" height="963" alt="FinnSana home screen with your learning path and the first unit, Greetings" decoding="async">
-              </div>
-            </div>
+      <div class="phone-fan rise" style="--d:3">
+            <div class="phone float"><div class="phone-screen"><img src="/assets/finnsana-screen-home.webp" width="540" height="963" alt="FinnSana home screen with your learning path and the first unit, Greetings" decoding="async"></div></div>
+            <div class="phone float"><div class="phone-screen"><img src="/assets/finnsana-screen-word.webp" width="540" height="963" alt="" decoding="async"></div></div>
+            <div class="phone float"><div class="phone-screen"><img src="/assets/finnsana-screen-match.webp" width="540" height="963" alt="" decoding="async"></div></div>
           </div>
     </div>
+    <div class="hero-wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 60 C 240 100 480 20 720 40 C 960 60 1200 100 1440 50 L1440 90 L0 90 Z" fill="currentColor"/></svg></div>
   </section>
 
-  <section class="section section--tight section--alt" aria-labelledby="glance-title">
+  <section class="stats" aria-labelledby="glance-title">
     <div class="container">
       <h2 id="glance-title" class="visually-hidden">FinnSana at a glance</h2>
       <ul class="tiles">
-        <li class="tile"><h3><span class="stat">Nearly 5,000</span>words</h3><p>Everyday words with sound and pictures.</p></li>
-        <li class="tile"><h3><span class="stat">100+</span>grammar lessons</h3><p>One small rule at a time.</p></li>
-        <li class="tile"><h3><span class="stat">A1–B2</span>CEFR levels</h3><p>From your first words to B2.</p></li>
-        <li class="tile"><h3><span class="stat">Free</span>no ads</h3><p>And no account needed.</p></li>
+        <li class="tile rise" style="--d:4"><h3><span class="stat">Nearly 5,000</span>words</h3><p>Everyday words with sound and pictures.</p></li>
+        <li class="tile rise" style="--d:5"><h3><span class="stat">100+</span>grammar lessons</h3><p>One small rule at a time.</p></li>
+        <li class="tile rise" style="--d:6"><h3><span class="stat">A1–B2</span>CEFR levels</h3><p>From your first words to B2.</p></li>
+        <li class="tile rise" style="--d:7"><h3><span class="stat">Free</span>no ads</h3><p>And no account needed.</p></li>
       </ul>
     </div>
   </section>
@@ -234,9 +234,8 @@
   <section class="section" id="features" aria-label="Features">
     <div class="container">
       <article class="feature">
-        <div>
-          <span class="eyebrow">Vocabulary</span>
-          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg></div>
+        <div class="reveal">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg> Vocabulary</span>
           <h2>Nearly 5,000 words with sound and pictures</h2>
           <p class="lead">Everyday words from A1 to B2, sorted by topic.</p>
           <ul class="checklist">
@@ -245,7 +244,7 @@
             <li>A memory trick for every word, and word families that show how Finnish builds words</li>
           </ul>
         </div>
-        <div class="feature-media">
+        <div class="feature-media reveal-scale">
           <div class="phone-stage">
             <div class="phone phone--small">
               <div class="phone-screen">
@@ -256,9 +255,8 @@
         </div>
       </article>
       <article class="feature">
-        <div>
-          <span class="eyebrow">Grammar</span>
-          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5z"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20"/><path d="M8 7h8M8 11h6"/></svg></div>
+        <div class="reveal">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5z"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20"/><path d="M8 7h8M8 11h6"/></svg> Grammar</span>
           <h2>Grammar that finally makes sense</h2>
           <p class="lead">Over 100 grammar lessons: cases, verb types, partitive, past tense, conditional, passive and more.</p>
           <ul class="checklist">
@@ -268,7 +266,7 @@
             <li>Spoken Finnish (<span lang="fi">puhekieli</span>) explained, so you understand real conversations</li>
           </ul>
         </div>
-        <div class="feature-media">
+        <div class="feature-media reveal-scale">
           <div class="phone-stage">
             <div class="phone phone--small">
               <div class="phone-screen">
@@ -279,9 +277,8 @@
         </div>
       </article>
       <article class="feature">
-        <div>
-          <span class="eyebrow">Practice</span>
-          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11" r="1.1" fill="currentColor"/><circle cx="18" cy="14" r="1.1" fill="currentColor"/></svg></div>
+        <div class="reveal">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11" r="1.1" fill="currentColor"/><circle cx="18" cy="14" r="1.1" fill="currentColor"/></svg> Practice</span>
           <h2>Practice that feels like a game</h2>
           <p class="lead">Ten ways to practise, with streaks, sounds and celebrations to keep you going.</p>
           <ul class="checklist">
@@ -290,7 +287,7 @@
           </ul>
           <ul class="games" aria-label="Practice modes"><li>Word Match</li><li>Speed Round</li><li>True or False</li><li>Fix the Mistake</li><li>Spell what you hear</li><li>Flashcards</li><li>Verb trainer</li><li>Sentence builder</li><li>Listening practice</li><li>Reading practice</li></ul>
         </div>
-        <div class="feature-media">
+        <div class="feature-media reveal-scale">
           <div class="phone-stage">
             <div class="phone phone--small">
               <div class="phone-screen">
@@ -301,9 +298,8 @@
         </div>
       </article>
       <article class="feature">
-        <div>
-          <span class="eyebrow">Smart review</span>
-          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg></div>
+        <div class="reveal">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg> Smart review</span>
           <h2>Review at just the right moment</h2>
           <p class="lead">Spaced repetition brings each word back just before you forget it.</p>
           <ul class="checklist">
@@ -311,7 +307,7 @@
             <li>Track your progress, streak and weak areas</li>
           </ul>
         </div>
-        <div class="feature-media">
+        <div class="feature-media reveal-scale">
           <div class="phone-stage">
             <div class="phone phone--small">
               <div class="phone-screen">
@@ -322,9 +318,8 @@
         </div>
       </article>
       <article class="feature">
-        <div>
-          <span class="eyebrow">My words</span>
-          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div>
+        <div class="reveal">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg> My words</span>
           <h2>Add your own words</h2>
           <p class="lead">Heard a word at work or on the bus? Add it, and FinnSana brings it back in your reviews.</p>
           <ul class="checklist">
@@ -332,7 +327,7 @@
             <li>Practise your words like the built-in ones</li>
           </ul>
         </div>
-        <div class="feature-media">
+        <div class="feature-media reveal-scale">
           <div class="phone-stage">
             <div class="phone phone--small">
               <div class="phone-screen">
@@ -345,39 +340,46 @@
     </div>
   </section>
 
+  <section class="marquee" aria-label="Practice modes">
+    <div class="marquee-inner">
+      <ul class="marquee-track"><li>Word Match</li><li>Speed Round</li><li>True or False</li><li>Fix the Mistake</li><li>Spell what you hear</li><li>Flashcards</li><li>Verb trainer</li><li>Sentence builder</li><li>Listening practice</li><li>Reading practice</li></ul>
+      <ul class="marquee-track" aria-hidden="true"><li>Word Match</li><li>Speed Round</li><li>True or False</li><li>Fix the Mistake</li><li>Spell what you hear</li><li>Flashcards</li><li>Verb trainer</li><li>Sentence builder</li><li>Listening practice</li><li>Reading practice</li></ul>
+    </div>
+  </section>
+
   <section class="section section--alt" aria-labelledby="levels-title">
     <div class="container">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center reveal">
         <span class="eyebrow">Made for real learners</span>
         <h2 id="levels-title">From your first words to B2</h2>
-        <p class="lead" style="margin-inline:auto">FinnSana is structured by the CEFR levels A1, A2, B1 and B2, with everyday situations: shopping, work, doctor, travel and more.</p>
+        <p class="lead">FinnSana is structured by the CEFR levels A1, A2, B1 and B2, with everyday situations: shopping, work, doctor, travel and more.</p>
       </div>
-      <ol class="levels" aria-label="CEFR levels">
+      <ol class="levels reveal" aria-label="CEFR levels">
         <li><b>A1</b><span>Beginner</span></li>
         <li><b>A2</b><span>Elementary</span></li>
         <li><b>B1</b><span>Intermediate</span></li>
         <li><b>B2</b><span>Upper intermediate</span></li>
       </ol>
       <ul class="tiles" style="margin-top:var(--s-6)">
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><h3>Works offline</h3><p>Once the sounds and pictures have downloaded (about 700 MB, once; Wi-Fi is best).</p></li>
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></span><h3>Listening and reading</h3><p>Listening recordings and reading texts.</p></li>
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="8" cy="10" r="1.3" fill="currentColor"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor"/><circle cx="16" cy="10" r="1.3" fill="currentColor"/><path d="M12 21a3 3 0 0 1 0-6h3"/></svg></span><h3>Three colour themes</h3><p>Forest, Terracotta and Midnight.</p></li>
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><h3>Start immediately</h3><p>The first lessons work right away, while the sounds and pictures download.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><h3>Works offline</h3><p>Once the sounds and pictures have downloaded (about 700 MB, once; Wi-Fi is best).</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></span><h3>Listening and reading</h3><p>Listening recordings and reading texts.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="8" cy="10" r="1.3" fill="currentColor"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor"/><circle cx="16" cy="10" r="1.3" fill="currentColor"/><path d="M12 21a3 3 0 0 1 0-6h3"/></svg></span><h3>Three colour themes</h3><p>Forest, Terracotta and Midnight.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><h3>Start immediately</h3><p>The first lessons work right away, while the sounds and pictures download.</p></li>
       </ul>
     </div>
   </section>
 
   <section class="section" aria-labelledby="start-title">
     <div class="container">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center reveal">
         <span class="eyebrow">Your choice</span>
         <h2 id="start-title">Three ways to start</h2>
-        <p class="lead" style="margin-inline:auto">Start as a guest, or sign in to back up your progress. You can change your mind later in Me → Account &amp; sync.</p>
+        <p class="lead">Start as a guest, or sign in to back up your progress. You can change your mind later in Me → Account &amp; sync.</p>
       </div>
       <ul class="tiles">
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>Guest mode</h3><p>Start right away, no account. Your learning progress never leaves your phone.</p></li>
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1 0 8z"/></svg></span><h3>Continue with Google</h3><p>Back up your progress so you can get it back on a new phone. We never see your Google password.</p></li>
-        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h3>Continue with email</h3><p>Use your email address and a password to back up your progress. The password is handled by Google Firebase, never visible to us.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>Guest mode</h3><p>Start right away, no account. Your learning progress never leaves your phone.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1 0 8z"/></svg></span><h3>Continue with Google</h3><p>Back up your progress so you can get it back on a new phone. We never see your Google password.</p></li>
+        <li class="tile reveal"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h3>Continue with email</h3><p>Use your email address and a password to back up your progress. The password is handled by Google Firebase, never visible to us.</p></li>
       </ul>
       <p class="muted" style="text-align:center;margin-top:var(--s-5)">Signed in? Sign out or <a href="/finnsana/delete-account/">delete your account</a> at any time. Details in the <a href="/finnsana/privacy/">privacy policy</a>.</p>
     </div>
@@ -385,7 +387,7 @@
 
   <section class="section section--flush-top" aria-labelledby="privacy-title">
     <div class="container">
-      <div class="panel panel--split">
+      <div class="panel panel--split reveal">
         <div>
           <span class="eyebrow">Privacy &amp; data</span>
           <h2 id="privacy-title">Your data, at a glance</h2>
@@ -407,7 +409,7 @@
 
   <section class="section section--alt" id="faq" aria-labelledby="faq-title">
     <div class="container">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center reveal">
         <span class="eyebrow">FAQ</span>
         <h2 id="faq-title">Questions and answers</h2>
       </div>
@@ -462,8 +464,8 @@
 
   <section class="section section--tight" aria-labelledby="cta-title">
     <div class="container">
-      <div class="cta">
-        <h2 id="cta-title">Learn Finnish with FinnSana</h2>
+      <div class="cta reveal-scale">
+        <h2 id="cta-title">Learn Finnish with <span class="hl">FinnSana</span></h2>
         <p>Free, no ads, no account needed. Coming soon to Google Play.</p>
         <div class="btn-row">
           <a class="btn btn--primary" href="mailto:kuvadoo@gmail.com?subject=FinnSana"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Ask a question</a>
