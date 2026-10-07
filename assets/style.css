@@ -10,10 +10,10 @@
   --bg: #faf7f0;            /* warm off-white page */
   --bg-alt: #f2ede2;        /* alternate section band */
   --surface: #ffffff;       /* cards */
-  --text: #1b201c;          /* 15.9:1 on --bg */
-  --muted: #535b55;         /* 6.6:1 on --bg, 6.0:1 on --bg-alt */
+  --text: #1b201c;          /* 15.5:1 on --bg */
+  --muted: #535b55;         /* 6.5:1 on --bg, 6.0:1 on --bg-alt */
   --border: #e2dbcc;
-  --brand: #1f6f4a;         /* forest green, 5.9:1 on --bg, 6.3:1 on white */
+  --brand: #1f6f4a;         /* forest green, 5.7:1 on --bg, 6.1:1 on white */
   --brand-strong: #17573a;  /* hover */
   --brand-soft: #e3efe7;    /* tinted fills */
   --on-brand: #ffffff;
@@ -47,13 +47,13 @@
     --bg: #121613;
     --bg-alt: #171c18;
     --surface: #1d231f;
-    --text: #edf0eb;        /* 15.6:1 */
-    --muted: #b1b9b3;       /* 9.0:1 */
+    --text: #edf0eb;        /* 15.9:1 */
+    --muted: #b1b9b3;       /* 9.1:1 */
     --border: #2c342f;
-    --brand: #7fd1a6;       /* 10.4:1 on --bg */
+    --brand: #7fd1a6;       /* 10.1:1 on --bg */
     --brand-strong: #9fe0bd;
     --brand-soft: #1e3328;
-    --on-brand: #0d1a13;    /* 10.4:1 on --brand */
+    --on-brand: #0d1a13;    /* 9.9:1 on --brand */
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
     --shadow-md: 0 12px 30px -12px rgb(0 0 0 / 0.6);
     --shadow-lg: 0 30px 60px -20px rgb(0 0 0 / 0.7);
@@ -121,6 +121,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 /* ---------- 4. Header ---------------------------------------------------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
+  background: var(--bg);
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   -webkit-backdrop-filter: saturate(1.6) blur(14px); backdrop-filter: saturate(1.6) blur(14px);
   border-bottom: 1px solid var(--border);
@@ -212,41 +213,17 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
   background: color-mix(in srgb, var(--brand) 18%, transparent); filter: blur(60px);
 }
 .phone {
-  position: relative; width: min(17rem, 72vw); aspect-ratio: 9 / 18.5;
-  padding: 10px; border-radius: 2.6rem;
+  position: relative; width: min(17rem, 72vw);
+  padding: 9px; border-radius: 2.6rem;
   background: #1b201c; box-shadow: var(--shadow-lg), inset 0 0 0 2px #3a423c;
 }
-.phone::after {   /* camera */
-  content: ""; position: absolute; top: 18px; left: 50%; width: 10px; height: 10px;
-  transform: translateX(-50%); border-radius: 50%; background: #0b0e0c; box-shadow: inset 0 0 0 2px #2b322d;
-}
 .phone-screen {
-  position: relative; height: 100%; overflow: hidden; border-radius: 2rem;
-  background: var(--bg);
+  position: relative; overflow: hidden; border-radius: 2.05rem;
+  aspect-ratio: 540 / 963; background: var(--surface);
 }
-.phone-screen > img { width: 100%; height: 100%; object-fit: cover; }
+.phone-screen > img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .phone--tilt { transform: rotate(-3deg); }
-.phone--small { width: min(14rem, 62vw); }
-
-/* Placeholder UI drawn inside the phone until real screenshots exist */
-.mock { display: flex; flex-direction: column; gap: 10px; height: 100%; padding: 44px 14px 14px; }
-.mock-bar { height: 10px; border-radius: 6px; background: var(--border); }
-.mock-bar--title { width: 55%; height: 14px; background: var(--text); opacity: 0.85; }
-.mock-bar--short { width: 35%; }
-.mock-card {
-  display: flex; align-items: center; gap: 10px; padding: 10px;
-  border-radius: 14px; background: var(--surface); box-shadow: var(--shadow-sm);
-}
-.mock-card i { width: 34px; height: 34px; border-radius: 10px; background: var(--brand-soft); flex: none; }
-.mock-card b { display: block; flex: 1; height: 8px; border-radius: 6px; background: var(--border); }
-.mock-hero {
-  flex: 1; display: grid; place-items: center; border-radius: 18px; min-height: 30%;
-  background: linear-gradient(160deg, var(--brand), color-mix(in srgb, var(--brand) 55%, #0b3a24));
-}
-.mock-hero img { width: 38%; border-radius: 22%; box-shadow: 0 10px 24px rgb(0 0 0 / 0.25); }
-.mock-tabs { display: flex; justify-content: space-around; padding-top: 6px; }
-.mock-tabs i { width: 22px; height: 22px; border-radius: 8px; background: var(--border); }
-.mock-tabs i:first-child { background: var(--brand); }
+.phone--small { width: min(15rem, 66vw); }
 
 /* ---------- 9. App cards (home grid) ------------------------------------- */
 .app-grid { display: grid; gap: var(--s-5); grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); list-style: none; padding: 0; margin: 0; }
@@ -264,7 +241,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .app-card h3 a { color: var(--text); text-decoration: none; }
 .app-card h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; } /* whole card clickable */
 .app-card h3 a:focus-visible { outline: none; }
-.app-card:has(a:focus-visible) { outline: 3px solid var(--brand); outline-offset: 3px; }
+.app-card h3 a:focus-visible::after { outline: 3px solid var(--brand); outline-offset: 3px; }
 .app-card p { margin: 0; color: var(--muted); }
 .app-card .chips { margin-top: auto; }
 .app-card--placeholder {
@@ -282,7 +259,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .tile .icon-tile { margin-bottom: var(--s-4); }
 .tile h3 { margin-bottom: var(--s-2); }
 .tile p { margin: 0; color: var(--muted); font-size: 1rem; }
-.stat { display: block; font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; color: var(--accent); line-height: 1.1; margin-bottom: var(--s-1); }
+.stat { display: block; font-size: clamp(1.625rem, 1.4rem + 0.6vw, 1.875rem); font-weight: 800; letter-spacing: -0.03em; color: var(--accent); line-height: 1.1; margin-bottom: var(--s-1); }
 
 .feature { display: grid; gap: var(--s-6); align-items: center; }
 .feature + .feature { margin-top: var(--section); }
@@ -369,7 +346,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 }
 .cta > * { position: relative; }
 .cta h2 { color: #ffffff; }
-.cta p { color: #dcebe2; max-width: 34rem; margin-inline: auto; margin-bottom: var(--s-6); }  /* 9.9:1 */
+.cta p { color: #e6f2eb; max-width: 34rem; margin-inline: auto; margin-bottom: var(--s-6); }  /* 5.3:1 on #1f6f4a */
 .cta .btn-row { justify-content: center; }
 .cta .btn--primary { background: #ffffff; color: #17573a; }
 .cta .btn--primary:hover { background: #eef6f1; color: #17573a; }

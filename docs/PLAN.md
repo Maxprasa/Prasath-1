@@ -88,6 +88,7 @@ price 0, no ratings — `FAQPage`, `BreadcrumbList`), sitemap updated, `.htacces
 | qa-tester | browser tests at 360/1280 px, light/dark, live smoke test | no (reports) |
 | play-store-compliance | Play policy: privacy, deletion page, badge rules, GDPR basics | no (reports) |
 | research-analyst | sourced web research → `docs/research/` | docs only |
+| growth-marketer | positioning, launch plan, social posts, community outreach → `docs/marketing/` (honest claims only: no "best"/"#1") | docs only |
 
 Skills: `site-check` (render + test everything), `add-app-page` (new app in one go), `release`
 (build/verify zip + upload steps). Every change flows: **design → copy → SEO → audits → site-check →

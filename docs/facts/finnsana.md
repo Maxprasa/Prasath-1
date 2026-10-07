@@ -1,5 +1,10 @@
 # FinnSana — approved facts (owner-supplied; the only source for claims)
 
+**Primary source since 2026-10-07: `docs/facts/finnsana-app-knowledge.md`** (owner's website pack, checked
+against the app's code; includes the full privacy policy, terms of use and account-deletion texts).
+Where the two files differ, the app-knowledge file wins. Exception: the owner said purchases may come
+later — never claim "no purchases" (the pack's privacy-policy line about purchases was left out on the site).
+
 Anything not on this page must not appear on the website until the owner adds it here.
 
 ## Identity
@@ -47,11 +52,21 @@ Anything not on this page must not appear on the website until the owner adds it
 - Delete account: /finnsana/delete-account/
 - Contact: kuvadoo@gmail.com
 
-## Account deletion (verbatim)
-You can use FinnSana without an account. If you signed in: open the app → Me → Account → Delete account.
+## Account deletion
+Owner-confirmed 2026-10-07: the in-app path is **Me tab → tap your profile (at the top) → Delete account**
+(the brief's "Me → Account → Delete account" was outdated).
+
+You can use FinnSana without an account. If you signed in: open the app → Me tab → tap your profile → Delete account.
 This deletes your sign-in account and your cloud backup (progress, settings). Your progress on the phone is
 removed with "Reset progress" or by uninstalling the app. If you cannot open the app, write to
 kuvadoo@gmail.com from the email address of your account and we delete it within 30 days.
+
+## Owner decisions (2026-10-07)
+- Word count: **nearly 5,000** is correct. (A Play Store screenshot caption says "3,000 words" — owner to update it.)
+- Download size: **about 700 MB** is correct (the old Google Sites policy said 360 MB).
+- Purchases: FinnSana is free **for now**; purchases may be added later. **Never claim "no purchases" or "free forever".**
+- Website privacy policy: the full policy now lives at /finnsana/privacy/ (source: `docs/facts/finnsana-privacy.md`).
+  The owner will switch the Play Console privacy URL later.
 
 ## Forbidden
 "official", test-preparation claims, YKI, user numbers, ratings, awards, "human teacher", invented reviews.

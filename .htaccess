@@ -5,16 +5,17 @@ ErrorDocument 404 /404.html
 
 # Keep repository-only files private (in case the whole repo is ever deployed)
 RedirectMatch 404 ^/(\.git|\.claude|docs|tools)(/|$)
-<FilesMatch "^(CLAUDE\.md|DEPLOY\.md|\.gitignore|.*\.zip)$">
-  Require all denied
-</FilesMatch>
+RedirectMatch 404 (?i)^/(CLAUDE\.md|DEPLOY\.md|\.gitignore|.*\.zip)$
 
-# Cache static assets for a week; HTML always fresh
+# Cache images for a week. CSS is versioned in the HTML (style.css?v=N), HTML is always fresh.
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 7 days"
   ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/webp "access plus 7 days"
   ExpiresByType image/svg+xml "access plus 7 days"
+  ExpiresByType image/x-icon "access plus 7 days"
+  ExpiresByType image/vnd.microsoft.icon "access plus 7 days"
   ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
 
