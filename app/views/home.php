@@ -4,16 +4,6 @@ require __DIR__ . '/layout.php';
 $lang = $GLOBALS['lang'];
 $hero = photo(setting('hero_photo'));
 $featured = array_values(array_filter(albums(), fn($a) => !empty($a['featured'])));
-// Side prints of the hero fan: covers of two other featured albums (people first)
-$side = [];
-foreach (['portraits', 'confirmation', 'weddings', 'events', 'business', 'aerial'] as $cat) {
-    foreach ($featured as $a) {
-        $c = photo($a['cover']);
-        if ($a['category'] === $cat && $c && $c['id'] !== ($hero['id'] ?? '') && count($side) < 2) {
-            $side[] = $c;
-        }
-    }
-}
 $videos = array_values(array_filter(data_get('videos'), fn($v) => !empty($v['visible'])));
 $topVideos = array_slice(array_values(array_filter($videos, fn($v) => !empty($v['featured']))) ?: $videos, 0, 3);
 $about = photo(setting('about_photo'));
@@ -38,27 +28,17 @@ page_start('', txt('hero_lead'), [
     ]),
 ]);
 ?>
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="kicker rise d0"><?= e(txt('hero_kicker')) ?></p>
-      <h1 class="rise d1"><?= hl_text(txt('hero_title')) ?></h1>
-      <p class="lead rise d2"><?= e(txt('hero_lead')) ?></p>
-      <ul class="tags rise d3">
-        <li><?= e(txt('svc_photo_title')) ?></li><li lang="fi">Hämeen Films</li><li><?= e(txt('svc_aerial_title')) ?></li>
-      </ul>
-      <p class="btn-row rise d4">
-        <a class="btn btn-primary" href="<?= e(url('photo')) ?>"><?= e(t('cta_work')) ?></a>
-        <a class="btn btn-outline-light" href="<?= e(url('films')) ?>"><?= e(t('cta_films')) ?></a>
-      </p>
-    </div>
-    <div class="print-fan" aria-hidden="true">
-<?php if (isset($side[0])): ?>      <div class="print print--left"><?= img($side[0], '18rem', '', true, 480, '') ?></div>
-<?php endif; ?>
-<?php if (isset($side[1])): ?>      <div class="print print--right"><?= img($side[1], '18rem', '', true, 480, '') ?></div>
-<?php endif; ?>
-      <div class="print print--main"><?= img($hero, '(min-width: 60rem) 18rem, 60vw', '', false, 960, '') ?></div>
-    </div>
+<section class="hero hero--cover">
+  <div class="hero-media" aria-hidden="true"><?= img($hero, '100vw', 'hero-img', false, 1600, '') ?></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <p class="kicker rise d0"><?= e(txt('hero_kicker')) ?></p>
+    <h1 class="rise d1"><?= hl_text(txt('hero_title')) ?></h1>
+    <p class="lead rise d2"><?= e(txt('hero_lead')) ?></p>
+    <p class="btn-row rise d3">
+      <a class="btn btn-primary" href="<?= e(url('photo')) ?>"><?= e(t('cta_work')) ?></a>
+      <a class="btn btn-outline-light" href="<?= e(url('films')) ?>"><?= e(t('cta_films')) ?></a>
+    </p>
   </div>
   <div class="band-wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="currentColor" d="M0 90V40C240 0 480 0 720 30s480 50 720 10v50z"/></svg></div>
 </section>

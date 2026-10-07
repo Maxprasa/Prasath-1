@@ -181,40 +181,37 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .band-wave { position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(40px, 6vw, 90px); color: var(--bg); z-index: 0; pointer-events: none; }
 .band-wave svg { width: 100%; height: 100%; }
 
-/* Home hero: text + fan of three photo prints */
+/* Home hero: one wide cover photo (owner's choice, like the old site) with a green shade for the text */
 .hero { padding-block: clamp(2.5rem, 2rem + 4vw, 6rem) clamp(6rem, 5rem + 5vw, 9rem); }
-.hero-grid { display: grid; gap: var(--s-7); align-items: center; }
-@media (min-width: 60rem) { .hero-grid { grid-template-columns: 1.05fr .95fr; } }
-.hero h1 { margin-bottom: var(--s-5); }
-.hero .lead { margin-bottom: var(--s-5); }
+.hero h1 { margin-bottom: var(--s-5); max-width: 14ch; }
+.hero .lead { margin-bottom: var(--s-6); max-width: 34rem; }
 .hero .btn-primary { background: #ffffff; color: #064a30; box-shadow: 0 18px 40px -18px rgb(0 0 0 / .6); }
 .hero .btn-primary:hover { background: var(--lime); color: #064a30; }
-.print-fan { position: relative; display: grid; place-items: center; min-height: 34rem; }
-.print { grid-area: 1 / 1; width: min(20rem, 58vw); aspect-ratio: 4 / 5; padding: 8px; border-radius: 22px; background: #ffffff; box-shadow: var(--shadow-lg); transition: transform .6s var(--spring); }
-.print img { width: 100%; height: 100%; object-fit: cover; border-radius: 15px; }
-.print--main { z-index: 2; }
-.print--left { z-index: 0; transform: translateX(-48%) rotate(-9deg) scale(.86); }
-.print--right { z-index: 1; transform: translateX(48%) rotate(9deg) scale(.86); }
-.print-fan:hover .print--left { transform: translateX(-56%) rotate(-12deg) scale(.86); }
-.print-fan:hover .print--right { transform: translateX(56%) rotate(12deg) scale(.86); }
-.print-fan:hover .print--main { transform: translateY(-8px) scale(1.02); }
-@media (max-width: 40rem) {
-  .print-fan { min-height: 0; padding-block: var(--s-4); }
-  .print { width: min(13rem, 52vw); }
-  .print--left { transform: translateX(-40%) rotate(-8deg) scale(.82); }
-  .print--right { transform: translateX(40%) rotate(8deg) scale(.82); }
+.hero--cover { display: grid; align-items: end; min-height: clamp(34rem, 84svh, 50rem); background: #064a30; }
+.hero--cover::before, .hero--cover::after { display: none; }
+.hero-media { position: absolute; inset: 0; z-index: -2; }
+.hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
+.hero-shade { position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgb(6 60 39 / .92) 0%, rgb(6 74 48 / .78) 34%, rgb(6 74 48 / .25) 68%, rgb(6 74 48 / .05) 100%),
+              linear-gradient(0deg, rgb(4 40 24 / .55) 0%, transparent 45%); }
+@media (max-width: 47.99rem) {
+  /* Phones: the whole wide photo on top, text below it on the green band */
+  .hero--cover { display: block; min-height: 0; padding-top: 0; background: var(--hero-grad); }
+  .hero--cover .hero-media { position: relative; inset: auto; height: min(62vw, 22rem); z-index: 0; }
+  .hero--cover .hero-shade { inset: 0 0 auto; height: min(62vw, 22rem); z-index: 0; background: linear-gradient(180deg, transparent 55%, rgb(13 133 83 / .95) 100%); }
+  .hero--cover .hero-content { margin-top: calc(-1 * var(--s-6)); z-index: 1; }
 }
+.hero-content { position: relative; }
 @media (prefers-reduced-motion: no-preference) {
   .rise { animation: rise .9s var(--ease) both; animation-delay: calc(var(--d, 0) * 90ms + 80ms); }
   .d1 { --d: 1; } .d2 { --d: 2; } .d3 { --d: 3; } .d4 { --d: 4; }
   @keyframes rise { from { opacity: 0; transform: translateY(26px); filter: blur(4px); } }
-  .print--main { animation: print-in 1s var(--spring) both .2s; }
-  .print--left { animation: print-left 1.1s var(--spring) both .35s; }
-  .print--right { animation: print-right 1.1s var(--spring) both .45s; }
-  @keyframes print-in { from { opacity: 0; transform: translateY(40px) scale(.9); } }
-  @keyframes print-left { from { opacity: 0; transform: translateX(0) rotate(0) scale(.8); } }
-  @keyframes print-right { from { opacity: 0; transform: translateX(0) rotate(0) scale(.8); } }
+  .hero-img { animation: cover-in 2.2s var(--ease) both; }
+  @keyframes cover-in { from { transform: scale(1.08); } }
 }
+/* Photo "print" (white frame) – used for the about photo */
+.print { width: min(20rem, 70vw); aspect-ratio: 4 / 5; padding: 8px; border-radius: 22px; background: #ffffff; box-shadow: var(--shadow-lg); transition: transform .6s var(--spring); }
+.print img { width: 100%; height: 100%; object-fit: cover; border-radius: 15px; }
 
 /* Stats tiles overlapping the hero */
 .stats { position: relative; z-index: 2; margin-top: calc(-1 * clamp(3.5rem, 2.5rem + 4vw, 5.5rem)); }
