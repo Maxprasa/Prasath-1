@@ -1,6 +1,8 @@
 // Renders every page in sitemap.xml (plus the 404 page) at phone and desktop widths, light and dark.
 // Fails on HTTP errors, missing assets, console errors, horizontal scroll, or missing h1.
 // Usage: python3 -m http.server 8765 &  then  node tools/check-site.mjs [baseUrl] [outDir]
+// Playwright must resolve from the script's folder (ESM ignores NODE_PATH): if it is installed elsewhere,
+// copy this file next to that node_modules and run it with the repo root as the working directory.
 import { chromium } from 'playwright';
 import { readFileSync, mkdirSync } from 'node:fs';
 
@@ -10,11 +12,11 @@ mkdirSync(out, { recursive: true });
 
 const paths = [...readFileSync('sitemap.xml', 'utf8').matchAll(/<loc>https:\/\/apps\.kuvadoo\.fi([^<]*)<\/loc>/g)]
   .map(m => m[1] || '/');
-paths.push('/this-page-does-not-exist/');
+paths.push('/404.html');  // python's http.server can't serve the custom 404, so test the page itself
 
-const browser = await chromium.launch(
-  process.env.PLAYWRIGHT_BROWSERS_PATH ? {} : { executablePath: '/opt/pw-browsers/chromium' }
-).catch(() => chromium.launch());
+// Use the bundled browser if it matches; otherwise fall back to a system Chromium (CHROMIUM_PATH).
+const browser = await chromium.launch().catch(() =>
+  chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium' }));
 const sizes = [{ w: 360, h: 780 }, { w: 1280, h: 800 }];
 let failures = 0;
 
@@ -25,7 +27,7 @@ for (const scheme of ['light', 'dark']) {
     const problems = [];
     page.on('console', m => { if (m.type() === 'error') problems.push('console: ' + m.text()); });
     page.on('response', r => {
-      if (r.status() >= 400 && !r.url().includes('this-page-does-not-exist')) problems.push(`${r.status()} ${r.url()}`);
+      if (r.status() >= 400) problems.push(`${r.status()} ${r.url()}`);
     });
     for (const p of paths) {
       problems.length = 0;

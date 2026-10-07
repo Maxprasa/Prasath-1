@@ -3,118 +3,533 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FinnSana: Learn Finnish</title>
-<meta name="description" content="FinnSana: Learn Finnish A1–B2 on Android. Nearly 5,000 words, clear grammar, pictures, games. Free, no ads, no account needed.">
+<title>FinnSana: Learn Finnish – Free Android App (A1–B2)</title>
+<meta name="description" content="Learn Finnish on Android, free with no ads and no account needed. Nearly 5,000 words with pictures and sound, over 100 grammar lessons, games and spaced repetition. A1–B2.">
 <link rel="canonical" href="https://apps.kuvadoo.fi/finnsana/">
+<meta name="theme-color" content="#faf7f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121613" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/finnsana-icon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/style.css">
-<meta name="theme-color" content="#1F6F4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kuvadoo apps">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="FinnSana: Learn Finnish – Free Android App (A1–B2)">
+<meta property="og:description" content="Learn Finnish on Android, free with no ads and no account needed. Nearly 5,000 words with pictures and sound, over 100 grammar lessons, games and spaced repetition. A1–B2.">
+<meta property="og:url" content="https://apps.kuvadoo.fi/finnsana/">
+<meta property="og:image" content="https://apps.kuvadoo.fi/assets/og-finnsana.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FinnSana: Learn Finnish – Free Android App (A1–B2)">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://apps.kuvadoo.fi/finnsana/#app",
+   "name": "FinnSana: Learn Finnish",
+   "description": "Learn Finnish A1–B2: nearly 5,000 words, clear grammar, pictures, games.",
+   "url": "https://apps.kuvadoo.fi/finnsana/",
+   "image": "https://apps.kuvadoo.fi/assets/finnsana-icon.png",
+   "operatingSystem": "Android",
+   "applicationCategory": "EducationalApplication",
+   "inLanguage": "en",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://apps.kuvadoo.fi/#org",
+    "name": "Kuvadoo",
+    "url": "https://apps.kuvadoo.fi/",
+    "email": "kuvadoo@gmail.com",
+    "logo": "https://apps.kuvadoo.fi/assets/apple-touch-icon.png",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Hämeenlinna",
+     "addressCountry": "FI"
+    },
+    "sameAs": [
+     "https://www.kuvadoo.fi"
+    ]
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is FinnSana free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. FinnSana is free and has no ads."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need an account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You can use FinnSana without an account. If you like, you can sign in with Google or email to back up your progress."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which levels does FinnSana cover?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CEFR levels A1 to B2: everyday words by topic and over 100 grammar lessons."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which devices does it run on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "FinnSana is an Android app."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When can I download it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "FinnSana is in testing on Google Play. The public release is coming soon."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work offline?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, once the sounds and pictures have downloaded. That is about 700 MB, once. Wi-Fi is best."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are the voices real people?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Words, example sentences and lesson explanations are spoken by a clear computer-generated Finnish voice, at normal or slow speed. The pictures are AI-generated illustrations."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it teach spoken Finnish?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. FinnSana explains spoken Finnish (puhekieli)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is FinnSana connected to an official test or authority?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. FinnSana is an independent app and is not connected to any authority or test organiser."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I delete my account and data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the app: Me → Account → Delete account. Without the app, see Delete your account."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I give feedback or report a mistake?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Write to kuvadoo@gmail.com."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Kuvadoo apps",
+     "item": "https://apps.kuvadoo.fi/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "FinnSana",
+     "item": "https://apps.kuvadoo.fi/finnsana/"
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/">Kuvadoo <span>apps</span></a>
+  <div class="container">
+    <a class="logo" href="/" aria-label="Kuvadoo apps, home"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="16" fill="#1F6F4A"/><path d="M23 17v30M43 17 27 32l16 15" fill="none" stroke="#FAF7F0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="logo-word">Kuvadoo&nbsp;<span>apps</span></span></a>
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="/">All apps</a></li>
-        <li><a href="/finnsana/" aria-current="page">FinnSana</a></li>
-        <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#apps">Apps</a></li>
+          <li><a href="/finnsana/" aria-current="page">FinnSana</a></li>
+          <li><a href="/support/">Support</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main id="main">
-  <div class="wrap">
-    <div class="hero">
-      <img class="app-icon large" src="/assets/finnsana-icon.png" width="104" height="104" alt="FinnSana app icon">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
       <div>
-        <h1>FinnSana: Learn Finnish</h1>
+        <div class="app-title">
+          <img src="/assets/finnsana-icon.png" width="512" height="512" alt="FinnSana app icon">
+          <span class="badge">In testing on Google Play</span>
+        </div>
+        <h1 id="hero-title">FinnSana: Learn Finnish</h1>
         <p class="lead">Learn Finnish A1–B2: nearly 5,000 words, clear grammar, pictures, games.</p>
+        <ul class="chips" aria-label="Key facts">
+          <li>Android</li><li>Free</li><li>No ads</li><li>No account needed</li>
+        </ul>
+        <div class="btn-row">
+              <!-- When the Play Store listing is public, replace the span below with:
+              <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=app.finnsana">Get it on Google Play</a>
+              (and consider Google's official badge artwork) -->
+              <span class="btn btn--soon">Coming soon to Google Play</span>
+          <a class="btn btn--ghost" href="#features">See features</a>
+        </div>
+        <p class="hero-status">In testing on Google Play. Public release soon.</p>
+      </div>
+      <div class="phone-stage">
+            <div class="phone phone--tilt">
+              <div class="phone-screen">
+                <!-- SCREENSHOT 1 (FinnSana, 9:16): replace the .mock div below with
+                     <img src="/assets/finnsana-screen-1.png" width="1080" height="1920" alt="FinnSana home screen" loading="lazy"> -->
+                <div class="mock" aria-hidden="true">
+                  <span class="mock-bar mock-bar--title"></span>
+                  <span class="mock-bar mock-bar--short"></span>
+                  <div class="mock-hero"><img src="/assets/finnsana-icon.png" width="512" height="512" alt=""></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-tabs"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--alt" aria-labelledby="glance-title">
+    <div class="container">
+      <h2 id="glance-title" class="visually-hidden">FinnSana at a glance</h2>
+      <ul class="tiles">
+        <li class="tile"><span class="stat">~5,000</span><h3>Words</h3><p>Everyday words with sound and pictures.</p></li>
+        <li class="tile"><span class="stat">100+</span><h3>Grammar lessons</h3><p>One small rule at a time.</p></li>
+        <li class="tile"><span class="stat">A1–B2</span><h3>CEFR levels</h3><p>From your first words to B2.</p></li>
+        <li class="tile"><span class="stat">Free</span><h3>No ads</h3><p>And no account needed.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="features" aria-label="Features">
+    <div class="container">
+      <article class="feature">
+        <div>
+          <span class="eyebrow">Vocabulary</span>
+          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg></div>
+          <h2>Nearly 5,000 words with sound and pictures</h2>
+          <p class="lead">Everyday words from A1 to B2, sorted by topic.</p>
+          <ul class="checklist">
+            <li>A picture for almost every word (AI-generated illustrations)</li>
+            <li>Words and example sentences spoken by a clear computer-generated Finnish voice, normal or slow</li>
+            <li>A memory trick for every word</li>
+            <li>Add your own words</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone-stage">
+            <div class="phone phone--small">
+              <div class="phone-screen">
+                <!-- SCREENSHOT 2 (FinnSana, 9:16): replace the .mock div below with
+                     <img src="/assets/finnsana-screen-2.png" width="1080" height="1920" alt="FinnSana vocabulary screen" loading="lazy"> -->
+                <div class="mock" aria-hidden="true">
+                  <span class="mock-bar mock-bar--title"></span>
+                  <span class="mock-bar mock-bar--short"></span>
+                  <div class="mock-hero"><img src="/assets/finnsana-icon.png" width="512" height="512" alt=""></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-tabs"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="feature">
+        <div>
+          <span class="eyebrow">Grammar</span>
+          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5z"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20"/><path d="M8 7h8M8 11h6"/></svg></div>
+          <h2>Grammar that finally makes sense</h2>
+          <p class="lead">Over 100 grammar lessons: cases, verb types, partitive, past tense, conditional, passive and more.</p>
+          <ul class="checklist">
+            <li>An overview first, then one small rule at a time</li>
+            <li>Spoken lesson explanations (computer-generated voice)</li>
+            <li>Spoken Finnish (<span lang="fi">puhekieli</span>) explained</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone-stage">
+            <div class="phone phone--small">
+              <div class="phone-screen">
+                <!-- SCREENSHOT 3 (FinnSana, 9:16): replace the .mock div below with
+                     <img src="/assets/finnsana-screen-3.png" width="1080" height="1920" alt="FinnSana grammar lesson screen" loading="lazy"> -->
+                <div class="mock" aria-hidden="true">
+                  <span class="mock-bar mock-bar--title"></span>
+                  <span class="mock-bar mock-bar--short"></span>
+                  <div class="mock-hero"><img src="/assets/finnsana-icon.png" width="512" height="512" alt=""></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-tabs"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="feature">
+        <div>
+          <span class="eyebrow">Practice</span>
+          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="16" cy="11" r="1.1" fill="currentColor"/><circle cx="18" cy="14" r="1.1" fill="currentColor"/></svg></div>
+          <h2>Practice that feels like a game</h2>
+          <p class="lead">Lots of different ways to practise, so learning stays fresh.</p>
+          
+          <ul class="games" aria-label="Practice modes"><li>Word Match</li><li>Speed Round</li><li>True or False</li><li>Fix the Mistake</li><li>Spell what you hear</li><li>Flashcards</li><li>Verb trainer</li><li>Sentence builder</li><li>Listening practice</li><li>Reading practice</li></ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone-stage">
+            <div class="phone phone--small">
+              <div class="phone-screen">
+                <!-- SCREENSHOT 4 (FinnSana, 9:16): replace the .mock div below with
+                     <img src="/assets/finnsana-screen-4.png" width="1080" height="1920" alt="FinnSana practice game screen" loading="lazy"> -->
+                <div class="mock" aria-hidden="true">
+                  <span class="mock-bar mock-bar--title"></span>
+                  <span class="mock-bar mock-bar--short"></span>
+                  <div class="mock-hero"><img src="/assets/finnsana-icon.png" width="512" height="512" alt=""></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-tabs"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="feature">
+        <div>
+          <span class="eyebrow">Smart review</span>
+          <div class="icon-tile" style="margin-bottom:var(--s-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg></div>
+          <h2>Review at just the right moment</h2>
+          <p class="lead">Spaced repetition brings each word back just before you forget it.</p>
+          <ul class="checklist">
+            <li>Targeted practice for the patterns behind your mistakes</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone-stage">
+            <div class="phone phone--small">
+              <div class="phone-screen">
+                <!-- SCREENSHOT 5 (FinnSana, 9:16): replace the .mock div below with
+                     <img src="/assets/finnsana-screen-5.png" width="1080" height="1920" alt="FinnSana review screen" loading="lazy"> -->
+                <div class="mock" aria-hidden="true">
+                  <span class="mock-bar mock-bar--title"></span>
+                  <span class="mock-bar mock-bar--short"></span>
+                  <div class="mock-hero"><img src="/assets/finnsana-icon.png" width="512" height="512" alt=""></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-card"><i></i><b></b></div>
+                  <div class="mock-tabs"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt" aria-labelledby="levels-title">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Made for real learners</span>
+        <h2 id="levels-title">From your first words to B2</h2>
+        <p class="lead" style="margin-inline:auto">FinnSana follows the CEFR levels A1–B2 and teaches Finnish for everyday situations.</p>
+      </div>
+      <ol class="levels" aria-label="CEFR levels">
+        <li><b>A1</b><span>Beginner</span></li>
+        <li><b>A2</b><span>Elementary</span></li>
+        <li><b>B1</b><span>Intermediate</span></li>
+        <li><b>B2</b><span>Upper intermediate</span></li>
+      </ol>
+      <ul class="tiles" style="margin-top:var(--s-6)">
+        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><h3>Works offline</h3><p>Once the sounds and pictures have downloaded (about 700 MB, once; Wi-Fi is best).</p></li>
+        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></span><h3>Memory tricks</h3><p>A memory trick for every word.</p></li>
+        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="8" cy="10" r="1.3" fill="currentColor"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor"/><circle cx="16" cy="10" r="1.3" fill="currentColor"/><path d="M12 21a3 3 0 0 1 0-6h3"/></svg></span><h3>Three colour themes</h3><p>Choose the look you like.</p></li>
+        <li class="tile"><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1 0 8z"/></svg></span><h3>Optional backup</h3><p>Sign in with Google or email to back up your progress.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="privacy-title">
+    <div class="container">
+      <div class="panel panel--split">
+        <div>
+          <span class="eyebrow">Privacy &amp; data</span>
+          <h2 id="privacy-title">Your data, at a glance</h2>
+          <p class="muted">Sign-in is optional. Here is what that means for your account and data.</p>
+          <ul class="link-row">
+            <li><a href="/finnsana/privacy/">Privacy policy</a></li>
+            <li><a href="/finnsana/delete-account/">Delete account</a></li>
+          </ul>
+        </div>
+        <ul class="facts-list">
+          <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><div><strong>No account needed</strong><span>Use FinnSana without signing in.</span></div></li>
+          <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1 0 8z"/></svg></span><div><strong>Optional backup</strong><span>Sign in with Google or email to back up progress and settings.</span></div></li>
+          <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/></svg></span><div><strong>Delete any time</strong><span>Me → Account → Delete account, or write to us.</span></div></li>
+          <li><span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6 18.4 18.4"/></svg></span><div><strong>No ads</strong><span>FinnSana has no ads.</span></div></li>
+        </ul>
       </div>
     </div>
-    <ul class="facts" aria-label="Key facts">
-      <li>Android</li>
-      <li>Free</li>
-      <li>No ads</li>
-      <li>No account needed</li>
-    </ul>
+  </section>
 
-    <div class="status">
-      <p>FinnSana is in testing on Google Play. Public release soon.</p>
-      <p>
-        <!-- When the Play Store page is public, replace the span below with:
-        <a class="button" href="https://play.google.com/store/apps/details?id=app.finnsana">Get it on Google Play</a>
-        -->
-        <span class="button" aria-disabled="true">Coming soon to Google Play</span>
-      </p>
+  <section class="section section--alt" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Questions and answers</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is FinnSana free?</summary>
+          <div><p>Yes. FinnSana is free and has no ads.</p></div>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <div><p>No. You can use FinnSana without an account. If you like, you can sign in with Google or email to back up your progress.</p></div>
+        </details>
+        <details>
+          <summary>Which levels does FinnSana cover?</summary>
+          <div><p>CEFR levels A1 to B2: everyday words by topic and over 100 grammar lessons.</p></div>
+        </details>
+        <details>
+          <summary>Which devices does it run on?</summary>
+          <div><p>FinnSana is an Android app.</p></div>
+        </details>
+        <details>
+          <summary>When can I download it?</summary>
+          <div><p>FinnSana is in testing on Google Play. The public release is coming soon.</p></div>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <div><p>Yes, once the sounds and pictures have downloaded. That is about 700 MB, once. Wi-Fi is best.</p></div>
+        </details>
+        <details>
+          <summary>Are the voices real people?</summary>
+          <div><p>No. Words, example sentences and lesson explanations are spoken by a clear computer-generated Finnish voice, at normal or slow speed. The pictures are AI-generated illustrations.</p></div>
+        </details>
+        <details>
+          <summary>Does it teach spoken Finnish?</summary>
+          <div><p>Yes. FinnSana explains spoken Finnish (<span lang="fi">puhekieli</span>).</p></div>
+        </details>
+        <details>
+          <summary>Is FinnSana connected to an official test or authority?</summary>
+          <div><p>No. FinnSana is an independent app and is not connected to any authority or test organiser.</p></div>
+        </details>
+        <details>
+          <summary>How do I delete my account and data?</summary>
+          <div><p>In the app: Me → Account → Delete account. Without the app, see <a href="/finnsana/delete-account/">Delete your account</a>.</p></div>
+        </details>
+        <details>
+          <summary>How do I give feedback or report a mistake?</summary>
+          <div><p>Write to <a href="mailto:kuvadoo@gmail.com?subject=FinnSana%20feedback">kuvadoo@gmail.com</a>.</p></div>
+        </details>
+      </div>
     </div>
+  </section>
 
-    <ul class="shots" aria-label="Screenshots (coming soon)">
-      <li><!-- SCREENSHOT 1 (phone, 9:16): replace this comment with <img src="/assets/finnsana-screen-1.png" width="1080" height="1920" alt="Describe the screen"> --></li>
-      <li><!-- SCREENSHOT 2 (phone, 9:16): replace this comment with <img src="/assets/finnsana-screen-2.png" width="1080" height="1920" alt="Describe the screen"> --></li>
-      <li><!-- SCREENSHOT 3 (phone, 9:16): replace this comment with <img src="/assets/finnsana-screen-3.png" width="1080" height="1920" alt="Describe the screen"> --></li>
-      <li><!-- SCREENSHOT 4 (phone, 9:16): replace this comment with <img src="/assets/finnsana-screen-4.png" width="1080" height="1920" alt="Describe the screen"> --></li>
-      <li><!-- SCREENSHOT 5 (phone, 9:16): replace this comment with <img src="/assets/finnsana-screen-5.png" width="1080" height="1920" alt="Describe the screen"> --></li>
-    </ul>
+  <section class="section section--tight" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta">
+        <h2 id="cta-title">Learn Finnish with FinnSana</h2>
+        <p>Free, no ads, no account needed. Coming soon to Google Play.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="mailto:kuvadoo@gmail.com?subject=FinnSana"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Ask a question</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h2>Nearly 5,000 words with sound and pictures</h2>
-    <ul>
-      <li>Everyday words from A1 to B2, by topic.</li>
-      <li>A picture for almost every word (AI-generated illustrations).</li>
-      <li>Words and example sentences spoken by a clear computer-generated Finnish voice, normal or slow.</li>
-      <li>A memory trick for every word.</li>
-      <li>Add your own words.</li>
-    </ul>
-
-    <h2>Grammar that finally makes sense</h2>
-    <ul>
-      <li>Over 100 grammar lessons: cases, verb types, partitive, past tense, conditional, passive and more.</li>
-      <li>An overview first, then one small rule at a time.</li>
-      <li>Spoken lesson explanations (computer-generated voice).</li>
-      <li>Spoken Finnish (puhekieli) explained.</li>
-    </ul>
-
-    <h2>Practice that feels like a game</h2>
-    <ul>
-      <li>Word Match, Speed Round, True or False, Fix the Mistake, Spell what you hear.</li>
-      <li>Flashcards, verb trainer, sentence builder.</li>
-      <li>Listening and reading practice.</li>
-    </ul>
-
-    <h2>Smart review</h2>
-    <ul>
-      <li>Spaced repetition brings each word back just before you forget it.</li>
-      <li>Targeted practice for the patterns behind your mistakes.</li>
-    </ul>
-
-    <h2>Made for real learners</h2>
-    <ul>
-      <li>CEFR levels A1–B2.</li>
-      <li>Everyday situations.</li>
-      <li>Works offline once the sounds and pictures have downloaded (about 700 MB, once; Wi-Fi is best).</li>
-      <li>Three colour themes.</li>
-      <li>Optional sign-in with Google or email to back up your progress.</li>
-    </ul>
-
-    <h2>Links</h2>
-    <ul class="links">
-      <li><a href="https://sites.google.com/view/finnsana-privacy/home">Privacy policy</a></li>
-      <li><a href="/finnsana/terms/">Terms of use</a></li>
-      <li><a href="/finnsana/delete-account/">Delete your account and data</a></li>
-      <li>Contact: <a href="mailto:kuvadoo@gmail.com">kuvadoo@gmail.com</a></li>
-    </ul>
-
-    <div class="smallprint">
+  <section class="section section--tight" aria-labelledby="notes-title">
+    <div class="container smallprint">
+      <h2 id="notes-title">Honest notes</h2>
       <p>FinnSana is an independent app and is not connected to any authority or test organiser. Voices and pictures are computer-generated. Example sentences partly from Tatoeba (<a href="https://tatoeba.org">tatoeba.org</a>, CC BY 2.0 FR).</p>
+      <ul class="link-row" aria-label="FinnSana links">
+        <li><a href="/finnsana/privacy/">Privacy policy</a></li>
+        <li><a href="/finnsana/terms/">Terms of use</a></li>
+        <li><a href="/finnsana/delete-account/">Delete account</a></li>
+        <li><a href="mailto:kuvadoo@gmail.com">Contact</a></li>
+      </ul>
     </div>
-  </div>
+  </section>
 </main>
 <footer class="site-footer">
-  <div class="wrap">
-    <p>© 2026 Kuvadoo, Hämeenlinna, Finland · <a href="mailto:kuvadoo@gmail.com">kuvadoo@gmail.com</a></p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/" aria-label="Kuvadoo apps, home"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="16" fill="#1F6F4A"/><path d="M23 17v30M43 17 27 32l16 15" fill="none" stroke="#FAF7F0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="logo-word">Kuvadoo&nbsp;<span>apps</span></span></a>
+        <p>Independent apps from Hämeenlinna, Finland. No ads in any Kuvadoo app.</p>
+      </div>
+      <nav aria-labelledby="f-apps">
+        <h2 id="f-apps">Apps</h2>
+        <ul>
+          <li><a href="/finnsana/">FinnSana: Learn Finnish</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-help">
+        <h2 id="f-help">Support</h2>
+        <ul>
+          <li><a href="/support/">Help &amp; support</a></li>
+          <li><a href="/finnsana/#faq">FinnSana FAQ</a></li>
+          <li><a href="/finnsana/delete-account/">Delete FinnSana account</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-company">
+        <h2 id="f-company">Kuvadoo</h2>
+        <ul>
+          <li><a href="https://www.kuvadoo.fi">kuvadoo.fi</a></li>
+          <li><a href="mailto:kuvadoo@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-legal">
+        <h2 id="f-legal">Legal</h2>
+        <ul>
+          <li><a href="/privacy/">Website privacy</a></li>
+          <li><a href="/finnsana/privacy/">FinnSana privacy</a></li>
+          <li><a href="/finnsana/terms/">FinnSana terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kuvadoo, Hämeenlinna, Finland · <a href="mailto:kuvadoo@gmail.com">kuvadoo@gmail.com</a></p>
+      <p>No cookies. No trackers.</p>
+    </div>
   </div>
 </footer>
 </body>

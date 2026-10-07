@@ -3,14 +3,19 @@
 # Custom "not found" page
 ErrorDocument 404 /404.html
 
-# Keep repository files private if the site is deployed with Git
-RedirectMatch 404 /\.git
-<FilesMatch "^(DEPLOY\.md|\.gitignore)$">
+# Keep repository-only files private (in case the whole repo is ever deployed)
+RedirectMatch 404 ^/(\.git|\.claude|docs|tools)(/|$)
+<FilesMatch "^(CLAUDE\.md|DEPLOY\.md|\.gitignore|.*\.zip)$">
   Require all denied
 </FilesMatch>
 
-# Force HTTPS. Turn on ONLY after the SSL certificate for apps.kuvadoo.fi is active
-# (remove the # from the three lines below).
-# RewriteEngine On
-# RewriteCond %{HTTPS} off
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Cache static assets for a week; HTML always fresh
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 7 days"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# HTTPS: Hostinger already redirects http → https for this site.

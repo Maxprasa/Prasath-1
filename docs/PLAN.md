@@ -1,6 +1,6 @@
 # apps.kuvadoo.fi — redesign plan (v2)
 
-Status: **draft, waiting for owner approval** · Research: `docs/research/` · Rules: `CLAUDE.md`
+Status: **approved 2026-10-07 (calm & warm, English, no About page yet)** · Research: `docs/research/` · Rules: `CLAUDE.md`
 
 ## Goal
 
@@ -33,7 +33,7 @@ trackers, and 100 % honest (no invented ratings, users, awards or reviews).
 /finnsana/delete-account/  (unchanged URL) redesigned as a clear step-by-step page
 /support/                  NEW: help hub — per-app FAQ links, deletion links, contact
 /privacy/                  NEW: website privacy — no cookies, no analytics, no trackers
-/about/                    NEW (optional, needs owner text): the one-person studio story
+/about/                    LATER (owner chose "not now")
 /press/                    LATER: icons, screenshots, fact sheet per app (once real assets exist)
 ```
 
@@ -41,8 +41,7 @@ trackers, and 100 % honest (no invented ratings, users, awards or reviews).
 1. **Hero** — "Kuvadoo apps" + one-line studio promise, two CTAs (See our apps · Contact).
 2. **App grid** — card per app: icon, name, tagline, platform · price chips, status badge
    ("In testing" / "Available"). Grid auto-fills, so app #2…#20 just add a card.
-3. **How we make apps** — 3 principles. *Needs owner confirmation that these apply to all future apps*
-   (e.g. "Honest about AI", "No trackers on this site", "Small and focused").
+3. **Our promise** — "No ads in any Kuvadoo app" (owner-confirmed). Other principles not confirmed.
 4. **About strip** — "Made by Kuvadoo in Hämeenlinna, Finland", link to www.kuvadoo.fi.
 5. **Contact band** — email CTA.
 
