@@ -36,8 +36,9 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
    everything must switch off under `prefers-reduced-motion: reduce`.
 11. **Screenshots:** files are `assets/fs-<name>-<SHOT_VER>.webp` (540×1104, app screen only, no store
    captions; source shots 1080×2408 cropped to y 84–2292 to drop the status and navigation bars). Always
-   show screenshots complete inside a straight, thin phone frame (no cropping, tilt or overlap). Names in
-   use: welcome, home, path, lesson, word, flashcard, grammar, match, my-words. **When screenshots change,
+   show screenshots complete inside a thin phone frame (never cropped). Names in
+   use: welcome, home, path, lesson, word, wordbank, flashcard, grammar, match, my-words. Heroes use the
+   owner-approved fan: Word bank left, main screen in front, lesson right (tilted sides behind). **When screenshots change,
    bump SHOT_VER and rename the files** — Hostinger's CDN caches images by file name for 7 days. A missing
    file shows a branded placeholder automatically.
 12. **Site-wide header and footer only (owner rule, 2026-10-07).** The top menu is Apps · Support ·

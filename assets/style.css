@@ -267,19 +267,29 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .phone-screen > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .feature-media .phone:hover { transform: translateY(-6px); }
 
-/* three complete phones side by side (heroes and the featured app card) */
-.phone-row { display: flex; justify-content: center; align-items: center; gap: clamp(.5rem, 1.5vw, 1.25rem); padding-block: var(--s-4); }
-.phone-row .phone--main { width: min(15.5rem, 66vw); z-index: 1; }
-.phone-row .phone--side { width: min(12rem, 30vw); opacity: .96; }
-.phone-row .phone--side .phone-screen { border-radius: 1.5rem; }
-.phone-row .phone--side { padding: 5px; border-radius: 1.85rem; }
-@media (max-width: 40rem) { .phone-row .phone--side { display: none; } }
+/* hero fan: main phone in front, two tilted phones behind (screens always complete) */
+.phone-fan { position: relative; display: grid; place-items: center; min-height: 32rem; padding-block: var(--s-6); }
+.phone-fan .phone { grid-area: 1 / 1; }
+.phone-fan .phone--main { z-index: 2; width: min(15.5rem, 64vw); }
+.phone-fan .phone--right { z-index: 1; transform: translateX(46%) rotate(8deg) scale(.84); }
+.phone-fan .phone--left  { z-index: 0; transform: translateX(-46%) rotate(-8deg) scale(.84); }
+.phone-fan .phone--right, .phone-fan .phone--left { width: min(15.5rem, 64vw); }
+@media (max-width: 40rem) {
+  .phone-fan { min-height: 0; }
+  .phone-fan .phone--right { transform: translateX(36%) rotate(7deg) scale(.78); }
+  .phone-fan .phone--left  { transform: translateX(-36%) rotate(-7deg) scale(.78); }
+}
 @media (prefers-reduced-motion: no-preference) {
-  .phone-row .phone { animation: float 7s ease-in-out infinite; }
-  .phone-row .phone--side:first-child { animation-delay: -2.3s; }
-  .phone-row .phone--side:last-child { animation-delay: -4.6s; }
-  @keyframes float { 50% { transform: translateY(-12px); } }
-  .phone-row .phone:hover { animation-play-state: paused; }
+  .phone-fan .phone--main.float  { animation: float-c 7s ease-in-out infinite; }
+  .phone-fan .phone--right.float { animation: float-r 8s ease-in-out infinite; }
+  .phone-fan .phone--left.float  { animation: float-l 9s ease-in-out infinite; }
+  @keyframes float-c { 50% { transform: translateY(-14px); } }
+  @keyframes float-r { 0%, 100% { transform: translateX(46%) rotate(8deg) scale(.84); } 50% { transform: translateX(46%) rotate(6deg) scale(.84) translateY(-12px); } }
+  @keyframes float-l { 0%, 100% { transform: translateX(-46%) rotate(-8deg) scale(.84); } 50% { transform: translateX(-46%) rotate(-6deg) scale(.84) translateY(-10px); } }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 40rem) {
+  @keyframes float-r { 0%, 100% { transform: translateX(36%) rotate(7deg) scale(.78); } 50% { transform: translateX(36%) rotate(5deg) scale(.78) translateY(-10px); } }
+  @keyframes float-l { 0%, 100% { transform: translateX(-36%) rotate(-7deg) scale(.78); } 50% { transform: translateX(-36%) rotate(-5deg) scale(.78) translateY(-8px); } }
 }
 
 /* ---------- 9. Scroll reveal (CSS scroll-driven; content always visible without support) */
