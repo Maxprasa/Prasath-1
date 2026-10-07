@@ -13,6 +13,9 @@ description: Build and verify the upload zip for kuvadoo.fi (full first release,
      `rm -f kuvadoo.fi-update.zip && zip -qr kuvadoo.fi-update.zip . -x '.git' '.git/*' '.claude/*' 'docs/*' 'tools/*' 'CLAUDE.md' 'DEPLOY.md' 'router.php' '.gitignore' '*.zip' 'data/*' 'media/*'`
      If an update needs a new data field, make the PHP code tolerate its absence (defaults) instead of
      shipping data files.
+   The owner's file transfer limit is 30 MB: split the full release into parts under ~27 MB
+   (part 1 = everything except `media/photos/*` plus the first photos; further parts = more photos), named
+   `kuvadoo.fi-partN-of-M.zip`, and check that extracting all parts gives the same file list as the full zip.
 3. Verify: `unzip -l <zip>` — `index.php`, `.htaccess`, `.user.ini` at the top level; no `.git`, `docs`,
    `tools`, `router.php`, `auth.json` or `setup-code.txt` inside. Note the size.
 4. Commit and push (zips are git-ignored; send them to the owner as files).

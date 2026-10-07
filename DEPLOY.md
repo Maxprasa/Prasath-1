@@ -4,7 +4,8 @@ Simple steps. Hostinger sometimes renames menu items; if a name is different, lo
 
 ## What you need
 
-- `kuvadoo.fi.zip` (the full site: pages, photos, texts, prices).
+- The site in **3 zip files**: `kuvadoo.fi-part1-of-3.zip`, `-part2-of-3.zip`, `-part3-of-3.zip`
+  (pages, photos, texts, prices; split only because of a file-size limit). All three go to the same folder.
 - Your Hostinger login.
 
 ## Step 1 – Test address first (the old site stays online)
@@ -15,8 +16,9 @@ Simple steps. Hostinger sometimes renames menu items; if a name is different, lo
 3. hPanel → that website → **Advanced → PHP Configuration** → choose **PHP 8.2 or newer**.
    In "PHP options" check that `upload_max_filesize` is at least **40M** and `post_max_size` at least **400M**
    (the site's `.user.ini` asks for this; if hPanel shows smaller numbers, change them there).
-4. **File Manager** → `public_html` → delete the default files (e.g. `default.php`) → **Upload**
-   `kuvadoo.fi.zip` → right-click → **Extract** here → delete the zip.
+4. **File Manager** → `public_html` → delete the default files (e.g. `default.php`) → **Upload** all 3 zip
+   files → right-click each one → **Extract** into `public_html` (the same folder; "overwrite" is fine) →
+   delete the 3 zips.
    Check that `index.php`, `.htaccess`, `app/`, `data/`, `media/` are directly in `public_html`.
    (`.htaccess` and `.user.ini` are hidden files – turn on "Show hidden files" to see them.)
 5. Open **https://uusi.kuvadoo.fi/** – the new site should show.
@@ -58,5 +60,5 @@ Your email (kuvadoo@gmail.com) is not affected.
 
 - **Code/design update:** you get `kuvadoo.fi-update.zip`. It has **no** `data/` and `media/` folders, so your
   photos, prices and texts stay. Upload to `public_html` → Extract → overwrite → delete the zip.
-- Never upload the full `kuvadoo.fi.zip` again after you have made changes in the admin – it would replace
+- Never upload the 3 full-site zips again after you have made changes in the admin – it would replace
   your changes with the old content. (If it happens: restore your backup zip's `data/` and `media/`.)
