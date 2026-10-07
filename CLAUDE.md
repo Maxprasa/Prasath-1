@@ -48,7 +48,7 @@ docs/                      research, plan, design notes (not uploaded)
 Build the upload zip from the repo root (excludes repo-only files):
 
 ```
-zip -r apps.kuvadoo.fi.zip . -x '.git/*' '.claude/*' 'docs/*' 'CLAUDE.md' 'DEPLOY.md' 'apps.kuvadoo.fi.zip'
+zip -r apps.kuvadoo.fi.zip . -x '.git/*' '.claude/*' 'docs/*' 'tools/*' 'CLAUDE.md' 'DEPLOY.md' '.gitignore' 'apps.kuvadoo.fi.zip'
 ```
 
 Upload in hPanel → Websites → apps.kuvadoo.fi → File Manager → `public_html` → upload → extract
