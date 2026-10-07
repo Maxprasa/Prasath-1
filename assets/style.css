@@ -258,7 +258,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
   box-shadow: var(--shadow-lg), inset 0 0 0 1.5px rgb(255 255 255 / .12);
   transition: transform .6s var(--spring), box-shadow .4s var(--ease);
 }
-.phone-screen { position: relative; overflow: hidden; border-radius: 2.15rem; aspect-ratio: 540 / 963; background: var(--surface); }
+.phone-screen { position: relative; overflow: hidden; border-radius: 2.15rem; aspect-ratio: 540 / 1104; background: var(--surface); }
 .phone-screen > img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .phone-screen::after { /* glass sheen */
   content: ""; position: absolute; inset: 0; pointer-events: none;

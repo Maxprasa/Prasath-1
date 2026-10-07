@@ -33,8 +33,9 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
 10. **Motion (v3 design):** micro-animations are pure CSS (entrance, scroll reveal via
    `animation-timeline`, hover, marquee). Content must be fully visible without animation support, and
    everything must switch off under `prefers-reduced-motion: reduce`.
-11. **Screenshots:** phone frames use `assets/finnsana-screen-<name>.webp` (540×963, app screen only, no
-   store captions). Names in use: home, path, word, flashcard, grammar, match, my-words. A missing file
+11. **Screenshots:** phone frames use `assets/finnsana-screen-<name>.webp` (540×1104, app screen only, no
+   store captions; source shots 1080×2408 cropped to y 84–2292 to drop the status and navigation bars).
+   Names in use: home, path, lesson, word, flashcard, grammar, match, my-words. A missing file
    shows a branded placeholder automatically.
 
 ## Structure
