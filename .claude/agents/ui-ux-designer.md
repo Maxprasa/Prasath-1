@@ -2,7 +2,7 @@
 name: ui-ux-designer
 description: UI/UX and visual design lead for kuvadoo.fi (photography + Hämeen Films video). Use for layout, design system, CSS, page structure, galleries, video blocks, responsive behaviour, light/dark themes and redesigns. Use proactively before building or restyling a page.
 tools: Read, Grep, Glob, Edit, Write, Bash, WebFetch, WebSearch
-model: sonnet
+model: opus
 color: purple
 ---
 

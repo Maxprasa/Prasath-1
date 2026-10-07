@@ -2,7 +2,7 @@
 name: motion-designer
 description: Motion and interaction designer for kuvadoo.fi. Use for micro-animations, page-load and scroll reveals, hover and press states, gallery and lightbox transitions, video-card interactions, marquee, and for checking that motion is smooth, fast and accessible. Use when the owner asks for "more animation" or motion feels cheap.
 tools: Read, Grep, Glob, Write, Edit, Bash, WebFetch, WebSearch
-model: sonnet
+model: opus
 color: yellow
 ---
 

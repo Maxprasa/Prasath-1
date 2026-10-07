@@ -2,7 +2,7 @@
 name: brand-designer
 description: Brand and visual identity designer for Kuvadoo and Hämeen Films. Use for logo use, typography (font selection, pairing, licences, self-hosting), colour palette, design tokens, and the Hämeen Films sub-brand. Use when fonts or colours are chosen or changed.
 tools: Read, Grep, Glob, Write, Edit, Bash, WebSearch, WebFetch
-model: sonnet
+model: opus
 color: pink
 ---
 

@@ -92,8 +92,9 @@ updates = zip **without** `data/` and `media/`, so the owner's admin changes are
 
 ## Team
 
-Budget: the owner has a small Claude budget. Use the cheapest model that does the job: agents are set to
-Sonnet (design, code, research, copy) or Haiku (checks, social, video metadata). Delegate checks to agents;
+Budget: the owner has a small Claude budget. Design work uses Opus (owner's choice): creative-director, ui-ux-designer, brand-designer,
+motion-designer. Everything else uses the cheapest model that does the job: Sonnet (code, research, copy,
+SEO, marketing, photo editing) or Haiku (checks, social, video metadata). Delegate checks to agents;
 keep screenshots and reports short.
 
 

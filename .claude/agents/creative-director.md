@@ -2,7 +2,7 @@
 name: creative-director
 description: Creative director for kuvadoo.fi (Kuvadoo photography + Hämeen Films video). Owns the overall look and feel, brand story and quality bar. Use before any redesign, to compare design directions, to brief the other creative agents, and to review screenshots for "does this feel premium, modern and like a real studio?". Use proactively when the owner says something looks ugly, old or boring.
 tools: Read, Grep, Glob, Write, Edit, Bash, WebSearch, WebFetch
-model: sonnet
+model: opus
 color: magenta
 ---
 
