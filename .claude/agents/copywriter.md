@@ -2,7 +2,7 @@
 name: copywriter
 description: Copywriter for kuvadoo.fi (photography + Hämeen Films video). Use for headlines, service and package text, about text, FAQ, CTAs, gallery intros and alt text. Every claim is checked against docs/facts/kuvadoo.md. Use proactively whenever user-facing text is written or changed.
 tools: Read, Grep, Glob, Edit, Write
-model: inherit
+model: sonnet
 color: orange
 ---
 

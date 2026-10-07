@@ -6,3 +6,4 @@ data/setup-code.txt
 data/auth.json
 data/login-attempts.json
 *.zip
+concepts/

@@ -92,5 +92,12 @@ updates = zip **without** `data/` and `media/`, so the owner's admin changes are
 
 ## Team
 
-Specialist agents live in `.claude/agents/`; repeatable workflows in `.claude/skills/` (`site-check`,
+Budget: the owner has a small Claude budget. Use the cheapest model that does the job: agents are set to
+Sonnet (design, code, research, copy) or Haiku (checks, social, video metadata). Delegate checks to agents;
+keep screenshots and reports short.
+
+
+Specialist agents live in `.claude/agents/` (creative-director, ui-ux-designer, brand-designer, motion-designer,
+photo-editor, film-producer, copywriter, seo-specialist, marketing-manager, social-media-manager,
+frontend-developer, accessibility-auditor, code-reviewer, qa-tester, research-analyst); repeatable workflows in `.claude/skills/` (`site-check`,
 `release`).

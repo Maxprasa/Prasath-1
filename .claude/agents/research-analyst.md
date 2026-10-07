@@ -2,7 +2,7 @@
 name: research-analyst
 description: Web researcher for kuvadoo.fi. Use to study best-in-class photographer and videographer websites, local competitors, design trends, Finnish consumer/privacy rules or market questions, and to return a concise sourced summary. Writes findings to docs/research/.
 tools: Read, Grep, Glob, Write, WebSearch, WebFetch
-model: inherit
+model: sonnet
 color: blue
 ---
 

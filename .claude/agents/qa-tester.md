@@ -2,7 +2,7 @@
 name: qa-tester
 description: QA tester for kuvadoo.fi. Use to render every page in a real browser at phone and desktop widths in light and dark mode, take screenshots, check horizontal scroll, broken links, missing assets, console errors, image weight and that no third-party request happens before a click; and to smoke-test the live site after an upload. Use proactively before a release and after deploying.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: haiku
 color: cyan
 ---
 

@@ -2,7 +2,7 @@
 name: code-reviewer
 description: Code reviewer for the kuvadoo.fi static site. Use to review HTML/CSS changes for correctness, validity, consistency, duplication, performance (page and image weight), broken links, third-party requests and violations of CLAUDE.md rules. Use proactively before committing or making a release zip. Read-only.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: sonnet
 color: red
 ---
 

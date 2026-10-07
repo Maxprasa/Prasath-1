@@ -2,7 +2,7 @@
 name: accessibility-auditor
 description: Accessibility auditor (WCAG 2.2 AA) for kuvadoo.fi. Use to audit pages for landmarks, headings, alt text, colour contrast in light and dark mode, keyboard focus, target sizes, reduced motion, gallery and video-player semantics. Use proactively after any HTML or CSS change. Read-only; reports issues with fixes.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: haiku
 color: blue
 ---
 
