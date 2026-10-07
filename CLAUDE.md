@@ -34,10 +34,12 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
 10. **Motion (v3 design):** micro-animations are pure CSS (entrance, scroll reveal via
    `animation-timeline`, hover, marquee). Content must be fully visible without animation support, and
    everything must switch off under `prefers-reduced-motion: reduce`.
-11. **Screenshots:** phone frames use `assets/finnsana-screen-<name>.webp` (540×1104, app screen only, no
-   store captions; source shots 1080×2408 cropped to y 84–2292 to drop the status and navigation bars).
-   Names in use: home, path, lesson, word, flashcard, grammar, match, my-words. A missing file
-   shows a branded placeholder automatically.
+11. **Screenshots:** files are `assets/fs-<name>-<SHOT_VER>.webp` (540×1104, app screen only, no store
+   captions; source shots 1080×2408 cropped to y 84–2292 to drop the status and navigation bars). Always
+   show screenshots complete inside a straight, thin phone frame (no cropping, tilt or overlap). Names in
+   use: welcome, home, path, lesson, word, flashcard, grammar, match, my-words. **When screenshots change,
+   bump SHOT_VER and rename the files** — Hostinger's CDN caches images by file name for 7 days. A missing
+   file shows a branded placeholder automatically.
 12. **Site-wide header and footer only (owner rule, 2026-10-07).** The top menu is Apps · Support ·
    Contact and the footer has only site-wide links (all apps, support, kuvadoo.fi, contact, website
    privacy). **Never add a menu button or footer links for a single app.** App-specific links (privacy,
