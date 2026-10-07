@@ -28,6 +28,10 @@ function image_load(string $path): \GdImage
     if ($type === IMAGETYPE_JPEG && function_exists('exif_read_data')) {
         $exif = @exif_read_data($path);
         $o = (int) ($exif['Orientation'] ?? 1);
+        if (in_array($o, [2, 4, 5, 7], true)) {
+            imageflip($img, IMG_FLIP_HORIZONTAL); // mirrored orientations: flip, then rotate like 1/3/8/6
+            $o = [2 => 1, 4 => 3, 5 => 8, 7 => 6][$o];
+        }
         $rot = [3 => 180, 6 => -90, 8 => 90][$o] ?? 0;
         if ($rot) {
             $img = imagerotate($img, $rot, 0);
@@ -54,8 +58,15 @@ function image_save_widths(\GdImage $img, string $base, array $widths, int $qual
         imagealphablending($dst, false);
         imagesavealpha($dst, true);
         imagecopyresampled($dst, $img, 0, 0, 0, 0, $w, $h, $sw, $sh);
-        imagewebp($dst, "$base-$w.webp", $quality);
+        $ok = imagewebp($dst, "$base-$w.webp", $quality);
         imagedestroy($dst);
+        if (!$ok) {
+            foreach ($done as $d) {
+                @unlink("$base-$d.webp");
+            }
+            @unlink("$base-$w.webp");
+            throw new RuntimeException('Could not save the image (too tall, or the disk is full)');
+        }
         $done[] = $w;
         if ($w === $sw) {
             break;
@@ -71,7 +82,7 @@ function image_save_widths(\GdImage $img, string $base, array $widths, int $qual
 function photo_process(string $path, string $nameHint = 'kuva'): array
 {
     $img = image_load($path);
-    $file = slugify($nameHint) . '-' . bin2hex(random_bytes(3));
+    $file = slugify($nameHint) . '-' . bin2hex(random_bytes(4));
     $widths = image_save_widths($img, MEDIA_DIR . '/photos/' . $file, PHOTO_WIDTHS);
     $rec = ['file' => $file, 'w' => imagesx($img), 'h' => imagesy($img), 'widths' => $widths, 'alt' => ['fi' => '', 'en' => ''], 'added' => date('c')];
     imagedestroy($img);
@@ -123,8 +134,12 @@ function video_poster_fetch(string $id): bool
         foreach ([640, 1280] as $tw) {
             $dst = imagecreatetruecolor($tw, (int) round($tw * 9 / 16));
             imagecopyresampled($dst, $img, 0, 0, 0, 0, imagesx($dst), imagesy($dst), imagesx($img), imagesy($img));
-            imagewebp($dst, MEDIA_DIR . "/videos/$id-$tw.webp", 78);
+            $ok = imagewebp($dst, MEDIA_DIR . "/videos/$id-$tw.webp", 78);
             imagedestroy($dst);
+            if (!$ok) {
+                imagedestroy($img);
+                return false;
+            }
         }
         imagedestroy($img);
         return true;

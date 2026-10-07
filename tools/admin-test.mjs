@@ -1,5 +1,5 @@
 // End-to-end test of the admin panel on a throwaway copy of the site.
-// Usage: copy the site to a throwaway folder, run `php -S 127.0.0.1:8766 router.php` there, then
+// Usage: copy the site to a throwaway folder, run `PHP_CLI_SERVER_WORKERS=4 php -S 127.0.0.1:8766 router.php` there, then
 // node tools/admin-test.mjs <copy folder> <any photo.jpg>   (needs Playwright; see the site-check skill)
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
@@ -62,7 +62,7 @@ await p.goto(B + '/hallinta/videos/');
 await p.fill('#yt', 'not a link'); await p.fill('#title_fi', 'x');
 await p.click('form:has(input[value=add]) button[type=submit]');
 ok(await p.getByText('does not look like a YouTube link').count() === 1, 'bad YouTube link rejected');
-await p.fill('#yt', 'https://youtu.be/st2p772Tlcs?si=abc'); await p.fill('#title_fi', 'Testivideo'); await p.fill('#title_en', 'Test video');
+await p.fill('#yt', 'https://youtu.be/JQCO3unk8To?si=abc'); await p.fill('#title_fi', 'Testivideo'); await p.fill('#title_en', 'Test video');
 await p.click('form:has(input[value=add]) button[type=submit]');
 ok(await p.getByText('Video added').count() === 1, 'video added');
 await pub.goto(B + '/hameen-films/');
@@ -106,6 +106,30 @@ ok(!html.includes('<script>alert(1)</script>'), 'album title escaped in admin');
 // 9. CSRF: post without token
 const r = await ctx.request.post(B + '/hallinta/prices/', { form: { 'p[photo][mini][name][fi]': 'hack' } });
 ok(r.status() === 400, 'POST without CSRF token rejected (' + r.status() + ')');
+
+// 9b. Two tabs upload at the same time into two albums: nothing may be lost
+{
+  const ids = [];
+  for (const name of ['Rinnakkais A', 'Rinnakkais B']) {
+    await p.goto(B + '/hallinta/albums/');
+    await p.fill('#title_fi', name); await p.selectOption('#cat', 'events');
+    await p.click('form:has(input[value=create]) button[type=submit]');
+    ids.push(p.url().split('/album/')[1].replace('/', ''));
+  }
+  const t1 = await ctx.newPage(), t2 = await ctx.newPage();
+  await t1.goto(B + '/hallinta/album/' + ids[0] + '/'); await t2.goto(B + '/hallinta/album/' + ids[1] + '/');
+  await t1.setInputFiles('#up', [photo, photo, photo]); await t2.setInputFiles('#up', [photo, photo, photo]);
+  await Promise.all([
+    t1.click('form.a-upload button[type=submit]').then(() => t1.waitForLoadState('load')),
+    t2.click('form.a-upload button[type=submit]').then(() => t2.waitForLoadState('load')),
+  ]);
+  const albums = JSON.parse(readFileSync(site + '/data/albums.json', 'utf8'));
+  const photos = JSON.parse(readFileSync(site + '/data/photos.json', 'utf8'));
+  const a = albums.find(x => x.id === ids[0]), b2 = albums.find(x => x.id === ids[1]);
+  const allThere = [...a.photos, ...b2.photos].every(id => photos[id]);
+  ok(a.photos.length === 3 && b2.photos.length === 3 && allThere, `parallel uploads kept: ${a.photos.length} + ${b2.photos.length}, records ok: ${allThere}`);
+  await t1.close(); await t2.close();
+}
 
 // 10. Backup download
 await p.goto(B + '/hallinta/settings/');

@@ -32,18 +32,69 @@ function data_get(string $name, $default = [])
     return $cache[$name] = is_array($json) ? $json : $default;
 }
 
-/** Write a JSON data file atomically (temp file + rename, with a lock). */
-function data_put(string $name, array $value): void
+/** Read a data file directly from disk (no cache). Throws if the file exists but is broken. */
+function data_read_fresh(string $name): array
 {
     $file = DATA_DIR . "/$name.json";
-    $lock = fopen(DATA_DIR . '/.lock', 'c');
-    flock($lock, LOCK_EX);
+    if (!is_file($file)) {
+        return [];
+    }
+    $raw = file_get_contents($file);
+    $json = $raw === false ? null : json_decode($raw, true);
+    if (!is_array($json)) {
+        throw new RuntimeException("Data file $name.json cannot be read. Restore it from a backup.");
+    }
+    return $json;
+}
+
+/**
+ * Change a data file safely: lock → read fresh → $fn($current) → write → unlock.
+ * $fn returns the new value, or null to leave the file unchanged. Use this for every read-change-write,
+ * so two admin tabs (or a long upload) cannot overwrite each other's changes.
+ */
+function data_update(string $name, callable $fn)
+{
+    static $depth = 0;
+    static $lock = null;
+    if ($depth === 0) {
+        $lock = fopen(DATA_DIR . '/.lock', 'c');
+        if (!$lock || !flock($lock, LOCK_EX)) {
+            throw new RuntimeException('Could not lock the data folder.');
+        }
+    }
+    $depth++;
+    try {
+        $new = $fn(data_read_fresh($name));
+        if ($new !== null) {
+            data_write($name, $new);
+        }
+        return $new;
+    } finally {
+        $depth--;
+        if ($depth === 0) {
+            flock($lock, LOCK_UN);
+            fclose($lock);
+        }
+    }
+}
+
+/** Replace a whole data file (locked). */
+function data_put(string $name, array $value): void
+{
+    data_update($name, fn() => $value);
+}
+
+/** Write temp file + rename. Never replaces the real file with a broken or partial one. Call only under the lock. */
+function data_write(string $name, array $value): void
+{
+    $file = DATA_DIR . "/$name.json";
+    $json = json_encode($value, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR | JSON_INVALID_UTF8_SUBSTITUTE);
     $tmp = $file . '.' . bin2hex(random_bytes(4)) . '.tmp';
-    file_put_contents($tmp, json_encode($value, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
-    rename($tmp, $file);
+    if (file_put_contents($tmp, $json) !== strlen($json) || !rename($tmp, $file)) {
+        @unlink($tmp);
+        throw new RuntimeException("Could not save $name.json (is the disk full?). Nothing was changed.");
+    }
     $GLOBALS['__data_cache'][$name] = $value;
-    flock($lock, LOCK_UN);
-    fclose($lock);
 }
 
 /** Pick the current language from a {fi, en} value; falls back to Finnish. */
@@ -99,9 +150,10 @@ function slugify(string $s): string
     return trim((string) $s, '-') ?: 'albumi';
 }
 
+/** Random id. Starts with a letter so PHP never turns it into an integer array key. */
 function new_id(): string
 {
-    return bin2hex(random_bytes(6));
+    return 'p' . bin2hex(random_bytes(6));
 }
 
 /** Format a price like "1 190 €" (Finnish style) or "1,190 €" (English). */

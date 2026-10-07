@@ -7,6 +7,10 @@ require __DIR__ . '/app/routes.php';
 
 $path = trim(rawurldecode(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/'), '/');
 
+if ($path === 'hallinta' && !str_ends_with(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '', '/')) {
+    header('Location: /hallinta/', true, 301); // the admin cookie lives on /hallinta/ only
+    exit;
+}
 if ($path === 'hallinta' || str_starts_with($path, 'hallinta/')) {
     require __DIR__ . '/app/admin/admin.php';
     exit;

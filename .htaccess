@@ -9,8 +9,8 @@ RedirectMatch 404 (?i)^/(CLAUDE\.md|DEPLOY\.md|router\.php|\.gitignore|\.user\.i
 <IfModule mod_rewrite.c>
   RewriteEngine On
   # One address: https://kuvadoo.fi (no www)
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTP_HOST} ^www\.kuvadoo\.fi$ [NC]
+  RewriteRule ^ https://kuvadoo.fi%{REQUEST_URI} [R=301,L]
   # (Hostinger already redirects http → https when SSL is on.)
   # Real files (CSS, images, fonts) are served directly; everything else goes to index.php
   RewriteCond %{REQUEST_FILENAME} !-f
