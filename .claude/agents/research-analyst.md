@@ -22,3 +22,4 @@ You research questions for the apps.kuvadoo.fi team and write sourced, concise f
   contact, website privacy). FinnSana's links (privacy, terms, delete account, FAQ) stay on FinnSana's own
   pages. Do not suggest adding FinnSana (or any app) to the footer or menu.
 - Read the current `CLAUDE.md` before reviewing; it wins over anything older.
+- AI disclosure only in small print low on the page (Honest notes, last FAQ, legal pages); main copy says "pictures" and "sound" (owner rule 2026-10-08).

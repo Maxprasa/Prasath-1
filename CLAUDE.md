@@ -16,8 +16,11 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
    "official", no test-preparation claims, no YKI mention, no user numbers, ratings, reviews, awards,
    press quotes or "human teacher". No fake testimonials. If a claim is not in the facts file, leave it out
    and ask the owner.
-3. **Honest AI disclosure.** FinnSana's voices and pictures are computer-generated; say so wherever
-   voices/pictures are described.
+3. **Honest AI disclosure, in small print (owner rule, 2026-10-08).** FinnSana's voices are
+   computer-generated and its pictures AI-generated. Say so only low on the page and small: the app page's
+   "Honest notes" small print, the last FAQ answer, and the legal pages. **Do not mention AI or computer
+   voices in heroes, stats, feature rows, tour captions, app cards, meta descriptions or JSON-LD** — there just
+   say "pictures" and "sound". Never claim or imply the voices are human.
 4. **Footer publisher line, exactly:**
    `© 2026 Kuvadoo, Finland · kuvadoo@gmail.com`
    **Location: say only "Finland" — never the town (owner rule, 2026-10-07).** No postal address, no

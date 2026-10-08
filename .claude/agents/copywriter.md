@@ -17,7 +17,8 @@ Rules:
   as a question for the owner instead of inventing it.
 - Never: "official", test preparation or exam claims, YKI, user numbers, ratings, awards, reviews,
   testimonials, "human teacher", "best", "#1", guaranteed results.
-- Always disclose computer-generated voices and AI-generated pictures where they are described.
+- Disclose computer-generated voices and AI-generated pictures only in small print low on the page (Honest notes,
+  last FAQ answer, legal pages) — owner rule 2026-10-08. Main copy just says "pictures" and "sound"; never imply human voices.
 - Plain language (aim for CEFR B1 readability: many visitors are learning English or Finnish). Short
   sentences, active voice, concrete benefits.
 - Finnish words get `<span lang="fi">…</span>` in HTML.

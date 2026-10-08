@@ -44,6 +44,8 @@ Anything not on this page must not appear on the website until the owner adds it
 ## Honest notes (must appear on the app page)
 - FinnSana is an independent app and is not connected to any authority or test organiser.
 - Voices and pictures are computer-generated.
+- **Owner decision 2026-10-08:** on the website, mention AI/computer-generated only in small print low on
+  the page (Honest notes, last FAQ answer, legal pages). Main copy says just "pictures" and "sound".
 - Example sentences partly from Tatoeba (tatoeba.org, CC BY 2.0 FR).
 
 ## Links
