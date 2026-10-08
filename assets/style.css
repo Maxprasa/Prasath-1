@@ -424,6 +424,57 @@ body { padding-bottom: 88px; }
 .lb-next { grid-column: 3; }
 .lightbox :focus-visible { outline-color: #ffffff; }
 
+/* ---------- 20b. Depth, 3D ring and micro-interactions (owner's choice, 2026-10-08) ---------- */
+/* Giant outline text that slides behind the services (moved by site.js; static without JS) */
+.depth { position: relative; overflow: hidden; }
+.depth > .wrap { position: relative; z-index: 1; }
+.ghost { position: absolute; z-index: 0; top: 58%; left: 0; white-space: nowrap; font: 800 clamp(6rem, 3rem + 13vw, 16rem)/1 var(--font-display); letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--brand) 30%, transparent); transform: translate3d(0, -50%, 0); pointer-events: none; user-select: none; }
+/* Tilt cards with a light reflection */
+.services { perspective: 900px; }
+.tilt { --rx: 0deg; --ry: 0deg; --gx: 50%; --gy: 50%; --ga: 0; transform: rotateX(var(--rx)) rotateY(var(--ry)); transform-style: preserve-3d; overflow: hidden; }
+.tilt.live { transition: transform .08s linear; }
+.tilt::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit; background: radial-gradient(circle at var(--gx) var(--gy), rgb(255 255 255 / .55), transparent 45%); opacity: var(--ga); mix-blend-mode: soft-light; transition: opacity .3s; }
+.tilt .icon-tile { transform: translateZ(40px); }
+.tilt:hover .icon-tile { transform: translateZ(60px) rotate(-10deg) scale(1.08); }
+/* 3D photo ring: bigger photos on wide screens so it fills the width */
+.ring-sec { padding-top: var(--section); background: linear-gradient(180deg, var(--bg), var(--bg-alt) 45%, var(--bg)); overflow: hidden; }
+.stage { --card: clamp(10rem, 6rem + 16vw, 24rem); position: relative; height: calc(var(--card) * 1.55); perspective: 1600px; perspective-origin: 50% 40%; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+@media (min-width: 64rem) { .stage { --card: clamp(18rem, 3rem + 22vw, 30rem); perspective: 1500px; } }
+.stage.drag { cursor: grabbing; }
+.ring { position: absolute; left: 50%; top: 50%; width: var(--card); height: calc(var(--card) * 1.25); margin: calc(var(--card) * -.625) 0 0 calc(var(--card) * -.5); transform-style: preserve-3d; }
+.ring-item { position: absolute; inset: 0; border-radius: var(--radius); overflow: hidden; background: #000; box-shadow: 0 30px 50px -20px rgb(0 0 0 / .5); -webkit-backface-visibility: hidden; backface-visibility: hidden; color: #fff; text-decoration: none; -webkit-user-drag: none; }
+.ring-item img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.ring-item span { position: absolute; left: 10px; right: 10px; bottom: 10px; padding: 8px 12px; border-radius: 12px; background: rgb(8 20 13 / .6); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); font: 700 .9rem var(--font-display); }
+.ring-ctrl { display: flex; justify-content: center; gap: var(--s-3); margin-top: var(--s-3); }
+.round { width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--border); background: var(--surface); color: var(--text); font-size: 1.4rem; cursor: pointer; transition: transform .35s var(--spring), border-color .25s; }
+.round:hover { transform: scale(1.1); border-color: var(--brand); }
+.round:active { transform: scale(.92); }
+/* Without JS the ring becomes a simple scrollable row */
+.no-js .ring { position: static; display: flex; gap: 12px; width: auto; height: auto; margin: 0; overflow-x: auto; padding-inline: var(--s-4); }
+.no-js .ring-item { position: relative; flex: 0 0 var(--card); aspect-ratio: 4 / 5; }
+.no-js .stage { height: auto; cursor: auto; }
+.no-js .ring-ctrl { display: none; }
+/* Image floats inside its card while scrolling (site.js moves the img) */
+[data-inner] { overflow: hidden; }
+[data-inner] img { will-change: transform; transition: none; }
+/* Buttons: fill from the point you press + magnetic pull (mouse) */
+.btn { --mx: 0px; --my: 0px; translate: var(--mx) var(--my); transition: translate .45s var(--spring), transform .25s var(--spring), box-shadow .25s var(--ease), background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease); }
+.btn::before { content: ""; position: absolute; z-index: -1; left: var(--fx, 50%); top: var(--fy, 50%); width: 0; height: 0; border-radius: 50%; background: var(--lime); transform: translate(-50%, -50%); transition: width .5s var(--ease), height .5s var(--ease); pointer-events: none; }
+.btn:hover::before { width: 260%; height: 600%; }
+.btn-primary:hover, .btn-outline-light:hover, .btn-light:hover, .btn-ghost:hover { color: #064a30; }
+.btn-wa::before { background: #ffffff; }
+/* Nav pill that slides under the hovered link */
+.site-nav ul { position: relative; }
+.nav-pill { position: absolute; z-index: 0; top: 4px; bottom: 4px; border-radius: var(--radius-pill); background: var(--brand-soft); opacity: 0; transition: left .35s var(--spring), width .35s var(--spring), opacity .2s; pointer-events: none; }
+.site-nav li { position: relative; z-index: 1; }
+/* Custom cursor with labels (mouse only) */
+.cursor { position: fixed; z-index: 60; left: 0; top: 0; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--lime); color: #064a30; display: grid; place-items: center; font: 800 .78rem var(--font); pointer-events: none; opacity: 0; transition: width .35s var(--spring), height .35s var(--spring), margin .35s var(--spring), opacity .3s; }
+.cursor.on { opacity: 1; }
+.cursor.big { width: 84px; height: 84px; margin: -42px 0 0 -42px; }
+.cursor span { opacity: 0; transition: opacity .2s; }
+.cursor.big span { opacity: 1; }
+@media (hover: none), (pointer: coarse) { .cursor { display: none; } }
+
 /* ---------- 21. Scroll reveal (content always visible without support) ---------- */
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {

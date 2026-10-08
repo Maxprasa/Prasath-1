@@ -50,7 +50,7 @@ ok(await pub.locator('img[alt="Testikuvan kuvaus"]').count() === 1, 'alt text vi
 await pub.goto(B + '/valokuvaus/haat/');
 ok(await pub.getByText('Testihäät 2027').count() >= 1, 'weddings category shows new album');
 await pub.goto(B + '/');
-const heroSrc = await pub.locator('.print--main img').getAttribute('src');
+const heroSrc = await pub.locator('.hero-img').getAttribute('src');
 ok(heroSrc.includes('testihaat-2027'), 'home hero changed: ' + heroSrc);
 // 4. Delete one photo
 await p.locator('input[name^=delete]').first().check();

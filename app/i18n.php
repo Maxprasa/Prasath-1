@@ -25,6 +25,8 @@ return [
     'stat3_t' => ['fi' => 'sertifioitu lentäjä', 'en' => 'certified operator'],
     'stat4_n' => ['fi' => 'Kuva + video', 'en' => 'Photo + video'],
     'stat4_t' => ['fi' => 'kuvaus ja editointi samasta kädestä', 'en' => 'filming and editing from one hand'],
+    'ring_title' => ['fi' => 'Pyöritä kuvia', 'en' => 'Spin the photos'],
+    'ring_hint' => ['fi' => 'Vedä sormella tai hiirellä. Kaikki galleriat löytyvät alta.', 'en' => 'Drag with your finger or mouse. All galleries are below.'],
     'cta_whatsapp' => ['fi' => 'WhatsApp', 'en' => 'WhatsApp'],
     'cta_email' => ['fi' => 'Sähköposti', 'en' => 'Email'],
     'cta_ask' => ['fi' => 'Kysy vapaita aikoja', 'en' => 'Ask for free dates'],

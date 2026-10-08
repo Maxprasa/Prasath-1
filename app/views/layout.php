@@ -33,7 +33,7 @@ function page_start(string $title, string $description, array $o = []): void
     ];
     ?>
 <!doctype html>
-<html lang="<?= $lang ?>">
+<html lang="<?= $lang ?>" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -135,6 +135,7 @@ function page_end(): void
     <p>© <?= date('Y') ?> Kuvadoo (<?= e(t('sole_trader')) ?>) · <?= e(t('ytunnus')) ?> <?= e(setting('ytunnus')) ?> · <?= e(setting('email')) ?></p>
   </div>
 </footer>
+<div class="cursor" aria-hidden="true"><span></span></div>
 <div class="contact-bar" role="group" aria-label="<?= e(t('contact_bar')) ?>">
   <a class="btn btn-wa" href="<?= e(whatsapp_link()) ?>" rel="noopener"><?= wa_icon() ?><span>WhatsApp</span></a>
   <a class="btn btn-ghost" href="<?= e($mail) ?>"><?= mail_icon() ?><span><?= e(t('cta_email')) ?></span></a>

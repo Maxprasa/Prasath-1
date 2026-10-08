@@ -29,7 +29,7 @@ page_start('', txt('hero_lead'), [
 ]);
 ?>
 <section class="hero hero--cover">
-  <div class="hero-media" aria-hidden="true"><?= img($hero, '100vw', 'hero-img', false, 1600, '') ?></div>
+  <div class="hero-media" data-parallax aria-hidden="true"><?= img($hero, '100vw', 'hero-img', false, 1600, '') ?></div>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="wrap hero-content">
     <p class="kicker rise d0"><?= e(txt('hero_kicker')) ?></p>
@@ -51,18 +51,45 @@ page_start('', txt('hero_lead'), [
   </ul>
 </section>
 
-<section class="section wrap" aria-labelledby="svc-h">
+<section class="section depth" aria-labelledby="svc-h">
+  <div class="ghost" aria-hidden="true">Kuvadoo · Hämeen Films · Kuvadoo · Hämeen Films ·</div>
+  <div class="wrap">
   <div class="section-head reveal"><div><p class="kicker"><?= e(t('brand_tagline')) ?></p><h2 id="svc-h" class="section-title"><?= e(txt('services_title')) ?></h2></div></div>
   <ul class="services">
 <?php foreach ([['photo', url('photo')], ['video', url('films')], ['aerial', url('films')], ['edit', url('films')]] as [$k, $href]): ?>
-    <li class="service reveal">
+    <li class="service tilt reveal">
       <span class="icon-tile"><?= $icons[$k] ?></span>
       <h3><a href="<?= e($href) ?>"><?= hf(e(txt("svc_{$k}_title"))) ?></a></h3>
       <p><?= e(txt("svc_{$k}_text")) ?></p>
     </li>
 <?php endforeach; ?>
   </ul>
+</div>
 </section>
+
+<?php
+// 3D photo ring: covers + a few photos of each featured album (decorative; the album grid below is the accessible version)
+$ringPhotos = [];
+foreach ($featured as $a) {
+    foreach (array_slice(array_values(array_unique(array_merge([$a['cover']], $a['photos']))), 0, 3) as $pid) {
+        if (($p = photo($pid)) && count($ringPhotos) < 12) {
+            $ringPhotos[] = [$p, $a];
+        }
+    }
+}
+if (count($ringPhotos) >= 6): ?>
+<section class="ring-sec" aria-labelledby="ring-h">
+  <div class="wrap section-head reveal"><div><p class="kicker"><?= e(t('galleries')) ?></p><h2 id="ring-h" class="section-title"><?= e(t('ring_title')) ?></h2></div><p class="muted"><?= e(t('ring_hint')) ?></p></div>
+  <div class="stage" aria-hidden="true">
+    <div class="ring">
+<?php foreach ($ringPhotos as [$p, $a]): ?>
+      <a class="ring-item" tabindex="-1" href="<?= e(url('album', null, ['cat' => $a['category'], 'album' => $a['slug']])) ?>"><?= img($p, '24rem', '', true, 960, '') ?><span><?= e(tr($a['title'])) ?></span></a>
+<?php endforeach; ?>
+    </div>
+  </div>
+  <div class="ring-ctrl" aria-hidden="true"><button class="round" type="button" tabindex="-1" data-ring="1">‹</button><button class="round" type="button" tabindex="-1" data-ring="-1">›</button></div>
+</section>
+<?php endif; ?>
 
 <?php if ($featured): ?>
 <section class="section wrap" aria-labelledby="work-h">
@@ -74,7 +101,7 @@ page_start('', txt('hero_lead'), [
 <?php foreach ($featured as $i => $a): $cover = photo($a['cover']) ?? photo($a['photos'][0]); ?>
     <li class="album-card reveal<?= $i === 0 ? ' album-card-wide' : '' ?>">
       <a href="<?= e(url('album', null, ['cat' => $a['category'], 'album' => $a['slug']])) ?>">
-        <span class="album-img"><?= img($cover, $i === 0 ? '(min-width: 56rem) 66vw, 100vw' : '(min-width: 56rem) 33vw, 100vw', '', true, 960, '') ?></span>
+        <span class="album-img" data-inner><?= img($cover, $i === 0 ? '(min-width: 56rem) 66vw, 100vw' : '(min-width: 56rem) 33vw, 100vw', '', true, 960, '') ?></span>
         <span class="album-meta"><span class="album-cat"><?= e(tr(categories()[$a['category']]['name'])) ?></span><span class="album-title"><?= e(tr($a['title'])) ?></span></span>
       </a>
     </li>
