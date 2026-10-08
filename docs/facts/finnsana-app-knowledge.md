@@ -7,7 +7,7 @@ Facts checked against the app's code on 7 Oct 2026. Use only what is written her
 
 ## Quick facts
 - Name: FinnSana: Learn Finnish. Package app.finnsana. Android only. Version 1.0.0, in closed testing on Google Play (not public yet).
-- Maker: Kuvadoo (sole trader, Hämeenlinna, Finland). Contact kuvadoo@gmail.com. Developer name on Play: PRASADOO.
+- Maker: Kuvadoo (sole trader, Hämeenlinna, Finland). Contact info@kuvadoo.fi. Developer name on Play: PRASADOO.
 - Free, no ads, no analytics, no advertising ID. No microphone, camera or location. No account needed.
 - Optional sign-in (Google or email + password) only to back up progress to the cloud (Firebase, EU region).
 - Tabs: Home, Learn, Practice, Grammar, Me.
@@ -89,7 +89,7 @@ Kiitos ja tervetuloa — thank you and welcome!
 
 ## Other fields
 - Category: Education
-- Contact email: kuvadoo@gmail.com
+- Contact email: info@kuvadoo.fi
 - Privacy policy: https://sites.google.com/view/finnsana-privacy/home
 - Terms of use: text in docs/terms-of-use.md (in the app under Me → Terms of use); once it is published on the privacy site, put its address in the listing too.
 - Contains ads: No
@@ -99,7 +99,7 @@ First test version of FinnSana.
 • Nearly 5,000 Finnish words with pictures and a computer-generated voice, over 100 grammar lessons, listening and reading practice, and games.
 • Optional sign-in with Google or email to back up your progress.
 • After installing, Google Play downloads the sounds and pictures (about 700 MB, once). Wi-Fi is best.
-Mistakes? kuvadoo@gmail.com
+Mistakes? info@kuvadoo.fi
 
 
 ---
@@ -127,7 +127,7 @@ The data controller is **Kuvadoo**, a sole trader business in Finland:
 - Owner (sole trader): **[TO FILL: owner's full legal name]**
 - Business ID (Y-tunnus): **[TO FILL: Y-tunnus]**
 - Postal address: **[TO FILL: street, postcode, town], Finland**
-- Email: **kuvadoo@gmail.com**
+- Email: **info@kuvadoo.fi**
 
 ## 1. What stays on your device
 
@@ -256,7 +256,7 @@ with a new date.
 
 ## 8. Contact
 
-Questions or requests about privacy: **kuvadoo@gmail.com** (Kuvadoo, see
+Questions or requests about privacy: **info@kuvadoo.fi** (Kuvadoo, see
 section 0 for the postal address).
 
 
@@ -277,7 +277,7 @@ and to the Play listing. Have a lawyer read it before any paid feature. -->
 
 FinnSana is made by **Kuvadoo**, a sole trader business in Finland
 (owner **[TO FILL: owner's full legal name]**, business ID **[TO FILL: Y-tunnus]**,
-**[TO FILL: postal address]**, Finland). Email: **kuvadoo@gmail.com**.
+**[TO FILL: postal address]**, Finland). Email: **info@kuvadoo.fi**.
 
 By using FinnSana you accept these terms. If you do not accept them, please do not use the app.
 
@@ -306,7 +306,7 @@ The words and notes you add yourself stay yours. We store them only to back them
 All voices in FinnSana are computer-generated (Microsoft Azure AI Speech). The word pictures were made with AI image tools.
 
 We work hard to keep the Finnish correct, but mistakes can still happen. If you find one, please tell us at
-kuvadoo@gmail.com and we will fix it.
+info@kuvadoo.fi and we will fix it.
 
 ## Content from others
 
@@ -334,7 +334,7 @@ If these terms change, the new version is shown in the app and on this page with
 These terms are under Finnish law. Nothing in them limits the rights you have as a consumer under the law
 of the country where you live.
 
-If something goes wrong, please contact us first at kuvadoo@gmail.com. Consumers in Finland can also turn to
+If something goes wrong, please contact us first at info@kuvadoo.fi. Consumers in Finland can also turn to
 the Consumer Disputes Board (https://www.kuluttajariita.fi).
 
 
@@ -364,7 +364,7 @@ Another phone that is still signed in to the deleted account cannot upload its p
 
 ### Without the app
 
-Email **kuvadoo@gmail.com** from the address you signed in with, with the subject **"Delete my FinnSana account"**. We delete the account and its backup within 30 days and reply when it is done.
+Email **info@kuvadoo.fi** from the address you signed in with, with the subject **"Delete my FinnSana account"**. We delete the account and its backup within 30 days and reply when it is done.
 
 ### What is deleted
 
@@ -379,4 +379,4 @@ Email **kuvadoo@gmail.com** from the address you signed in with, with the subjec
 
 ### Who handles your request
 
-Kuvadoo (sole trader), Finland, kuvadoo@gmail.com. Business ID and postal address: see the privacy policy, section 0.
+Kuvadoo (sole trader), Finland, info@kuvadoo.fi. Business ID and postal address: see the privacy policy, section 0.

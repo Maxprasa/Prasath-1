@@ -1,6 +1,6 @@
 # Brief: new kuvadoo.fi (photography & video) — for a new session
 
-Owner: Kuvadoo, a sole trader (toiminimi) in Finland. Contact: kuvadoo@gmail.com.
+Owner: Kuvadoo, a sole trader (toiminimi) in Finland. Contact: info@kuvadoo.fi.
 Written 2026-10-07 from the apps.kuvadoo.fi session. Research with sources: `docs/research/` in this repo
 (especially `2026-10-kuvadoo-site-and-brands.md` and `2026-10-business-names-fi.md`).
 

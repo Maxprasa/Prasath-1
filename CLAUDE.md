@@ -22,7 +22,7 @@ Live site: https://apps.kuvadoo.fi/ (Hostinger, "PHP/HTML website", files in `pu
    voices in heroes, stats, feature rows, tour captions, app cards, meta descriptions or JSON-LD** — there just
    say "pictures" and "sound". Never claim or imply the voices are human.
 4. **Footer publisher line, exactly:**
-   `© 2026 Kuvadoo, Finland · kuvadoo@gmail.com`
+   `© 2026 Kuvadoo, Finland · info@kuvadoo.fi`
    **Location: say only "Finland" — never the town (owner rule, 2026-10-07).** No postal address, no
    business ID unless the owner adds them.
 5. **Language:** English, `<html lang="en">`. Finnish words in text get `lang="fi"` spans.

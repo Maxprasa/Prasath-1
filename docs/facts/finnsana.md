@@ -52,7 +52,7 @@ Anything not on this page must not appear on the website until the owner adds it
 - Privacy policy (current live): https://sites.google.com/view/finnsana-privacy/home
 - Terms: /finnsana/terms/ — "Terms of use are in the app under Me → Terms of use"
 - Delete account: /finnsana/delete-account/
-- Contact: kuvadoo@gmail.com
+- Contact: info@kuvadoo.fi
 
 ## Account deletion
 Owner-confirmed 2026-10-07: the in-app path is **Me tab → tap your profile (at the top) → Delete account**
@@ -61,7 +61,7 @@ Owner-confirmed 2026-10-07: the in-app path is **Me tab → tap your profile (at
 You can use FinnSana without an account. If you signed in: open the app → Me tab → tap your profile → Delete account.
 This deletes your sign-in account and your cloud backup (progress, settings). Your progress on the phone is
 removed with "Reset progress" or by uninstalling the app. If you cannot open the app, write to
-kuvadoo@gmail.com from the email address of your account and we delete it within 30 days.
+info@kuvadoo.fi from the email address of your account and we delete it within 30 days.
 
 ## Owner decisions (2026-10-07)
 - Word count: **nearly 5,000** is correct. (A Play Store screenshot caption says "3,000 words" — owner to update it.)
@@ -85,7 +85,7 @@ kuvadoo@gmail.com from the email address of your account and we delete it within
   standard"), listening (conversations with 4 questions), reading (short real-life texts), My words,
   Me (streaks, words learned, skills, minutes studied this week), Credits & licences.
 
-- **Early access (owner, 2026-10-07):** visitors email kuvadoo@gmail.com with the email address of their Google
+- **Early access (owner, 2026-10-07):** visitors email info@kuvadoo.fi with the email address of their Google
   Play account; the owner then sends them the Google Play test link (closed testing, Android only).
 
 ## Forbidden

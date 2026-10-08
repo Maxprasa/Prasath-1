@@ -17,7 +17,7 @@ You research questions for the apps.kuvadoo.fi team and write sourced, concise f
 
 ## Owner rules that override older notes (2026-10-07)
 - **Location: say only "Finland". Never mention Hämeenlinna** anywhere on the site, including the footer
-  (`© 2026 Kuvadoo, Finland · kuvadoo@gmail.com`). Do not flag "Finland" as an error.
+  (`© 2026 Kuvadoo, Finland · info@kuvadoo.fi`). Do not flag "Finland" as an error.
 - **No app links in the footer or top menu.** The footer is site-wide only (all apps, support, kuvadoo.fi,
   contact, website privacy). FinnSana's links (privacy, terms, delete account, FAQ) stay on FinnSana's own
   pages. Do not suggest adding FinnSana (or any app) to the footer or menu.
