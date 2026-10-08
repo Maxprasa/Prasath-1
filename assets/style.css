@@ -216,7 +216,7 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
 .hero.is-scrub .hero-content { margin-top: 0; transform-origin: 0 100%; will-change: transform;
   transform: translate3d(0, calc((1 - var(--p)) * 3svh), 0) scale(calc(1 + (1 - var(--p)) * .08)); }
 @media (max-width: 47.99rem) {
-  .hero.is-scrub { height: 175svh; --cx: 4%; --cy: 7%; }
+  .hero.is-scrub { height: 190svh; --cx: 6%; --cy: 11%; }
   .hero--cover.is-scrub .hero-shade { background: linear-gradient(0deg, rgb(4 40 24 / .94) 0%, rgb(6 60 39 / .8) 45%, rgb(6 74 48 / .2) 80%, transparent 100%); }
   .hero.is-scrub .hero-content { transform: scale(calc(1 + (1 - var(--p)) * .04)); }
 }

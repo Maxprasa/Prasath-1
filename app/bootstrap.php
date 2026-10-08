@@ -6,7 +6,7 @@ const ROOT = __DIR__ . '/..';
 const DATA_DIR = ROOT . '/data';
 const MEDIA_DIR = ROOT . '/media';
 const SITE_URL = 'https://kuvadoo.fi';
-const ASSET_VER = '7';
+const ASSET_VER = '8';
 
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Helsinki');
