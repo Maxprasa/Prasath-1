@@ -28,8 +28,9 @@ page_start('', txt('hero_lead'), [
     ]),
 ]);
 ?>
-<section class="hero hero--cover">
-  <div class="hero-media" data-parallax aria-hidden="true"><?= img($hero, '100vw', 'hero-img', false, 1600, '') ?></div>
+<section class="hero hero--cover" data-scrub>
+  <div class="scrub-pin">
+  <div class="hero-media" aria-hidden="true"><?= img($hero, '100vw', 'hero-img', false, 1600, '') ?></div>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="wrap hero-content">
     <p class="kicker rise d0"><?= e(txt('hero_kicker')) ?></p>
@@ -39,6 +40,7 @@ page_start('', txt('hero_lead'), [
       <a class="btn btn-primary" href="<?= e(url('photo')) ?>"><?= e(t('cta_work')) ?></a>
       <a class="btn btn-outline-light" href="<?= e(url('films')) ?>"><?= e(t('cta_films')) ?></a>
     </p>
+  </div>
   </div>
   <div class="band-wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="currentColor" d="M0 90V40C240 0 480 0 720 30s480 50 720 10v50z"/></svg></div>
 </section>

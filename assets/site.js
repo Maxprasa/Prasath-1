@@ -30,16 +30,26 @@
   const lerp = (a, b, t) => a + (b - a) * t;
   const fi = document.documentElement.lang === 'fi';
 
-  // 3) Scroll parallax: hero photo, giant outline text, images inside album cards.
-  const heroLayer = matchMedia('(min-width: 48rem)').matches ? document.querySelector('[data-parallax]') : null;
+  // 3) Scroll effects: scroll-scrubbed hero (photo grows from a card to full width),
+  //    giant outline text, images inside album cards.
+  const scrub = reduce ? null : document.querySelector('[data-scrub]');
+  const header = document.querySelector('.site-header');
   const ghost = document.querySelector('.ghost');
   const inners = [...document.querySelectorAll('[data-inner] img')];
-  if (!reduce && (heroLayer || ghost || inners.length)) {
+  if (scrub) scrub.classList.add('is-scrub');
+  if (!reduce && (scrub || ghost || inners.length)) {
     let queued = false;
     const update = () => {
       queued = false;
-      const y = scrollY, vh = innerHeight;
-      if (heroLayer && y < vh * 1.3) heroLayer.style.transform = `translate3d(0,${y * 0.3}px,0) scale(${1 + (y / vh) * 0.06})`;
+      const vh = innerHeight;
+      if (scrub) {
+        const hdr = header ? header.offsetHeight : 0;
+        document.documentElement.style.setProperty('--hdr', hdr + 'px');
+        const r = scrub.getBoundingClientRect();
+        const room = r.height - (vh - hdr);
+        const t = room > 0 ? Math.min(1, Math.max(0, (hdr - r.top) / (room * 0.85))) : 1;
+        scrub.style.setProperty('--p', (t * t * (3 - 2 * t)).toFixed(4));
+      }
       if (ghost) { const r = ghost.parentElement.getBoundingClientRect(); ghost.style.transform = `translate3d(${(r.top - vh) * 0.35}px,-50%,0)`; }
       inners.forEach(img => {
         const r = img.parentElement.getBoundingClientRect();
@@ -123,26 +133,6 @@
     const pill = document.createElement('span'); pill.className = 'nav-pill'; pill.setAttribute('aria-hidden', 'true'); navUl.prepend(pill);
     navUl.querySelectorAll('a').forEach(a => a.addEventListener('pointerenter', () => { const li = a.parentElement; pill.style.left = li.offsetLeft + 'px'; pill.style.width = li.offsetWidth + 'px'; pill.style.opacity = 1; }));
     navUl.addEventListener('pointerleave', () => { pill.style.opacity = 0; });
-  }
-
-  // 8) Custom cursor with labels (mouse only).
-  const cur = document.querySelector('.cursor');
-  if (cur && fine && !reduce) {
-    const lab = cur.querySelector('span');
-    let cx = innerWidth / 2, cy = innerHeight / 2, px = cx, py = cy;
-    addEventListener('pointermove', e => { px = e.clientX; py = e.clientY; cur.classList.add('on'); });
-    document.addEventListener('pointerleave', () => cur.classList.remove('on'));
-    const labels = [
-      ['.album-card a, .g-item', fi ? 'Katso' : 'View'],
-      ['.video-play', fi ? 'Toista' : 'Play'],
-      ['.stage', fi ? 'Vedä' : 'Drag'],
-    ];
-    labels.forEach(([sel, text]) => document.querySelectorAll(sel).forEach(el => {
-      el.addEventListener('pointerenter', () => { lab.textContent = text; cur.classList.add('big'); });
-      el.addEventListener('pointerleave', () => cur.classList.remove('big'));
-    }));
-    const loop = () => { cx = lerp(cx, px, 0.2); cy = lerp(cy, py, 0.2); cur.style.transform = `translate3d(${cx}px,${cy}px,0)`; requestAnimationFrame(loop); };
-    loop();
   }
 
   // 2) Lightbox for gallery photos.

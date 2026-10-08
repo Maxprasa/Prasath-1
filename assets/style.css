@@ -202,6 +202,24 @@ a:hover { color: var(--brand-strong); text-decoration-thickness: 2px; }
   .hero--cover .hero-content { margin-top: calc(-1 * var(--s-6)); z-index: 1; }
 }
 .hero-content { position: relative; }
+/* Scroll-scrubbed hero (JS adds .is-scrub; without JS or with reduced motion the hero above is shown as is).
+   The section is tall, the inner part sticks to the screen, and scroll progress --p (0..1) grows the photo
+   from a rounded card to full width while the heading settles into place. */
+.scrub-pin { display: contents; }
+.hero.is-scrub { display: block; overflow: clip; min-height: 0; height: 200svh; padding: 0; background: var(--film-grad); --p: 0; --cx: 7%; --cy: 11%; }
+.hero.is-scrub .scrub-pin { position: sticky; top: var(--hdr, 0px); display: grid; align-items: end; height: calc(100svh - var(--hdr, 0px)); overflow: hidden; isolation: isolate;
+  padding-block: clamp(2.5rem, 2rem + 4vw, 6rem) clamp(6.5rem, 5rem + 6vw, 10rem); }
+.hero--cover.is-scrub .hero-media, .hero--cover.is-scrub .hero-shade { position: absolute; inset: 0; height: auto; z-index: -1;
+  clip-path: inset(calc((1 - var(--p)) * var(--cy)) calc((1 - var(--p)) * var(--cx)) round calc((1 - var(--p)) * 40px)); }
+.hero--cover.is-scrub .hero-media { z-index: -2; }
+.hero.is-scrub .hero-img { animation: none; transform: scale(calc(1.28 - .28 * var(--p))); will-change: transform; }
+.hero.is-scrub .hero-content { margin-top: 0; transform-origin: 0 100%; will-change: transform;
+  transform: translate3d(0, calc((1 - var(--p)) * 3svh), 0) scale(calc(1 + (1 - var(--p)) * .08)); }
+@media (max-width: 47.99rem) {
+  .hero.is-scrub { height: 175svh; --cx: 4%; --cy: 7%; }
+  .hero--cover.is-scrub .hero-shade { background: linear-gradient(0deg, rgb(4 40 24 / .94) 0%, rgb(6 60 39 / .8) 45%, rgb(6 74 48 / .2) 80%, transparent 100%); }
+  .hero.is-scrub .hero-content { transform: scale(calc(1 + (1 - var(--p)) * .04)); }
+}
 @media (prefers-reduced-motion: no-preference) {
   .rise { animation: rise .9s var(--ease) both; animation-delay: calc(var(--d, 0) * 90ms + 80ms); }
   .d1 { --d: 1; } .d2 { --d: 2; } .d3 { --d: 3; } .d4 { --d: 4; }
@@ -467,13 +485,7 @@ body { padding-bottom: 88px; }
 .site-nav ul { position: relative; }
 .nav-pill { position: absolute; z-index: 0; top: 4px; bottom: 4px; border-radius: var(--radius-pill); background: var(--brand-soft); opacity: 0; transition: left .35s var(--spring), width .35s var(--spring), opacity .2s; pointer-events: none; }
 .site-nav li { position: relative; z-index: 1; }
-/* Custom cursor with labels (mouse only) */
-.cursor { position: fixed; z-index: 60; left: 0; top: 0; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--lime); color: #064a30; display: grid; place-items: center; font: 800 .78rem var(--font); pointer-events: none; opacity: 0; transition: width .35s var(--spring), height .35s var(--spring), margin .35s var(--spring), opacity .3s; }
-.cursor.on { opacity: 1; }
-.cursor.big { width: 84px; height: 84px; margin: -42px 0 0 -42px; }
-.cursor span { opacity: 0; transition: opacity .2s; }
-.cursor.big span { opacity: 1; }
-@media (hover: none), (pointer: coarse) { .cursor { display: none; } }
+
 
 /* ---------- 21. Scroll reveal (content always visible without support) ---------- */
 @supports (animation-timeline: view()) {
